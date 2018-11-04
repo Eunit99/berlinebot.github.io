@@ -190,7 +190,7 @@
 	}
 	
 	#about-container p a:hover {
-		text-decoration: underline;
+		text-decoration: none;
 	}
 	
 	#about-container a.big-link {
@@ -205,7 +205,7 @@
 	}
 	
 	#about-container a.big-link:hover {
-		border-color: #3F74B0;
+		border-color: #4c00e6;
 	}
 	#about-container a.big-link:active {
 		background-color: #efefef;
