@@ -41,16 +41,16 @@
 	  	<link rel="shortcut icon" href="images/favicon.ico">
 	  	
 	  	<!--  Stylesheets -->
-	  	<link rel="stylesheet" type="text/css" media="all" href="/css/reset.css">
-		<link rel="stylesheet" type="text/css" media="all" href="/css/berlinebot.css">
-		<link rel="stylesheet" type="text/css" media="all" href="css//css/animate.css">
-		<link rel="stylesheet" type="text/css" media="all" href="/font-awesome/css/font-awesome.min.css">
+	  	<link rel="stylesheet" type="text/css" media="all" href="/sdcard/DroidEdit/css/reset.css">
+		<link rel="stylesheet" type="text/css" media="all" href="/sdcard/DroidEdit/css/berlinebot.css">
+		<link rel="stylesheet" type="text/css" media="all" href="css//sdcard/DroidEdit/css/animate.css">
+		<link rel="stylesheet" type="text/css" media="all" href="/sdcard/DroidEdit/font-awesome/css/font-awesome.min.css">
 		
 		<!--   Scripts  -->
-		<script type="text/javascript" src="/js/jquery-3.1.1.min.js"></script>
-		<script type="text/javascript" src="/js/berline_bot_conversations.js"></script>
-		<script type="text/javascript" src="/js/berline_contact.js"></script>
-		<script type="text/javascript" src="/js/berline_chat_settings.js"></script>
+		<script type="text/javascript" src="/sdcard/DroidEdit/js/jquery-3.1.1.min.js"></script>
+		<script type="text/javascript" src="/sdcard/DroidEdit/js/berline_bot_conversations.js"></script>
+		<script type="text/javascript" src="/sdcard/DroidEdit/js/berline_contact.js"></script>
+		<script type="text/javascript" src="/sdcard/DroidEdit/js/berline_chat_settings.js"></script>
 		<script>
 		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -64,8 +64,9 @@
 	</head>
 	<body>
 	
-		<div id="container" class="container spacer">
-				<div id="about-container" class="container spacer animated fadeIn displayOff">
+				<div id="chat-container" class="container spacer animated fadeIn"></div>
+				<div id="container" class="container spacer">
+						<div id="about-container" class="container spacer animated fadeIn displayOff">
 				<div id="about-container" class="container spacer animated fadeIn ">
 			<div class="section">
 				<img src="http://jor.dance/images/profile.jpg" alt="Photo of Jordan Staniscia">
@@ -111,14 +112,14 @@
 						Chat
 					</a>
 				</li>
-				<li id="info">
+				<li id="about">
 					<a href="#about-container" onclick="about()">
-						<svg xmlns="http://www.w3.org/2000/svg" data-name="circle" viewBox="0 0 24 24"><title>info</title><g data-name="Icon/Circle"><circle class="circle" cx="12" cy="12" r="11"/></g></svg>
-						Info
+						<svg xmlns="http://www.w3.org/2000/svg" data-name="circle" viewBox="0 0 24 24"><title>about</title><g data-name="Icon/Circle"><circle class="circle" cx="12" cy="12" r="11"/></g></svg>
+						About
 					</a>
 				</li>
 				<li id="mail">
-					<a href="mailto:eunithelp@gmail.com" onclick="mail()">
+					<a href="#" onclick="mail()">
 						<svg xmlns="http://www.w3.org/2000/svg" data-name="triangle" viewBox="0 0 24 24"></defs><title>triangle</title><g data-name="Icon/Triangle"><polygon class="triangle" points="12 2 24 22 0 22 12 2"/></g></svg>
 						Mail
 					</a>
