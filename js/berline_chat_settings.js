@@ -51,7 +51,7 @@ function createMessage (messagesArray, i, response) {
 		// if it's not the last message, display the next one
 		else {
 
-			$('#container').append(htmlWrapperBeginning + messagesArray[i] + htmlWrapperEnding);
+			$('#chat-container').append(htmlWrapperBeginning + messagesArray[i] + htmlWrapperEnding);
 			//Special case for chat
 			if ($(".active").attr('id') == "chat") {
 				smoothScrollBottom();
@@ -70,7 +70,7 @@ function createAnswerField () {
 		return 1;
 	}
 
-	$('#container').append(htmlAnswerField);
+	$('#chat-container').append(htmlAnswerField);
 
 	$('#answer').keyup(function(event){
 	    if(event.keyCode == 13){
@@ -100,7 +100,7 @@ function createAnswerMessage (answer) {
 	var htmlWrapperBeginning = "<div class=\"line\"><div class=\"message message-right animated tada\">",
 		htmlWrapperEnding = "</div></div><div class=\"clear\"></div>";
 
-	$('#container').append(htmlWrapperBeginning + answer + htmlWrapperEnding);
+	$('#chat-container').append(htmlWrapperBeginning + answer + htmlWrapperEnding);
 
 	if (local) {
 		console.log(answer);
