@@ -16,7 +16,7 @@ var questions = {
 	"0": {
 		"name": "name",
 		"intro": true,
-		"question": ["Hi.", "I'm Berline.", "I'm a conversational bot, I help guys like you get over 'that' girl 😝", "Might I ask what your name is?"],
+		"question": ["Hi.", "I'm Berline.", "I'm a conversational bot, I discourage guys like you from getting infatuated over 'that' girl 😝", "Might I ask what your name is?"],
 		"answers": {
 			"default": {
 				"replies": ["That's a good name.", "Names are a funny thing", "It's one of the only decisions you don't make yourself 😉"]
@@ -701,6 +701,5 @@ var questions = {
 		"ending": true
 	}
 }
-
 
 
