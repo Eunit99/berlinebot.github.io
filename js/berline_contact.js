@@ -8,7 +8,7 @@
 =========DO NOT MODIFY===========
 
 */
-     
+     // hide() and show() the menu for Berline bot with jQuery
 	       // <![CDATA[ 
 		$(document).ready(function(){
 		    $("#chat").click(function(){
@@ -63,10 +63,10 @@
             //]]>
            //<![CDATA[
             function mail(){
-   var confS = confirm("You are about to mail my developer, do you wish to continue?");
+   var confS = confirm("You are about to mail me, do you wish to continue?");
           if (confS == true){ 
           alert("Here you go 😃");
-          window.location = "mailto:eunithelp@gmail.com";          return true;
+          window.location = "mailto:berline_bot@gmail.com";          return true;
         } else {
         
           return false;
