@@ -97,6 +97,16 @@
 		color: #eee6ff;
 	}
 	
+	.chatImg{
+		height: 32px;
+		width: 32px;
+		border-radius: 50%;
+		padding: 10px ;
+		display: inline-block;
+		margin: 0 0 8px 0;
+		box-shadow: 0 1px 16px 0 rgba(0,0,0,0.12);
+	}
+	
 	#menu {
 		height: 100%;
 		width: 90px;
@@ -163,11 +173,16 @@
 	}
 	
 	#about-container img {
-		width: 100%;
+		width: 80%;
 		max-width: 720px;
 		height: auto;
 		border-radius: 2px;
 		margin-bottom: 32px;
+		display: block;
+		background-color: #fff;
+		box-shadow: 0 1px 16px 0 rgba(0,0,0,0.12);
+		border: 2px solid #ffffff;
+		border-radius: 50% !important;
 	}
 	
 	#about-container h1 {
