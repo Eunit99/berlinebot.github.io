@@ -153,7 +153,7 @@ function smoothScrollBottom () {
 
 // Tabs
 
-/*function tabHandler () {
+function tabHandler () {
 	$tab = $('#menu ul li');
 	$content = $('.content');
 	$defaultTab = $('#chat');
@@ -194,7 +194,10 @@ function smoothScrollBottom () {
 			}
 		}
 	});
-}*/
+}
+
+
+
 
 // })(); END GLOBAL
 
