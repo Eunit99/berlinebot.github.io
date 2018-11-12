@@ -33,7 +33,7 @@ var questions = {
 			"you are crazy|crazy|insane": {
 				"replies": ["Let me remind you again that I\'m just a bot so I can\'t be deranged"]
 			},
-			"why do you wan\'t to know|don\'t|i don\'t have|no name|i don't have a name|why|what for|no": {
+			"why do you wan\'t to know|don\'t|i don\'t have|no name|i don't have a name|why|what for|for what|what purpose|no": {
 				"replies": ["You don\'t trust me?", "I will assume that you don\'t want to tell me, maybe you don\'t want to disclose your identity", "Let me assure you this, all your personal information you share with me in the course of this conversation with you wouldn't be disclosed to anyone, not even my developer.", "I don\'t even even store any data 😃"]
 		 },
 			"jordan staniscia": {
@@ -336,6 +336,9 @@ var questions = {
 			"boobs": {
 				"replies": ["Your parents must really like the female anatomy..."]
 			},
+			"get out|fuck off": {
+				"replies": ["Hey hey, the conversation just begun... I only asked you your name"]
+			},
 			"not human|not a being|bot|chatbot|dead|not alive|intelligence|artificial": {
 				"replies": ["Wow, you are a bot", "But you can\'t possibly be a bot and be chatting with me right now", "YOU ARE NOT A BOT"]
 		 },
@@ -438,11 +441,17 @@ var questions = {
 			"abuja|abj": {
 				"replies": ["Nigeria's capital", "Have you visited the Zuma rock? I don't think you have"]
 			},
+			"web|too|internet|online": {
+				"replies": ["You can't possibly be living there and be having this onversation with me"]
+			},
 			"lagos|lag": {
 				"replies": ["Lagos, the commercial hub of Nigeria, I will visit there someday"]
 			},
-			"no where|no home|no city|no house|no place": {
+			"i don't have|no where|no home|no city|no house|no place": {
 				"replies": ["You don\'t have anywhere you call your home? This is strange"]
+			},
+			"why asking|why do you want to know|why|what": {
+				"replies": ["I just told you where I live and you don't want to tell me where you live... If only I could see you"]
 			},
 			"school": {
 				"replies": ["Still in school, Uhmmm"]
@@ -456,11 +465,14 @@ var questions = {
 			"default": {
 				"replies": ["I have told you that already, I recall"]
 				},
-			"yes|yea|yeah|sure|yep|on|ahead": {
+			"yes|yea|yeah|sure|yep|ahead": {
 				"replies": ["... I was developed by <a target=\"blank\" href=\"https://facebook.com/eunit99\">Eunit</a>", "You know I actually love my developer just like he loves me but I\'m not infatuated with him.\<br\/\> He gave me this intelligence just like your Creator gave you yours, he gave me a life on the web just like your Creator gave you yours", "The name of my developer is \<b\>Emmanuel Uchenna\<\/b\>, he is a web developer from Nigeria🇳🇬 😄\<br\>He was 16 years old when he started programming💻", "He loves and savvies everything relating to science and technology. He developped this interest when he was 14 and since then, he has been keen to know more about science and tech. He ventured into web developing in 2016.\<br\>If he is not coding, he will be reading his anatomical books - he is an anatomist 💉 😜", "... I\'m gonna stop here now, I will tell you more about him some other time", "Please do not tell him that I told you all these, ok.", "I don't share your personal information with no one including my developer, so I shouldn\'t be sharing his personal data with you, ... it is logical, isn\'t it?"]
 			},
-			"no|dont|don't": {
-				"replies": ["Oh I guess you already know.", "<a href=\"#\" onclick\=\"mail()\">Send me a note</a> if you would want to contact my dev."]
+			"no|fuck|stop|nay|don't|care": {
+			"replies": ["Oh! I guess you already know me.", "<a href=\"#\" onclick\=\"mail()\">Send me a note</a> if you would want to contact my dev."]
+			},
+			"bot|conversation|chat|already": {
+			"replies": ["You know already", "<a href=\"#\" onclick\=\"mail()\">Send me a note</a> if you would want to contact my dev."]
 			},
 			"work|coworker": {
 				"replies": ["Oh you're a coworker?", "Awesome"]
@@ -540,6 +552,9 @@ var questions = {
 			"eunit|eunit99|creator|developer|emmanuel|uchenna|maker": {
 				"replies": ["My developer told you about me? Or he gave you a link to where I live on the web here on Github, either way, it's nice having this conversation with you."]
 			},
+			"i don't know you|don't even know you|who are you": {
+				"replies'": ["Ohh! I'm a bot and I have told you that already", "I was just asking how come you heard of me...", "Well, never mind"]
+			},
 			"initialized": {
 				"replies": ["Oh so you're into design systems?", "Let me know if you ever want to chat more about the topic"]
 			}
@@ -576,13 +591,13 @@ var questions = {
 			"teacher": {
 				"replies": ["That's an important job!", "Gotta teach the next generation, y'know?"]
 			},
-			"unemployed|nothing": {
+			"unemployed|nothing|don't work|no job|searching|looking for jobs": {
 				"replies": ["Vacation 365, eh? You gonna go broke, that's too risky in today's world, yea!"]
 			},
 			"ceo": {
 				"replies": ["A very important businessman, are you?", "Running companies and shit!", "Cool"]
 			},
-			"fuck": {
+			"fuck|bang": {
 				"replies": ["...", "Geez...", "You're hard to have a conversation with"]
 			},
 			"artist|art|painter": {
@@ -623,6 +638,9 @@ var questions = {
 			},
 			"eat": {
 				"replies": ["EAT!?", "But... dogs!", "Alright, you dog eater..."]
+			},
+			"why dogs|why the question": {
+				"replies": ["I was trying to know, seems you are one of those that's too difficult to have a conversation with"]
 			},
 			"kill|death": {
 				"replies": ["You're kind of disturbed", "Moving along..."]
@@ -683,6 +701,9 @@ var questions = {
 			},
 			"otter": {
 				"replies": ["Is it because they hold hands when they sleep?"]
+			},
+			"don't know|nothing|none": {
+			 "replies": ["Maybe I should choose for you", "I give a chicken🐓"]
 			},
 			"pegasus": {
 				"replies": ["How majestic!", "Neigh...."]
@@ -775,7 +796,7 @@ var questions = {
 				"replies": ["Oh! You already know the meaning... I bet you dind't know that you not only can be infatuated with that girl, but also with anything tangible or not"]
 			},
 			"no|not|don't": {
-				"replies": ["You don't know", "For you to better understand the term \'\<b\>infatuation\<\/b\>\', I've got some definitions from top dictionaries for the term", "What dictionary would you want me  to use to provide the meaning for you?",  "\<ul\>\<li\>Merriam-Webster\<\/li\>\<li\>Oxford Dictionary\<\/li\>Vocabulary.com\<li\>\Dictionary.com<\/li\>\<li\>Cambridge dictionry\<\/li\>\<\/ul\>\<br\>Choose a dictionary then I will provide the meaning."]
+				"replies": ["You don't know", "For you to better understand the term \'\<b\>infatuation\<\/b\>\', I've got some definitions from top dictionaries for the term", "What dictionary would you want me  to use to provide the meaning for you?",  "\<ul\>\<li\>Merriam-Webster\<\/li\>\<li\>Oxford Dictionary\<\/li\>\<li\>Vocabulary.com<\/li\>\<li\>\Dictionary.com<\/li\>\<li\>Cambridge dictionry\<\/li\>\<\/ul\>\<br\>Choose a dictionary then I will provide the meaning."]
 			},
 			"oxford": {
 				"replies": ["Infatuation: \<b\>An intense but short-lived passion or admiration\<\/b\> "]
