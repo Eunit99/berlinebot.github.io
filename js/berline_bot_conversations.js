@@ -817,7 +817,7 @@ var questions = {
 	},
 	"11": {
 		"name": "ending",
-		"question": ["See, I really enjoyed our conversation, and I got to know you better and I know you did enjoy it too", "but I've got to go now. It was a pleasure.", "You can follow me on <a href=\"http://twitter.com/berlinebot\">Twitter</a> if you want to chat more", "See ya!"],
+		"question": ["See, I really enjoyed our conversation, and I got to know you better and I know you did enjoy it too", "but I've got to go now. It was a pleasure.", "You can follow me on <a href=\"http://twitter.com/berline_bot\">Twitter</a> if you want to chat more", "See ya!"],
 		"ending": true
 	}
 }
