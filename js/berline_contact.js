@@ -66,7 +66,7 @@
    var confS = confirm("You are about to mail me, do you wish to continue?");
           if (confS == true){ 
           alert("Here you go 😃");
-          window.location = "mailto:berline_bot@gmail.com";          return true;
+          window.location = "mailto:berlinebot@gmail.com";          return true;
         } else {
         
           return false;
