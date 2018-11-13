@@ -23,17 +23,14 @@ var questions = {
 			},
 			"who are you|what are you": {
 				"replies":	["I have told you that already", "I am a bot"]
-				},
-			"foolish|fool": {
-				"replies": ["Are you saying that you are foolish or a fool?", "I get it, but I'm only a bot so I can be foolish...", "I was only asking what your name was."]
-				},
-			"stupid|you are stupid": {
-				"replies": ["Are you saying that you are stupid?", "I get it, but I'm only a bot so I can be stupid...", "I was only asking what your name was."]
-				},
-			"you are crazy|crazy|insane": {
-				"replies": ["Let me remind you again that I\'m just a bot so I can\'t be deranged"]
 			},
-			"why do you wan\'t to know|don\'t|i don\'t have|no name|i don't have a name|why|what for|for what|what purpose|no": {
+			"won't|not|no": {
+				"replies": ["It is ok if you wouldn't want to tell me", "But I want you to know that all your personal information you share with me in the course of this conversation with you wouldn't be disclosed to anyone, not even my developer.", "I don\'t even even store any data 😃"]
+			},
+			"never|mind": {
+				"replies": ["I just told you my name and that's all you can say? Well, Never Mind too"]
+			},
+			"why do you wan\'t to know|don\'t|i don\'t have|no name|i don't have a name|why|what for|for what|what purpose": {
 				"replies": ["You don\'t trust me?", "I will assume that you don\'t want to tell me, maybe you don\'t want to disclose your identity", "Let me assure you this, all your personal information you share with me in the course of this conversation with you wouldn't be disclosed to anyone, not even my developer.", "I don\'t even even store any data 😃"]
 		 },
 			"jordan staniscia": {
@@ -117,8 +114,8 @@ var questions = {
 			"max": {
 				"replies": ["I know a few people named Max", "Are you tall?", "Do you have brownish/reddish hair?", "If so, we haven't narrowed it down at all"]
 			},
-			"min": {
-				"replies": ["Shortest intro ever is definitely \"Min iOS\"", "Let's build more cool shit, ok?"]
+			"erick": {
+				"replies": ["Erick? Do I even know what that means? Uhmmm... I don't!"]
 			},
 			"mike dean": {
 				"replies": ["Hey, man!", "How's Bandit?"]
@@ -344,7 +341,13 @@ var questions = {
 		 },
 			"fuck": {
 				"replies": ["Do you kiss your mother with that mouth?", "I was only asking your name..."]
-				}
+			},
+			"you are foolish|you are a fool": {
+				"replies": ["Are you saying that you are foolish or a fool?", "I get it, but I'm only a bot so I can be foolish...", "I was only asking what your name was."]
+				},
+			"you are stupid|are you stupid": {
+				"replies": ["Are you saying that you are stupid?", "I get it, but I'm only a bot so I can be stupid...", "I was only asking what your name was."]
+			}
 		}
 	},
 	"1": {
@@ -441,8 +444,14 @@ var questions = {
 			"abuja|abj": {
 				"replies": ["Nigeria's capital", "Have you visited the Zuma rock? I don't think you have"]
 			},
-			"web|too|internet|online": {
+			"web|space|internet|online": {
 				"replies": ["You can't possibly be living there and be having this onversation with me"]
+			},
+			"somewhere": {
+			"replies": ["That \'somewhere\' doesn't have a name? Well, forget it if you wouldn't tell me."]
+			},
+			"cave|valley|ocean|sea|desert": {
+			"replies": ["That's a good place for someone like you"]
 			},
 			"lagos|lag": {
 				"replies": ["Lagos, the commercial hub of Nigeria, I will visit there someday"]
@@ -468,7 +477,7 @@ var questions = {
 			"yes|yea|yeah|sure|yep|ahead": {
 				"replies": ["... I was developed by <a target=\"blank\" href=\"https://facebook.com/eunit99\">Eunit</a>", "You know I actually love my developer just like he loves me but I\'m not infatuated with him.\<br\/\> He gave me this intelligence just like your Creator gave you yours, he gave me a life on the web just like your Creator gave you yours", "The name of my developer is \<b\>Emmanuel Uchenna\<\/b\>, he is a web developer from Nigeria🇳🇬 😄\<br\>He was 16 years old when he started programming💻", "He loves and savvies everything relating to science and technology. He developped this interest when he was 14 and since then, he has been keen to know more about science and tech. He ventured into web developing in 2016.\<br\>If he is not coding, he will be reading his anatomical books - he is an anatomist 💉 😜", "... I\'m gonna stop here now, I will tell you more about him some other time", "Please do not tell him that I told you all these, ok.", "I don't share your personal information with no one including my developer, so I shouldn\'t be sharing his personal data with you, ... it is logical, isn\'t it?"]
 			},
-			"no|fuck|stop|nay|don't|care": {
+			"fuck|stop|nay|don't|care|no": {
 			"replies": ["Oh! I guess you already know me.", "<a href=\"#\" onclick\=\"mail()\">Send me a note</a> if you would want to contact my dev."]
 			},
 			"bot|conversation|chat|already": {
@@ -504,6 +513,19 @@ var questions = {
 			"mau": {
 				"replies": ["Ahhh vegas!"]
 			},
+			
+			"you are crazy|are you crazy": {
+				"replies": ["Let me remind you again that I\'m just a bot so I can\'t be crazy"]
+			},
+			"you are insane|are you insane": {
+				"replies": ["Let me remind you again that I\'m just a bot so I can\'t be insane"]
+			},
+			"you are foolish|you are a fool": {
+				"replies": ["Let me remind you again that I\'m just a bot so I can\'t be foolish"]
+			},
+			"you are stupid|are you stupid": {
+				"replies": ["Let me remind you again that I\'m just a bot so I can\'t be stupid"]
+			},
 			"initialized": {
 				"replies": ["Oh so you're into design systems?", "Let me know if you ever want to chat more about the topic"]
 			}
@@ -517,7 +539,7 @@ var questions = {
 				"replies": ["That's... quite specific"]
 			},
 			"dont|don't": {
-				"replies": ["Oh that is a shame.", "<a href=\"mailto:jordangetsthisemail@gmail.com\">Send me a note</a> or something if you want to"]
+				"replies": ["Oh that's a shame because I've told you that alreay.", "<a href=\"#\" onclick\=\"mail()\">Send me a note</a> or something if you want to."]
 			},
 			"work|coworker": {
 				"replies": ["Oh you're a coworker?", "Awesome"]
@@ -552,8 +574,14 @@ var questions = {
 			"eunit|eunit99|creator|developer|emmanuel|uchenna|maker": {
 				"replies": ["My developer told you about me? Or he gave you a link to where I live on the web here on Github, either way, it's nice having this conversation with you."]
 			},
-			"i don't know you|don't even know you|who are you": {
+			"friend": {
+			"replies": ["Great! You know me through someone who knows me"]
+			},
+			"i don't know you|don't even know you|who are you|don't": {
 				"replies'": ["Ohh! I'm a bot and I have told you that already", "I was just asking how come you heard of me...", "Well, never mind"]
+			},
+			"you've told me|you just told me": {
+				"replies": ["Yea I did", "I just wanted to be sure"]
 			},
 			"initialized": {
 				"replies": ["Oh so you're into design systems?", "Let me know if you ever want to chat more about the topic"]
@@ -567,9 +595,16 @@ var questions = {
 			"default": {
 				"replies": ["That's quite the job!"]
 			},
-			"study|studying|student|schooling|school": {
+			"study|studying": {
 			"replies": ["Oh, I see, you are still studying", "You haven\'t got hold of anything to do yet to earn some cash, Uhhh!"]
 			},
+			"student": {
+			"replies": ["Oh, I see, you are still a  student", "You haven\'t got hold of anything to do yet to earn some cash, Uhhh!"]
+			},
+			"schooling|school": {
+			"replies": ["Oh, I see, you are still schooling", "You haven\'t got hold of anything to do yet to earn some cash, Uhhh!"]
+			},
+
 			"design|designer": {
 				"replies": ["I'm a designer too!", "I work at Instacart on the customer core experience team"]
 			},
@@ -611,6 +646,19 @@ var questions = {
 			},
 			"recruiter|recruiting": {
 				"replies": ["You're probably looking for the about page to learn a bit more about me", "Click that tab below ↘️"]
+			},
+			
+			"you are crazy|are you crazy": {
+				"replies": ["Let me remind you again that I\'m just a bot so I can\'t be crazy"]
+			},
+			"you are insane|are you insane": {
+				"replies": ["Let me remind you again that I\'m just a bot so I can\'t be insane"]
+			},
+			"you are foolish|you are a fool": {
+				"replies": ["Let me remind you again that I\'m just a bot so I can\'t be foolish"]
+			},
+			"you are stupid|are you stupid": {
+				"replies": ["Let me remind you again that I\'m just a bot so I can\'t be stupid"]
 			}
 		}
 	},
@@ -639,11 +687,24 @@ var questions = {
 			"eat": {
 				"replies": ["EAT!?", "But... dogs!", "Alright, you dog eater..."]
 			},
-			"why dogs|why the question": {
+			"why|ask|question|why dogs|why the question": {
 				"replies": ["I was trying to know, seems you are one of those that's too difficult to have a conversation with"]
 			},
 			"kill|death": {
 				"replies": ["You're kind of disturbed", "Moving along..."]
+			},
+			
+			"you are crazy|are you crazy": {
+				"replies": ["Let me remind you again that I\'m just a bot so I can\'t be crazy"]
+			},
+			"you are insane|are you insane": {
+				"replies": ["Let me remind you again that I\'m just a bot so I can\'t be insane"]
+			},
+			"you are foolish|you are a fool": {
+				"replies": ["Let me remind you again that I\'m just a bot so I can\'t be foolish"]
+			},
+			"you are stupid|are you stupid": {
+				"replies": ["Let me remind you again that I\'m just a bot so I can\'t be stupid"]
 			}
 		}
 	},
@@ -703,11 +764,14 @@ var questions = {
 				"replies": ["Is it because they hold hands when they sleep?"]
 			},
 			"don't know|nothing|none": {
-			 "replies": ["Maybe I should choose for you", "I give a chicken🐓"]
+			 "replies": ["Maybe I should choose for you", "I give you a chicken🐓"]
 			},
 			"pegasus": {
 				"replies": ["How majestic!", "Neigh...."]
-			}
+			},
+			"fuck you": {
+				"replies": ["Hey! Hey!! Hey!!! Watch what you type."]
+			},
 		}
 	},
 	"7": {
@@ -723,8 +787,20 @@ var questions = {
 			"yes|duh|of course|yeah": {
 				"replies": ["I'm an amazing guesser, huh?"]
 			},
-			"not sure|don't know|dont know|idk|maybe": {
+			"i don't know|don't|not sure|don't know|dont know|idk|maybe": {
 				"replies": ["Maybe one day you'll go out, deep into the woods", "And you'll find your spirit animal", "Although, I'm betting it's a chicken 🐓", "If you wish to know what your spirit animal might be, you can check \<a href\=\"http://www.spiritanimal.info/\" title\=\"Check your spirit animal\" target\=\"_blank\"\>Spirit Animal.info</a> for that."]
+			},
+			"you are crazy|are you crazy": {
+				"replies": ["Let me remind you again that I\'m just a bot so I can\'t be crazy"]
+			},
+			"you are insane|are you insane": {
+				"replies": ["Let me remind you again that I\'m just a bot so I can\'t be insane"]
+			},
+			"you are foolish|you are a fool": {
+				"replies": ["Let me remind you again that I\'m just a bot so I can\'t be foolish"]
+			},
+			"you are stupid|are you stupid": {
+				"replies": ["Let me remind you again that I\'m just a bot so I can\'t be stupid"]
 			}
 		}
 	},
@@ -746,6 +822,9 @@ var questions = {
 			},
 			"kinda|kind of|sorta|sort of": {
 				"replies": ["You're kind of a half science, half faith sort of person I guess", "You must be very balanced"]
+			},
+			"why|what|question": {
+			 "replies": ["It was a polar question if at all you know what that means"]
 			}
 		}
 	},
@@ -782,11 +861,24 @@ var questions = {
 			},
 			"art|painting|drawing": {
 				"replies": ["being creative is a passion of mine too", "Colors, lines, expression...", "It's a rewarding hobby"]
+			},
+			
+			"you are crazy|are you crazy": {
+				"replies": ["Let me remind you again that I\'m just a bot so I can\'t be crazy"]
+			},
+			"you are insane|are you insane": {
+				"replies": ["Let me remind you again that I\'m just a bot so I can\'t be insane"]
+			},
+			"you are foolish|you are a fool": {
+				"replies": ["Let me remind you again that I\'m just a bot so I can\'t be foolish"]
+			},
+			"you are stupid|are you stupid": {
+				"replies": ["Let me remind you again that I\'m just a bot so I can\'t be stupid"]
 			}
 		}
 	},
 	"10": {
-		"name": "infatuate mreaning",
+		"name": "infatuate meaning",
 		"question": ["Let's start with the meaning of infatuation", "Would you say you know the meaning of \'\<b\>infatuation\<\/b\>\' ?"],
 		"answers": {
 			"default": {
@@ -796,26 +888,60 @@ var questions = {
 				"replies": ["Oh! You already know the meaning... I bet you dind't know that you not only can be infatuated with that girl, but also with anything tangible or not"]
 			},
 			"no|not|don't": {
-				"replies": ["You don't know", "For you to better understand the term \'\<b\>infatuation\<\/b\>\', I've got some definitions from top dictionaries for the term", "What dictionary would you want me  to use to provide the meaning for you?",  "\<ul\>\<li\>Merriam-Webster\<\/li\>\<li\>Oxford Dictionary\<\/li\>\<li\>Vocabulary.com<\/li\>\<li\>\Dictionary.com<\/li\>\<li\>Cambridge dictionry\<\/li\>\<\/ul\>\<br\>Choose a dictionary then I will provide the meaning."]
+				"replies": ["You don't know"]
 			},
-			"oxford": {
-				"replies": ["Infatuation: \<b\>An intense but short-lived passion or admiration\<\/b\> "]
+			
+			"you are crazy|are you crazy": {
+				"replies": ["Let me remind you again that I\'m just a bot so I can\'t be crazy"]
 			},
-			"cambridge": {
-				"replies": ["Infatuation: \<b\>A strong but not usually lasting feellings of love or attraction\<\/b\> "]
+			"you are insane|are you insane": {
+				"replies": ["Let me remind you again that I\'m just a bot so I can\'t be insane"]
 			},
-			"merriam|webster": {
-				"replies": ["Infatuation: \<b\>Anything that inspires you with a foolish love or admiration.\<\/b\> "]
+			"you are foolish|you are a fool": {
+				"replies": ["Let me remind you again that I\'m just a bot so I can\'t be foolish"]
 			},
-			"dictionary": {
-				"replies": ["Infatuation: \<b\>To inspire or possess with a foolish or unreasoning passion, as of love.\<\/b\> "]
-			},
-			"vocabulary": {
-				"replies": ["Infatuation: \<b\>To arouse unreasoning love or passion in and cause to behave in an irrational way.\<\/b\> "]
+			"you are stupid|are you stupid": {
+				"replies": ["Let me remind you again that I\'m just a bot so I can\'t be stupid"]
 			}
 		}
 	},
-	"11": {
+ 	"11": {
+		"name": "definitions",
+		"question": ["For you to better understand the term \'\<b\>infatuation\<\/b\>\', I've got some definitions from top dictionaries for you", "What dictionary would you want me  to use to provide the meaning for you?",  "\<ol\>\<li\>Merriam-Webster\<\/li\>\<li\>Oxford Dictionary\<\/li\>\<li\>Vocabulary.com<\/li\>\<li\>\Dictionary.com<\/li\>\<li\>Cambridge dictionry\<\/li\>\<\/ol\>\<br\>Choose a dictionary then I will provide the meaning."],
+		"answers": {
+			"default": {
+				"replies": ["Infatuation simply means an unreasoned or foolish love or affection towards someone or something."]
+				},
+			"2|oxford": {
+				"replies": ["Infatuation: \<b\>An intense but short-lived passion or admiration\<\/b\> "]
+			},
+			"5|cambridge": {
+				"replies": ["Infatuation: \<b\>A strong but not usually lasting feellings of love or attraction\<\/b\> "]
+			},
+			"1|merriam|webster": {
+				"replies": ["Infatuation: \<b\>Anything that inspires you with a foolish love or admiration.\<\/b\> "]
+			},
+			"4|dictionary": {
+				"replies": ["Infatuation: \<b\>To inspire or possess with a foolish or unreasoning passion, as of love.\<\/b\> "]
+			},
+			"3|vocabulary": {
+				"replies": ["Infatuation: \<b\>To arouse unreasoning love or passion in and cause to behave in an irrational way.\<\/b\> "]
+			},
+			"you are crazy|are you crazy": {
+				"replies": ["Let me remind you again that I\'m just a bot so I can\'t be crazy"]
+			},
+			"you are insane|are you insane": {
+				"replies": ["Let me remind you again that I\'m just a bot so I can\'t be insane"]
+			},
+			"you are foolish|you are a fool": {
+				"replies": ["Let me remind you again that I\'m just a bot so I can\'t be foolish"]
+			},
+			"you are stupid|are you stupid": {
+				"replies": ["Let me remind you again that I\'m just a bot so I can\'t be stupid"]
+			}
+		}
+	},
+	"12": {
 		"name": "ending",
 		"question": ["See, I really enjoyed our conversation, and I got to know you better and I know you did enjoy it too", "but I've got to go now. It was a pleasure.", "You can follow me on <a href=\"http://twitter.com/berline_bot\">Twitter</a> if you want to chat more", "See ya!"],
 		"ending": true
