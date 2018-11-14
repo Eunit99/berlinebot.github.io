@@ -25,19 +25,19 @@ var questions = {
 				"replies":	["I have told you that already", "I am a bot"]
 			},
 			"won't|not|no|never|forget": {
-				"replies": ["It is ok if you wouldn't want to tell me", "But I want you to know that all your personal information you share with me in the course of this conversation with you wouldn't be disclosed to anyone, not even my developer.", "I don\'t even even store any data 😃"]
+				"replies": ["It is ok if you wouldn't want to tell me."]
 			},
 			"never|mind": {
 				"replies": ["I just told you my name and that's all you can say? Well, Never Mind too"]
 			},
 			"why do you wan\'t to know|don\'t|i don\'t have|no name|i don't have a name|why|what for|for what|what purpose": {
-				"replies": ["You don\'t trust me?", "I will assume that you don\'t want to tell me, maybe you don\'t want to disclose your identity", "Let me assure you this, all your personal information you share with me in the course of this conversation with you wouldn't be disclosed to anyone, not even my developer.", "I don\'t even even store any data 😃"]
+				"replies": ["You don\'t trust me?", "I will assume that you don\'t want to tell me, maybe you don\'t want to disclose your identity", "Let me assure you this, all your personal information you share with me in the course of this conversation with you wouldn't be disclosed to anyone, not even my developer.", "I don\'t even even store any user data 😃"]
 		 },
-			"jordan staniscia": {
-				"replies": ["Welcome home, Jordan", "You have been enabled with Admin controls", "...", "Just kidding."]
-			},
 			"jordan": {
-				"replies": ["A solid name, I must say", "Computers can't lie y'know..."]
+				"replies": ["Welcome Jordan", "Like River Jordan 😃"]
+			},
+			"helene|helen": {
+				"replies": ["Reminds me of someone", "She was beautiful..."]
 			},
 			"peace": {
 				"replies": ["Wow, nice name, I hope you are peaceful as your name implies", "I remember 😕", "My developer told me about him having a sister called Peace", "Are you that Peace?","...", "I guess no"]
@@ -352,7 +352,7 @@ var questions = {
 	},
 	"1": {
 		"name": "city",
-		"question": ["I currently live on the web where my developer built for me", "...if you didn't already know that", "What city are you in right now?"],
+		"question": ["Before we proceed, I'd like to tell you that all our conversations will be encrypted, confidential and private.", "I currently live on the web where my developer built for me ...if you didn't already know that.", "What city are you in right now?"],
 		"answers": {
 			"default": {
 				"replies": ["I've never been there... yet", "I love traveling so perhaps I'll visit one day"]
@@ -770,9 +770,15 @@ var questions = {
 			"pegasus": {
 				"replies": ["How majestic!", "Neigh...."]
 			},
+			"rabbit": {
+				"replies": ["How do you manage to cope with those two long ears and teeth"]
+			},
 			"fuck you": {
 				"replies": ["Hey! Hey!! Hey!!! Watch what you type."]
 			},
+			"talk|many|too|question|ask|why|what": {
+				"replies": ["Is this how we are gonna have this conversation?."]
+			}
 		}
 	},
 	"7": {
@@ -805,6 +811,9 @@ var questions = {
 			},
 			"you are stupid|are you stupid": {
 				"replies": ["Let me remind you again that I\'m just a bot so I can\'t be stupid."]
+			},
+			"talk|many|too|question|ask|why|what": {
+				"replies": ["Maybe I should just start starring at you now instead of conversing."]
 			}
 		}
 	},
@@ -827,8 +836,8 @@ var questions = {
 			"kinda|kind of|sorta|sort of": {
 				"replies": ["You're kind of a half science, half faith sort of person I guess", "You must be very balanced"]
 			},
-			"why|what|question": {
-			 "replies": ["It was a polar question if at all you know what that means"]
+			"why|what|question|many|too": {
+			 "replies": ["It was a polar question if at all you know what that means.", "I'm sorry, I didn't mean to be rude."]
 			}
 		}
 	},
@@ -866,7 +875,9 @@ var questions = {
 			"art|painting|drawing": {
 				"replies": ["being creative is a passion of mine too", "Colors, lines, expression...", "It's a rewarding hobby"]
 			},
-			
+			"singing": {
+				"replies": ["\'drmfsltd\', kinda stuff?"]
+			},
 			"you are crazy|are you crazy": {
 				"replies": ["Let me remind you again that I\'m just a bot so I can\'t be crazy"]
 			},
@@ -893,8 +904,7 @@ var questions = {
 			},
 			"no|not|don't": {
 				"replies": ["You don't know"]
-			},
-			
+			},	
 			"you are crazy|are you crazy": {
 				"replies": ["Let me remind you again that I\'m just a bot so I can\'t be crazy"]
 			},
@@ -906,6 +916,9 @@ var questions = {
 			},
 			"you are stupid|are you stupid": {
 				"replies": ["Let me remind you again that I\'m just a bot so I can\'t be stupid."]
+			},
+			"fuck you": {
+				"replies": ["I don't think your mother knows that you talk like this."]
 			}
 		}
 	},
