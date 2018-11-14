@@ -445,7 +445,7 @@ var questions = {
 				"replies": ["Nigeria's capital", "Have you visited the Zuma rock? I don't think you have"]
 			},
 			"web|space|internet|online": {
-				"replies": ["You can't possibly be living there and be having this onversation with me"]
+				"replies": ["You can't possibly be living there and be having this conversation with me"]
 			},
 			"somewhere": {
 			"replies": ["That \'somewhere\' doesn't have a name? Well, forget it if you wouldn't tell me."]
@@ -924,24 +924,24 @@ var questions = {
 	},
  	"11": {
 		"name": "definitions",
-		"question": ["For you to better understand the term \'\<b\>infatuation\<\/b\>\', I've got some definitions from top dictionaries.", "What dictionary would you want me  to use to provide the meaning for you?",  "\<ol\>\<li\>Merriam-Webster\<\/li\>\<li\>Oxford Dictionary\<\/li\>\<li\>Vocabulary.com<\/li\>\<li\>\Dictionary.com<\/li\>\<li\>Cambridge dictionry\<\/li\>\<\/ol\>\<br\>Choose a dictionary then I will provide the meaning."],
+		"question": ["For you to better understand the term \'\<b\>infatuation\<\/b\>\', I've got some definitions from top dictionaries.", "What dictionary would you want me  to use to provide the meaning for you?",  "\<ol\>\<li\>Merriam-Webster\<\/li\>\<li\>Oxford Dictionary\<\/li\>\<li\>Vocabulary.com<\/li\>\<li\>\Dictionary.com<\/li\>\<li\>Cambridge dictionary\<\/li\>\<\/ol\>\<br\>Choose a dictionary then I will provide the meaning."],
 		"answers": {
 			"default": {
 				"replies": ["Infatuation simply means an unreasoned or foolish love or affection towards someone or something."]
 				},
-			"2|two|oxford": {
+			"2|two|use oxford|oxford": {
 				"replies": ["According to Oxford dictionary:\<br\/\>\<br\/\>Infatuation: \<b\>An intense but short-lived passion or admiration\<\/b\> "]
 			},
-			"5|five|cambridge": {
+			"5|five|use cambridge|cambridge": {
 				"replies": ["According to Cambrigde dictionary:\<br\/\>\<br\/\>Infatuation: \<b\>A strong but not usually lasting feellings of love or attraction\<\/b\> "]
 			},
-			"1|one|merriam|webster": {
+			"1|one|use merriam|merriam|webster": {
 				"replies": ["According Merriam-Webster dictionary:\<br\/\>\<br\/\>Infatuation: \<b\>Anything that inspires you with a foolish love or admiration.\<\/b\> "]
 			},
-			"4|four|dictionary": {
+			"4|four|use dictionary|dictionary": {
 				"replies": ["According Dictionary.com:\<br\/\>\<br\/\>Infatuation: \<b\>To inspire or possess with a foolish or unreasoning passion, as of love.\<\/b\> "]
 			},
-			"3|three|vocabulary": {
+			"3|three|use vocabulary|vocabulary": {
 				"replies": ["According to Vocabulary.com:\<br\/\>\<br\/\>Infatuation: \<b\>To arouse unreasoning love or passion in and cause to behave in an irrational way.\<\/b\> "]
 			},
 			"anyone|any|choose": {
