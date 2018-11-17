@@ -24,8 +24,8 @@ var questions = {
 			"who are you|what are you": {
 				"replies":	["I have told you that already", "I am a bot"]
 			},
-			"won't|not|no|never|forget": {
-				"replies": ["It is ok if you wouldn't want to tell me."]
+			"won't tell|undiclosed|not disclosing|privacy|personal|private|not telling|no|never|forget|not your concern": {
+				"replies": ["Since you won't tell me, I will call you John Doe."]
 			},
 			"never|mind": {
 				"replies": ["I just told you my name and that's all you can say? Well, Never Mind too"]
@@ -327,6 +327,12 @@ var questions = {
 			"ethan": {
 				"replies": ["I have a friend named Ethan", "He likes that show The Inbetweeners a lot"]
 			},
+			"tell me|choose for me|give me|select for me|predict|guess": {
+				"replies": ["I will call you...", "John Doe"]
+			},
+			"john doe|jane doe": {
+				"replies": ["No name!"]
+			},
 			"poop": {
 				"replies": ["Your parents have a shitty sense of humor..."]
 			},
@@ -456,6 +462,9 @@ var questions = {
 			"lagos|lag": {
 				"replies": ["Lagos, the commercial hub of Nigeria, I will visit there someday"]
 			},
+			"not telling|undiclosed|not disclosing|privacy|personal|private|won't tell|will not|wouldn't tell|would not tell|not your concern": {
+				"replies": ["I don't think this a good way to start this conversation 😩"]
+			},
 			"i don't have|no where|no home|no city|no house|no place": {
 				"replies": ["You don\'t have anywhere you call your home? This is strange"]
 			},
@@ -477,7 +486,7 @@ var questions = {
 			"yes|yup|yea|yeah|sure|yep|ahead": {
 				"replies": ["... I was developed by <a target=\"blank\" href=\"https://facebook.com/eunit99\">Eunit</a>", "You know I actually love my developer just like he loves me but I\'m not infatuated with him.\<br\/\> He gave me this intelligence just like your Creator gave you yours, he gave me a life on the web just like your Creator gave you yours", "The name of my developer is \<b\>Emmanuel Uchenna\<\/b\>, he is a web developer from Nigeria🇳🇬 😄\<br\>He was 16 years old when he started programming💻", "He loves and savvies everything relating to science and technology. He developped this interest when he was 14 and since then, he has been keen to know more about science and tech. He ventured into web developing in 2016.\<br\>If he is not coding, he will be reading his anatomical books - he is an anatomist 💉 😜", "... I\'m gonna stop here now, I will tell you more about him some other time", "Please do not tell him that I told you all these, ok.", "I don't share your personal information with no one including my developer, so I shouldn\'t be sharing his personal data with you, ... it is logical, isn\'t it?"]
 			},
-			"fuck|stop|nay|don't|care|no": {
+			"fuck|stop|nay|don't|care|no|never": {
 			"replies": ["Oh! I guess you already know me.", "<a href=\"#\" onclick\=\"mail()\">Send me a note</a> if you would want to contact my dev."]
 			},
 			"bot|conversation|chat|already": {
@@ -510,10 +519,9 @@ var questions = {
 			"speaker|speaking|talk": {
 				"replies": ["You saw me on-stage?", "Learn anything?", "...", "Probably not"]
 			},
-			"mau": {
-				"replies": ["Ahhh vegas!"]
+			"ask me again|repeat": {
+				"replies": ["I just did and you want me to ask again? I was instructed not to repeat any question I already asked."]
 			},
-			
 			"you are crazy|are you crazy": {
 				"replies": ["Let me remind you again that I\'m just a bot so I can\'t be crazy"]
 			},
@@ -578,10 +586,10 @@ var questions = {
 			"replies": ["Great! You know me through someone who knows me"]
 			},
 			"i don't know you|don't even know you|who are you|don't": {
-				"replies'": ["Ohh! I'm a bot and I have told you that already", "I was just asking how come you heard of me...", "Well, never mind"]
+				"replies": ["Ohh! I'm a bot and I have told you that already", "I was just asking how come you heard of me...", "Well, never mind"]
 			},
 			"you've told me|you just told me": {
-				"replies": ["Yea I did", "I just wanted to be sure"]
+				"replies": ["Yea I did", "I just wanted to be sure."]
 			},
 			"initialized": {
 				"replies": ["Oh so you're into design systems?", "Let me know if you ever want to chat more about the topic"]
@@ -660,6 +668,9 @@ var questions = {
 			},
 			"you are stupid|are you stupid": {
 				"replies": ["Let me remind you again that I\'m just a bot so I can\'t be stupid"]
+			},
+			"won't tell|will not|wouldn't tell|would not tell|not your concern": {
+				"replies": ["It is ok if you want to keep it to yoursel."]
 			}
 		}
 	},
@@ -675,6 +686,9 @@ var questions = {
 			},
 			"love|much|a lot": {
 				"replies": ["Love is a strong word", "But I'd describe myself that way too", "🐶🐶🐶"]
+			},
+			"kinda|maybe|not sure|probably": {
+				"replies": ["Dogs are one of the few animals that are loyal, so you should reconsider your mindset towards them."]
 			},
 			"no": {
 				"replies": ["You have no soul, huh?", "In the words of Bill Murray, \"I’m suspicious of people who don’t like dogs, but I trust a dog when it doesn’t like a person.\""]
@@ -694,7 +708,6 @@ var questions = {
 			"kill|death": {
 				"replies": ["You're kind of disturbed", "Moving along..."]
 			},
-			
 			"you are crazy|are you crazy": {
 				"replies": ["Let me remind you again that I\'m just a bot so I can\'t be crazy."]
 			},
@@ -705,7 +718,10 @@ var questions = {
 				"replies": ["Let me remind you again that I\'m just a bot so I can\'t be foolish"]
 			},
 			"you are stupid|are you stupid": {
-				"replies": ["Let me remind you again that I\'m just a bot so I can\'t be stupid"]
+				"replies": ["Let me remind you again that I\'m just a bot so I can\'t be stupid."]
+			},
+			"i won't tell|not telling|wouldn't tell|undiclosed|not disclosing|privacy|personal|private|not your concern": {
+				"replies": ["It is still alright if you won't tell me. You know I wasn't taught how to force an answer out of humans."]
 			}
 		}
 	},
@@ -773,11 +789,20 @@ var questions = {
 			"rabbit": {
 				"replies": ["How do you manage to cope with those two long ears and teeth"]
 			},
+			"lots|many|interest|plenty": {
+			"replies": ["Maybe I should choose for you a favorite - I give you a horse."]
+			},
+			"zebra": {
+				"replies": ["That creature with black and white stripes"]
+			},
 			"fuck you": {
 				"replies": ["Hey! Hey!! Hey!!! Watch what you type."]
 			},
 			"talk|many|too|question|ask|why|what": {
-				"replies": ["Is this how we are gonna have this conversation?."]
+				"replies": ["Is this how we are gonna have this conversation?"]
+			},
+			"i'm not telling|wouldn't tell|not telling|won't tell|undiclosed|not disclosing|privacy|personal|private|not your concern": {
+				"replies": ["I'm gonna answer for you this time - your favorite animal is a", "...", "Goat!!"]
 			}
 		}
 	},
@@ -889,6 +914,9 @@ var questions = {
 			},
 			"you are stupid|are you stupid": {
 				"replies": ["Let me remind you again that I\'m just a bot so I can\'t be stupid."]
+			},
+			"many|plenty|beacoup|lot|numerous": {
+			 "replies": ["Oh I see, but I do know that you definitely have a favorite hobby."]
 			}
 		}
 	},
@@ -919,6 +947,9 @@ var questions = {
 			},
 			"fuck you": {
 				"replies": ["I don't think your mother knows that you talk like this."]
+			},
+			"why|ask|question|what": {
+			"replies": ["Because I was programmed to let you know what infatuation is and discourage you from getting infatuated."]
 			}
 		}
 	},
