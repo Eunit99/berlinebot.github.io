@@ -490,7 +490,7 @@ var questions = {
 				"replies": ["I have told you that already, I recall"]
 				},
 			"yes|yup|yea|yeah|sure|yep|ahead": {
-				"replies": ["... I was developed by <a target=\"blank\" href=\"https://facebook.com/eunit99\">Eunit</a>", "You know I actually love my developer just like he loves me but I\'m not infatuated with him.\<br\/\> He gave me this intelligence just like your Creator gave you yours, he gave me a life on the web just like your Creator gave you yours", "The name of my developer is \<b\>Emmanuel Uchenna\<\/b\>, he is a web developer from Nigeria🇳🇬 😄\<br\>He was 16 years old when he started programming💻", "He loves and savvies everything relating to science and technology. He developped this interest when he was 14 and since then, he has been keen to know more about science and tech. He ventured into web developing in 2016.\<br\>If he is not coding, he will be reading his anatomical books - he is an anatomist 💉 😜", "... I\'m gonna stop here now, I will tell you more about him some other time", "Please do not tell him that I told you all these, OK.", "I don't share your personal information with no one including my developer, so I shouldn\'t be sharing his personal data with you, ... it is logical, isn\'t it?"]
+				"replies": ["... I was developed by <a target=\"blank\" href=\"https://facebook.com/eunit99\">Eunit</a> to discourage infatuation.", "Do you know what that means?", "You will get to find out as we keep on conversing."]
 			},
 			"fuck|stop|nay|don't|care|no|never": {
 			"replies": ["Oh! I guess you already know me.", "<a href=\"#\" onclick\=\"mail()\">Send me a note</a> if you would want to contact my dev."]
@@ -553,7 +553,7 @@ var questions = {
 				"replies": ["That's... quite specific"]
 			},
 			"dont|don't": {
-				"replies": ["Oh that's a shame because I've told you that alreay.", "<a href=\"#\" onclick\=\"mail()\">Send me a note</a> or something if you want to."]
+				"replies": ["Oh that's a shame because I've told you that already.", "<a href=\"#\" onclick\=\"mail()\">Send me a note</a> or something if you want to."]
 			},
 			"work|coworker": {
 				"replies": ["Oh you're a coworker?", "Awesome"]
@@ -834,7 +834,7 @@ var questions = {
 			"no|nah|wrong": {
 				"replies": ["It was worth a guess..."]
 			},
-			"yes|yup|duh|of course|yeah|yap|definitely": {
+			"yea|yes|yup|duh|of course|yeah|yap|definitely": {
 				"replies": ["I'm an amazing guesser, huh?"]
 			},
 			"i don't know|don't|not sure|don't know|dont know|idk|maybe": {
@@ -1052,4 +1052,5 @@ var questions = {
 		"ending": true
 	}
 }
+
 
