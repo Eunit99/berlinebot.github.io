@@ -1,4 +1,3 @@
-
 // Global Variables ---------------------- //
 var currentQuestion = 0,
 	lastQuestion = questions.length - 1;
@@ -22,7 +21,7 @@ function createMessage (messagesArray, i, response) {
 	response = typeof response !== 'undefined' ? response : 0;
 
 	// add this HTML to the front and back of the message for #style
-	var htmlWrapperBeginning = "<div class=\"line\"><div class=\"message message-left animated fadeInUp\">",
+	var htmlWrapperBeginning = "<div class=\"line\"><div class=\"message message-left animated fadeInUp bubbleLeft\">",
 		htmlWrapperEnding = "</div></div>";
 
 	// If this message is not the first, use the previous to calculate a delay, otherwise use a number
@@ -64,7 +63,7 @@ function createMessage (messagesArray, i, response) {
 
 // Creates an answer input bubble
 function createAnswerField () {
-	var htmlAnswerField = "<div id=\"answer-container\" class=\"line\"><form action=\"#\" onsubmit=\"return false;\"><input type=\"text\" name=\"answer\" id=\"answer\" class=\"message message-right animated fadeInUp\" value=\"\" placeholder=\"Write a response…\"></form><div class=\"clear\"></div></div>";
+	var htmlAnswerField = "<div id=\"answer-container\" class=\"line\"><form action=\"#\" onsubmit=\"return false;\"><input type=\"text\" name=\"answer\" id=\"answer\" class=\"message message-right animated fadeInUp\" value=\"\" placeholder=\"Type a message…\"></form><div class=\"clear\"></div></div>";
 
 	if (questions[currentQuestion].ending) {
 		return 1;
@@ -97,7 +96,7 @@ function createAnswerField () {
 }
 
 function createAnswerMessage (answer) {
-	var htmlWrapperBeginning = "<div class=\"line\"><div class=\"message message-right animated tada\">",
+	var htmlWrapperBeginning = "<div class=\"line\"><div class=\"message message-right animated fadeInUp bubbleRight\">",
 		htmlWrapperEnding = "</div></div><div class=\"clear\"></div>";
 
 	$('#chat-container').append(htmlWrapperBeginning + answer + htmlWrapperEnding);
