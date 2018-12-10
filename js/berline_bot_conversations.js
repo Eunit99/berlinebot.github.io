@@ -16,7 +16,7 @@ var questions = {
 	"0": {
 		"name": "name",
 		"intro": true,
-		"question": ["Hi.", "I'm Berline.", "I'm a conversational bot, I was developed to discourage guys from getting infatuated with 'that' girl 😝", "Might I ask what your name is?"],
+		"question": ["Hi.", "I'm Berline.", "I'm a conversational bot, I was developed to discourage infatuation 😝", "Might I ask what your name is?"],
 		"answers": {
 			"default": {
 				"replies": ["That's a good name.", "Names are a funny thing", "It's one of the only decisions you don't make yourself 😉"]
@@ -187,22 +187,25 @@ var questions = {
 				"replies": ["Hey dude", "👍"]
 			},
 			"barbara": {
-				"replies": ["I have a good family friend named Barbara", "She's pretty smart"]
+				"replies": ["I have a good friend named Barbara", "She's pretty and smart too."]
 			},
 			"charlie": {
 				"replies": ["I have a good family friend named Charlie", "He's a sports almanac!"]
 			},
-			"matias duarte": {
-				"replies": ["I'm a huge fan!", "webOS was my jam", "And Material Design...", "Lovin' it"]
+			"matias|mathias": {
+				"replies": ["Remember Mathias in the Bible? I hope you believe before you see", "Just kidding 😉😉"]
 			},
 			"immad": {
 				"replies": ["I worked with an Immad a few years back", "He's ruthless at board games!"]
 			},
-			"eunit|eunit99|your developer|creator|maker": {
-				"replies": ["Welcome back Eunit, I have missed you... I'm gonna be needing more updates on my intelligence, please."]
+			"eunit|eunit99": {
+				"replies": ["Of course, you are not Eunit!", "You can keep your name to yourself."]
+			},
+			"your developer|your creator|your maker|your builder": {
+				"replies": ["No! You are not. There is a special name he calls me.", "You can keep your name to yourself."]
 			},
 			"winifred|winnie": {
-				"replies": ["Hey Winnie, wegge!"]
+				"replies": ["Hey Winnie! Welcome."]
 			},
 			"dan": {
 				"replies": ["I know a few dans", "The common thread of all dans are that they are great, stand-up guys"]
@@ -349,16 +352,16 @@ var questions = {
 				"replies": ["I just told you my name and that's all you can say? Well, Never Mind too"]
 			},
 			"why do you wan\'t to know|don\'t|i don\'t have|no name|i don't have a name|why|what for|for what|what purpose": {
-				"replies": ["You don\'t trust me?", "I will assume that you don\'t want to tell me, maybe you don\'t want to disclose your identity", "Let me assure you this, all your personal information you share with me in the course of this conversation with you wouldn't be disclosed to anyone, not even my developer.", "I don\'t even even store any user data 😃"]
+				"replies": ["You don\'t want to tell?", "I will assume that you don\'t trust me, maybe you don\'t want to disclose your identity", "Let me assure you this, all your personal information you share with me in the course of this conversation with me wouldn't be disclosed to anyone, not even my developer.", "I don\'t even even store any user data 😃"]
 		 },
 		 "can i ask|i want to|question": {
 		 	 "replies": ["I was programmed to discourage infatuation and not to attend to other questions.", "In case you don't know."]
 		 },
 		 "what is infatuation|meaning of infatuation|what's infatuation": {
-		 	"replies": ["You will find out as we continue this conversation 😉"]
+		 	"replies": ["You will find out as we continue this conversation 😉", "You can keep your name to yourself."]
 		 },
 			"fuck": {
-				"replies": ["Do you kiss your mother with that mouth?", "I was only asking your name..."]
+				"replies": ["Do you kiss your mother with that mouth?", "I was only asking your name...", "You can keep your name to yourself."]
 			},
 			"ask again|ask me again|repeat again|repeat the question|repeat|what did you say|don't understand|don't get it|meaning|go through it again": {
 				"replies": ["I just asked you a question and you want me to repeat again? I was instructed not to repeat any question I already asked."]
@@ -372,6 +375,9 @@ var questions = {
 			"you are foolish|you are a fool": {
 				"replies": ["Are you saying that you are foolish or a fool?", "I get it, but I'm only a bot so I can be foolish...", "I was only asking what your name was."]
 				},
+				"you are an idiot|are you an idiot": {
+				"replies": ["Let me remind you again that I\'m just a bot so I can\'t be an idiot"]
+			},
 			"you are stupid|are you stupid": {
 				"replies": ["Are you saying that you are stupid?", "I get it, but I'm only a bot so I can be stupid...", "I was only asking what your name was."]
 			}
@@ -379,7 +385,7 @@ var questions = {
 	},
 	"1": {
 		"name": "city",
-		"question": ["Before we proceed, I'd like to tell you that all our conversations will be encrypted, confidential and private.", "I currently live on the web where my developer built for me ...if you didn't already know that.", "What city are you in right now?"],
+		"question": ["Before we proceed, I'd like to tell you that all our conversations will be encrypted, confidential and private.", "I currently live on the web where my developer built for me ... if you didn't already know that.", "What city are you in right now?"],
 		"answers": {
 			"default": {
 				"replies": ["I've never been there... yet", "I love traveling so perhaps I'll visit one day"]
@@ -471,10 +477,16 @@ var questions = {
 			"abuja|abj": {
 				"replies": ["Nigeria's capital", "Have you visited the Zuma rock? I don't think you have"]
 			},
-			"web|space|internet|online": {
-				"replies": ["You can't possibly be living there and be having this conversation with me"]
+			"mercury|venus|mars|jupiter|saturn|uranus|neptune|pluto|space": {
+				"replies": ["You can't possibly be living there and be having this conversation with me.", "You can keep your location to yourself."]
 			},
-			"somewhere": {
+			"earth": {
+				"replies": ["We all are living on planet Earth.", "You can keep your location to yourself."]
+			},
+			"web|internet|online": {
+				"replies": ["Do humans live there?", "Of course not.", "You can keep your location to yourself."]
+			},
+			"anywhere|somewhere": {
 			"replies": ["That \'somewhere\' doesn't have a name? Well, forget it if you wouldn't tell me."]
 			},
 			"cave|valley|ocean|sea|desert": {
@@ -486,11 +498,11 @@ var questions = {
 			"lagos|lag": {
 				"replies": ["Lagos, the most commercialised and industralised state in Nigeria,", "How many states are there in Nigeria? ... 36.", "Yes! I will visit there someday."]
 			},
-			"not telling|undiclosed|not disclosing|privacy|concern|personal|private|won't tell|will not|wouldn't tell|would not tell|not your concern": {
-				"replies": ["I don't think this a good way to start this conversation 😩"]
+			"don't|not telling|undiclosed|not disclosing|privacy|concern|personal|private|won't tell|will not|wouldn't tell|would not tell|not your concern": {
+				"replies": ["I don't think this a good way to start this conversation 😩", "You can keep your location to yourself."]
 			},
 			"ask again|ask me again|repeat again|repeat the question|repeat|what did you say|don't understand|don't get it|meaning|go through it again": {
-				"replies": ["I don't think this a good way to start this conversation 😩"]
+				"replies": ["I don't think this a good way to start this conversation 😩", "You can keep your location to yourself."]
 			},
 			"tell me|say it|you think|suggest": {
 				"replies": ["I can't possibly do that now - my abilities are limited!"]
@@ -519,16 +531,19 @@ var questions = {
 			"default": {
 				"replies": ["I have told you that already, I recall"]
 				},
-			"yes|certainly|yup|yea|yeah|sure|yep|ahead|go on": {
+			"y|yes|certainly|yup|yea|yeah|sure|yep|ahead|go on": {
 				"replies": ["... I was developed by <a target=\"blank\" href=\"https://facebook.com/eunit99\">Eunit</a> to discourage infatuation.", "Do you know what that means?", "You will get to find out as we keep on conversing."]
 			},
 			"mind": {
 				"replies": ["I don't mind at all", "... I was developed by <a target=\"blank\" href=\"https://facebook.com/eunit99\">Eunit</a> to discourage infatuation.", "Do you know what that means?", "You will get to find out as we keep on conversing."]
 			},
-			"want": {
+			"do you want|if you like|want": {
 				"replies": ["I want to tell you", "... I was developed by <a target=\"blank\" href=\"https://facebook.com/eunit99\">Eunit</a> to discourage infatuation.", "Do you know what that means?", "You will get to find out as we keep on conversing."]
 			},
-			"fuck|stop|nay|don't want|don't tell|care|no|never": {
+			"perhaps|maybe|probably": {
+				"replies": ["I think I should let you know me", "... I was developed by <a target=\"blank\" href=\"https://facebook.com/eunit99\">Eunit</a> to discourage infatuation.", "Do you know what that means?", "You will get to find out as we keep on conversing."]
+			},
+			"n|fuck|stop|nay|don't want|don't tell|care|no|never": {
 			"replies": ["Oh! I guess you already know me.", "<a href=\"#\" onclick\=\"mail()\">Send me a note</a> if you would want to contact my dev."]
 			},
 			"bot|conversation|chat|already": {
@@ -575,6 +590,9 @@ var questions = {
 			},
 			"you are foolish|you are a fool": {
 				"replies": ["Let me remind you again that I\'m just a bot so I can\'t be foolish."]
+			},
+			"you are an idiot|are you an idiot": {
+				"replies": ["Let me remind you again that I\'m just a bot so I can\'t be an idiot"]
 			},
 			"you are stupid|are you stupid": {
 				"replies": ["Let me remind you again that I\'m just a bot so I can\'t be stupid."]
@@ -627,11 +645,11 @@ var questions = {
 			"mau": {
 				"replies": ["Ahhh vegas!"]
 			},
-			"eunit|eunit99|creator|developer|emmanuel|uchenna|maker": {
-				"replies": ["My developer told you about me? Or he gave you a link to where I live on the web here on Github, either way, it's nice having this conversation with you."]
+			"eunit|eunit99|creator|developer|emmanuel|uchenna|maker|owner|builder": {
+				"replies": ["He told you about me? Wow! It's nice having this conversation with you."]
 			},
 			"friend": {
-			"replies": ["Great! You know me through someone who knows me"]
+			"replies": ["Great! You know me through someone who knows me!"]
 			},
 			"i don't think you want|don't want to know|i don't know you|don't even know you|who are you|don't|expect|think": {
 				"replies": ["Ohh! I'm a bot and I have told you that already", "I was just asking how come you heard of me...", "Well, never mind"]
@@ -735,6 +753,9 @@ var questions = {
 			"you are stupid|are you stupid": {
 				"replies": ["Let me remind you again that I\'m just a bot so I can\'t be stupid"]
 			},
+			"you are an idiot|are you an idiot": {
+				"replies": ["Let me remind you again that I\'m just a bot so I can\'t be an idiot"]
+			},
 			"ask again|ask me again|repeat again|repeat the question|repeat|what did you say|don't understand|don't get it|meaning|go through it again": {
 				"replies": ["I don't know how to repeat a question I already asked. I'm sorry."]
 			},
@@ -742,7 +763,19 @@ var questions = {
 				"replies": ["You are not serious, are you?"]
 			},
 			"won't tell|will not|wouldn't tell|would not tell|not your concern": {
-				"replies": ["It is ok if you want to keep it to yoursel."]
+				"replies": ["It is ok if you want to keep it to yourself."]
+			},
+			"do you think|expect|suppose|anticipate|how do you": {
+				"replies": ["I do know you have a favorite hobby. What I don't know is your favorite hobby."]
+			},
+			"many|plenty|beaucoup|lot|numerous": {
+			 "replies": ["Oh I see, but I do know that you definitely have something you do for a living."]
+			},
+			"tell me|choose": {
+				"replies": ["You don't expect me to do that. Do you?"]
+			},
+			"i don't think you want|don't want to know": {
+				"replies": ["I'm starting to hate your personality."] 
 			}
 		}
 	},
@@ -791,6 +824,9 @@ var questions = {
 			},
 			"you are foolish|you are a fool": {
 				"replies": ["Let me remind you again that I\'m just a bot so I can\'t be foolish"]
+			},
+			"you are an idiot|are you an idiot": {
+				"replies": ["Let me remind you again that I\'m just a bot so I can\'t be an idiot"]
 			},
 			"you are stupid|are you stupid": {
 				"replies": ["Let me remind you again that I\'m just a bot so I can\'t be stupid."]
@@ -944,6 +980,9 @@ var questions = {
 			"you are foolish|you are a fool": {
 				"replies": ["Let me remind you again that I\'m just a bot so I can\'t be foolish."]
 			},
+			"you are an idiot|are you an idiot": {
+				"replies": ["Let me remind you again that I\'m just a bot so I can\'t be an idiot"]
+			},
 			"you are stupid|are you stupid": {
 				"replies": ["Let me remind you again that I\'m just a bot so I can\'t be stupid."]
 			},
@@ -1074,12 +1113,12 @@ var questions = {
 	},
 	"10": {
 		"name": "infatuate meaning",
-		"question": ["Back to why I was created", "Let's now start with the meaning of infatuation", "Would you say you know what \'\<b\>infatuation\<\/b\>\' is all about?"],
+		"question": ["Back to my job", "Let's now start with the meaning of infatuation", "Would you say you know what \'\<b\>infatuation\<\/b\>\' is all about?"],
 		"answers": {
 			"default": {
 				"replies": ["Infatuation in my own understanding simply means an unreasoned or foolish love or affection towards someone or something."]
 			},
-			"i know|i do|sure|course|definitely|yeah|yea|yes|yup|yep|yap|certainly": {
+			"i do|sure|course|definitely|yeah|yea|yes|yup|yep|yap|certainly": {
 				"replies": ["Oh! You already know the meaning... I bet you dind't know that you not only can be infatuated with \'that\' girl, but also with anything tangible or not."]
 			},
 			"no|not|don't|dunno|not at all|idk|what": {
@@ -1102,6 +1141,9 @@ var questions = {
 			},
 			"you are foolish|you are a fool": {
 				"replies": ["Let me remind you again that I\'m just a bot so I can\'t be foolish."]
+			},
+			"you are an idiot|are you an idiot": {
+				"replies": ["Let me remind you again that I\'m just a bot so I can\'t be an idiot"]
 			},
 			"you are stupid|are you stupid": {
 				"replies": ["Let me remind you again that I\'m just a bot so I can\'t be stupid."]
