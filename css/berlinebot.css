@@ -197,8 +197,12 @@
 		font-style: normal !important;
 	}
 	
-	.displayOff{
+	.displayOff {
 		display: none;
+	}
+	
+	.displayNone {
+		display: none !important;
 	}
 	
 	::-webkit-input-placeholder {
@@ -356,6 +360,14 @@
 			
 			padding: 0 30px;
 		}
+	
+	.displayOff {
+		display: none;
+	}
+	
+	.displayNone {
+		display: none !important;
+	}
 	
 		#about-container h1 {
 			font-size: 24px;
