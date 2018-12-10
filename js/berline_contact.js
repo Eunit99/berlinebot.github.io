@@ -1,6 +1,6 @@
    /*
 =================================
-*Dialogue confirmation for OzyPeace.com
+*Dialogue confirmation for Berline bot
 *Copyright: EunitDesigns.com
 *Script developed by Eunit
 =================================
@@ -8,7 +8,19 @@
 =========DO NOT MODIFY===========
 
 */
-     // hide() and show() the menu for Berline bot with jQuery
+     // hide the loader for Berline bot with jQuery
+
+	       // <![CDATA[ 
+		$(document).ready(function(){
+		$("#chat-container").ready(function(){
+		        $(".loader").hide(1000);   
+		
+			     });
+		});
+
+   // ]]> 
+   
+        // hide and show the menu for Berline bot with jQuery
 	       // <![CDATA[ 
 		$(document).ready(function(){
 		    $("#chat").click(function(){
