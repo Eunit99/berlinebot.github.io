@@ -19,6 +19,14 @@
 		});
 
    // ]]> 
+	       // <![CDATA[ 
+		$(document).ready(function(){
+		$("#menu").show(); 
+		$("div").removeClass("displayNone");
+		
+		});
+
+   // ]]> 
    
         // hide and show the menu for Berline bot with jQuery
 	       // <![CDATA[ 
