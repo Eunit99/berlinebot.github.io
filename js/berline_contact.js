@@ -8,40 +8,7 @@
 =========DO NOT MODIFY===========
 
 */
-     // hide the loader for Berline bot with jQuery
 
-	       // <![CDATA[ 
-		$(document).ready(function(){
-		$("#chat-container").ready(function(){
-		        $(".loader").hide(1000);   
-		
-			     });
-		});
-
-   // ]]> 
-	       // <![CDATA[ 
-		$(document).ready(function(){
-		$("#menu").show(); 
-		$("div").removeClass("displayNone");
-		
-		});
-
-   // ]]> 
-   
-        // hide and show the menu for Berline bot with jQuery
-	       // <![CDATA[ 
-		$(document).ready(function(){
-		    $("#chat").click(function(){
-		        $("#about-container").hide();   
-		    				$("#chat-container").show();
-		    	 });
-		  $("#about").click(function(){
-		        $("#chat-container").hide();
-		 							$("#about-container").show();
-	     });
-		});
-
-   // ]]> 
      
             //<![CDATA[
             function Twitter()
