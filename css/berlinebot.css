@@ -114,13 +114,13 @@
 	}
 	
 	.loader {
-    position: fixed;
-    top: 40%;
-    left: 40%;
-    transform: translate (-50%, -50%);
-    width: 160px;
-    display: flex;
-		}
+   	 position: fixed;
+   	 top: 40%;
+    	left: 40%;
+    	transform: translate (-50%, -50%);
+    	width: 160px;
+    	display: flex;
+	} 
 		
 	.loader span{
     width: 20px;
