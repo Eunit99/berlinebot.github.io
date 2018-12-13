@@ -4,6 +4,108 @@ var currentQuestion = 0,
 
 var local = (!document.location.hostname); // check if local
 // --------------------------------------- //
+     // hide the loader for Berline bot with jQuery
+
+	       // <![CDATA[ 
+		$(document).ready(function(){
+		$("#chat-container").ready(function(){
+		        $(".loader").hide(600);   
+		
+			     });
+		});
+
+   // ]]> 
+	       // <![CDATA[ 
+		$(document).ready(function(){
+		$("#menu").show(); 
+		$("div").removeClass("displayNone");
+		
+		});
+
+   // ]]> 
+   
+        // hide and show the menu for Berline bot with jQuery
+	       // <![CDATA[ 
+		$(document).ready(function(){
+		    $("#chat").click(function(){
+		        $("#about-container").hide();   
+		    				$("#chat-container").show();
+		    	 });
+		  $("#about").click(function(){
+		        $("#chat-container").hide();
+		 							$("#about-container").show();
+	     });
+		});
+
+   // ]]> 
+ 
+ //Greetings Start
+ 
+ 
+		$(document).ready(function(){
+		
+		/* ========Get uswrNams through promp()====================
+		var userName = prompt("What is your name?");
+		while(userName == null || userName == "") 
+		{
+		userName = prompt("What is your name?")
+		}
+		=============================== */
+		
+
+		window.onload=function greet(){
+		var greet;
+		var date = new Date();
+		var sec = date.getSeconds();
+		var min = date.getMinutes();
+		var hour = date.getHours();
+		
+		
+		if(hour===5 || hour===6 || hour===7 || hour===8 || hour===9 || hour===10 || hour===11)
+		{
+		    
+		    greet='<div class="line"><div class="message message-left animated bubbleLeft fadeIn">Hi. Good morning </div></div>' ;
+		   // pr(greet);
+		
+		}
+		
+		
+		else if(hour===12)
+		{
+		    
+		    greet='<div class="line"><div class="message message-left animated bubbleLeft fadeIn">Hi. Good noon </div></div>' ;
+		   // pr(greet);
+		
+		}
+		
+				else if(hour===13 || hour===14 || hour===15 || hour===16 || hour===17)
+		{
+		    
+		    greet='<div class="line"><div class="message message-left animated bubbleLeft fadeIn">Hi. Good afternoon </div></div>' ;
+		   // pr(greet);
+		
+		}
+		
+				else if(hour===18 || hour===19 ||  hour===20 || hour===21 || hour===22 || hour===23 || hour===0 || hour===1 || hour===2 || hour===3 || hour===4)
+		{
+		    
+		    greet='<div class="line"><div class="message message-left animated bubbleLeft fadeIn">Hi. Good evening </div></div>' ;
+		   // pr(greet);
+		
+		}
+						
+		$("#chat-container").ready(function(){
+		        $("#welcomeMsg").html(greet);
+		 						$("#welcomeMsg").show(500);   
+			     });
+
+			}
+			
+		});
+		
+	
+ 
+ //Greetings End
 
 function storyController (questions) {
 	current = 0;
