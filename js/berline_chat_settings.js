@@ -96,7 +96,7 @@ var local = (!document.location.hostname); // check if local
 						
 		$("#chat-container").ready(function(){
 		        $("#welcomeMsg").html(greet);
-		 						$("#welcomeMsg").show(500);   
+		 						$("#welcomeMsg").show();   
 			     });
 
 			}
