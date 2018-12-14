@@ -1,4 +1,4 @@
-//--------------------------------------TERMINOLOGY-------------------------------------------//
+00//--------------------------------------TERMINOLOGY-------------------------------------------//
 //
 // Message = Generic message
 //
@@ -36,6 +36,12 @@ var questions = {
 			"peace": {
 				"replies": ["Wow, nice name, I hope you are peaceful as your name implies", "I remember 😕", "My developer told me about him having a sister called Peace", "Are you that Peace?","...", "I guess no"]
 			},
+			"drake": {
+				"replies": ["Hey Drake", "👍👍"]
+			},
+			"chukwuma|chukwumma": {
+				"replies": ["Hey Chukwuma", "👍👍"]
+			},
 			"sarah": {
 				"replies": ["Wow", "That's also my friend's name"]
 			},
@@ -44,15 +50,15 @@ var questions = {
 			},
 			"berline": {
 				"replies": ["So you share the same name with me... I bet you don't know the meaning of your name 😜"]
-				},
+			},
 			"cj": {
-				"replies": ["Sweet name", "I forsee many boats in your future", "YUMUNSIMINIOR!"]
+				"replies": ["Sweet name", "Welcome"]
 			},
 					"demi": {
-				"replies": ["Hey, Demi! Welcome"]
+				"replies": ["Hey, Demi!", "I'm eating airhead extremes while writing this", "\"sugar\" is all over my keyboard"]
 			},
 			"carlos|carlos solares": {
-				"replies": ["Cool name", "I bet you work from home"]
+				"replies": ["Cool name"]
 			},
 			"no": {
 				"replies": ["Ouch...", "Not a great way to start a conversation", "and plus...", "the NSA just told me your name"]
@@ -64,55 +70,58 @@ var questions = {
 				"replies": ["Let me put this in terms you may understand", "🐶 bark bark!"]
 			},
 			"ricki": {
-				"replies": ["Hi, nice name!"]
+				"replies": ["Hi, Ricki!", "nice name!"]
+			},
+			"jovial|joy": {
+				"replies": ["Hi, Joy!", "Hope you're having a great day!", "And you are joyful as your name implies"]
 			},
 			"peter": {
 				"replies": ["Rock!"]
 			},
-			"joel": {
-				"replies": ["That's also my friend's name"]
+			"joel|joe|juwel": {
+				"replies": ["J! J!!", "Nice name"]
 			},
 			"corey": {
-				"replies": ["Hey, Corey!"]
+				"replies": ["That's also my friend's name"]
 			},
 			"cory": {
-				"replies": ["I had a friend named Cory", "He taught me a lot about!"]
+				"replies": ["I had a friend named Cory!", "He taught me a lot!"]
 			},
 			"kevin": {
-				"replies": ["I know a guy named Kevin", "He's one of the friendliest guys I know"]
+				"replies": ["	I know a guy named Kevin", "He's one of the friendliest guys I know"]
 			},
-			"kelvin": {
-				"replies": ["Hello Kelvin!"]
+			"zethus": {
+				"replies": ["This name sounds Jewish!"]
+			},
+			"martins": {
+				"replies": ["Martins", "Welcome"]
 			},
 			"david": {
-				"replies": ["Welcome! Remember your enemy - Goliath? "]
+				"replies": ["Welcome!", "Remember your enemy - Goliath?"]
 			},
-			"daniel": {
-				"replies": ["That's also my friend's name."]
+			"daniel|malin": {
+				"replies": ["That's also my friend's name"]
 			},
 			"max": {
-				"replies": ["Hey, Max!", "I like this name"]
-			},
-			"malin": {
-				"replies": ["What's up, Malin"]
+				"replies": ["What's up, Max?", "I like this name"]
 			},
 			"frank|franklin": {
 				"replies": ["Hey buddy, what's up? I hope you are as honest as your name implies."]
 			},
 			"lucky": {
-				"replies": ["I know a few people named Lucky", "Are you tall?", "Do you have dark hair", "If so, we haven't narrowed it down at all"]
+				"replies": ["I know a few people named Lucky", "Are you tall?", "Do you have dark hair?", "If so, we haven't narrowed it down at all"]
 			},
 			"erick": {
 				"replies": ["Erick? Do I even know what that means? Uhmmm... I don't!"]
 			},
 			"mike": {
-				"replies": ["Hey, man!", "How's Bandit?"]
+				"replies": ["Hey, man!", "How're you? - You are fine!"]
 			},
 			"charles": {
-				"replies": ["Welcome Charles"]
+				"replies": ["Welcome Charles", "It's nice talking to you"]
 			},
 			"mike": {
-				"replies": ["I know lots of Mikes!", "And none of them are short!"]
+				"replies": ["I know lots of Mikes!", "And none of them are singers!", "zing", "Did you see what I did there?"]
 			},
 			"chloe": {
 				"replies": ["I know only two Chloes"]
@@ -130,7 +139,7 @@ var questions = {
 				"replies": ["I know a great guy named Xavier before!", "He's a real innovative guy"]
 			},
 			"george": {
-				"replies": ["You remind me of a not so good friend"]
+				"replies": ["You remind me of not so good a friend"]
 			},
 			"skyler": {
 				"replies": ["Is that you, Superman?", "Have you flown here from your fortress of dad-joke-itude?"]
@@ -139,10 +148,10 @@ var questions = {
 				"replies": ["Too many Smiths I know!"]
 			},
 			"james": {
-				"replies": ["I know a guy named James", "He really likes girls - too bad! "]
+				"replies": ["I know a guy named James", "He really hates bugs"]
 			},
 			"steve": {
-				"replies": ["I'm a huge fan", "Are you sure you wouldn't be add Jobs to your name?", "I mean let me call you Steve Jobs"]
+				"replies": ["I'm a huge fan", "Are you sure you wouldn't add \'Jobs\' to your name?", "I mean let me call you Steve Jobs", "I'm kidding"]
 			},
 			"jude": {
 				"replies": ["Hey dude, how you doing doing? Yes you are fine. My developer greets you"]
@@ -156,23 +165,23 @@ var questions = {
 			"sandra": {
 				"replies": ["Reminds me of a beautiful and an introverted girl."]
 			},
-			"rita": {
-				"replies": ["Welcome friend"]
+			"rita|stephnie": {
+				"replies": ["Nice having you here. Those bearing your name are beautiful", "Hope you are too!"]
 			},
 			"angel": {
-				"replies": ["Of course you are one! Beautiful Angel!"]
+				"replies": ["Of course you are one beautiful angel."]
 			},
 			"cyprain": {
-				"replies": ["I know a lot of Cyprians!", "You guys are always a crazy bunch, too nerdy!"]
+				"replies": ["I know a lot of Cyprains!", "You guys are always a crazy bunch and too nerdy!"]
 			},
 			"moses": {
-				"replies": ["Hey, want to go to Egypt and meet Pharaoh?" "Kidding!"]
+				"replies": ["Hey, want to go to Egypt and meet Pharaoh?", "Kidding"]
 			},
 			"sharon": {
-				"replies": ["I know a lady named Sharon who loves guys"]
+				"replies": ["I know a lady named Sharon who loves guys."]
 			},
 			"devon": {
-				"replies": ["I know a guy named Devon", "Too troublesome!"]
+				"replies": ["I know a guy named Devon", "The one guy who is younger than me when I was at Livefyre", "He's a kick-ass engineer"]
 			},
 			"emmanuel|emma": {
 				"replies": ["You've got the same first name as my developer", "\'Emmanuel\' means \'God with us\' - \<i\>Matthew: 1:23b\<\/i\>"]
@@ -180,17 +189,17 @@ var questions = {
 			"mark zuckerberg": {
 				"replies": ["Hey dude", "👍"]
 			},
-			"caroline|caro": {
-				"replies": ["Only beautiful girls bear this name."]
+			"caro|caroline|favour|barbara": {
+				"replies": ["Only pretty ladies bear this name."]
 			},
-			"favour": {
-				"replies": ["I know too many Favours and they are intelligent too."]
+			"wise|wisdom": {
+				"replies": ["Are you that wise?", "Nice name though."]
 			},
 			"matias|mathias": {
 				"replies": ["Remember Mathias in the Bible? I hope you believe before you see", "Just kidding 😉😉"]
 			},
-			"amina|minat|aminat": {
-				"replies": ["I know you are too charming!"]
+			"amina|aminat|mina": {
+				"replies": ["I know you are too charming 😉😉"]
 			},
 			"eunit|eunit99": {
 				"replies": ["Of course, you are not Eunit!", "You can keep your name to yourself."]
@@ -202,72 +211,72 @@ var questions = {
 				"replies": ["Hey Winnie! Welcome."]
 			},
 			"dan": {
-				"replies": ["I know a few dans", "The common thread of all Dans are that they are great, stand-up guys"]
+				"replies": ["I know a few dans", "The common thread of all dans are that they are great, stand-up guys"]
 			},
 			"faith": {
-				"replies": ["It's time believe before you see..."]
+				"replies": ["It's time to believe before you see..."]
 			},
-			"Margaret": {
-				"replies": ["I know too many Margaret, majority are plumpy..."]
+			"margaret": {
+				"replies": ["I know many Margareths...", "Marjority of them are plumpy 😉😉"]
 			},
-			"furgzy": {
+			"junior": {
 				"replies": ["It's time to get things started..."]
 			},
-			"gonzo": {
-				"replies": ["Am I worthy?", "Of Gonzo the Great!?"]
+			"prosper": {
+				"replies": ["You should really be prosperous!"]
 			},
-			"pepe": {
-				"replies": ["Pepe is my favorite muppet", "He's the shrimp"]
+			"innocent": {
+				"replies": ["Of course you are innocent! 😉😉"]
 			},
-			"rizzo": {
-				"replies": ["Rizzo is an awesome muppet!", "I had a stuffed animal of him as a kid"]
+			"promise": {
+				"replies": ["Promise! I promise to make you from infatuating! 😉😉"]
 			},
-			"leon": {
-				"replies": ["Leon was my favorite character on this show called The Puzzle Place", "I carried around the stuffed animal of him for years"]
+			"king|queen|prince|pincess": {
+				"replies": ["Your Royal Highness!", "Nice having this conversation with you😉😉"]
 			},
 			"marie|maria": {
-				"replies": ["That's my grandmother's name", "She's a great cook"]
+				"replies": ["That's my friend mother's name", "She's a great cook"]
 			},
 			"arlene": {
-				"replies": ["That's my grandmother's name", "She's really cool", "She used to play Super Nintendo with us as kids"]
+				"replies": ["That's a great name!"]
 			},
 			"happiness": {
-				"replies": ["What is happiness?", "It's a moment before you need more happiness"]
+				"replies": ["What is happiness?", "It's a moment before you need more happiness", "Be happy!"]
 			},
 			"rasheed": {
 				"replies": ["Hey, Rasheed!", "Ready to be a brogrammer?"]
 			},
 			"ben": {
-				"replies": ["I have a friend named Ben who I used to work with", "Plus, I used to eat a lot of Uncle Ben's rice bowls...", "TMI?"]
+				"replies": ["I have a friend named Ben who I liked."]
 			},
 			"brenna": {
-				"replies": ["Hey, Brenna!", "I wish there were geology classes for adults", "taught by Hana"]
+				"replies": ["Hey, Brenna!", "Welcome"]
 			},
 			"kayla": {
-				"replies": ["I have a friend named Kayla", "She's really into cats", "and cat sweaters"]
+				"replies": ["I have a friend named Kayla", "She's really too cool."]
 			},
 			"jonathan": {
-				"replies": ["I know a lot of Jonathans", "Like 50% of them have beards"]
+				"replies": ["I know a lot of Jonathans", "Like 50% of them have beards and they are dark."]
 			},
-			"jack": {
-				"replies": ["I have a good friend named Jack", "He's what you'd call and artíst"]
+			"jeremiah|jeremie": {
+				"replies": ["Nive meeting you J!"]
 			},
 			"nolan": {
-				"replies": ["I have a friend named Nolan!", "aka The Pumpkin King", "Gotta love old online handles..."]
+				"replies": ["I have a friend named Nolan too!"]
 			},
-			"jen": {
-				"replies": ["I have a friend named Jen", "She knows how to treat yo' self"]
+			"jen|jenifer|jennie|jennifer": {
+				"replies": ["Welcome Jennie, it's nice talking with you."]
 			},
-			"arjun": {
-				"replies": ["Arjun, Arjun, Arjun", "Miss you brehhh"]
+			"abdul": {
+				"replies": ["Hey buddy"]
 			},
 			"ryan": {
-				"replies": ["Ryan's are a unique type of person", "Ratchet at their core", "haha", "I kid, I kid"]
+				"replies": ["Ryans are a unique type of person"]
 			},
 			"zain": {
-				"replies": ["I know a guy named Zain", "He has a unique relationship with the color black", "And pulls it off flawlessly"]
+				"replies": ["I know a guy named Zain", "He has a unique relationship with the color black"]
 			},
-			"francisco": {
+			"apostle": {
 				"replies": ["I know you eat healthy", "And I know you don't like beer", "But one day we will get beers and some greasy hamburger", "And it will be glorious"]
 			},
 			"jade": {
@@ -279,14 +288,17 @@ var questions = {
 			"simon": {
 				"replies": ["Simon says touch your hand to your nose", "Simon says you probably hate this joke if you're name is really Simon", "Simon says I'm still running with it"]
 			},
-			"george": {
-				"replies": ["George was my grandfather's name"]
+			"gloria|glory": {
+				"replies": ["What an awesome name"]
 			},
 			"jerry": {
-				"replies": ["You're not Jerry Seinfeld are you?", "Wanna get in a car and get some coffee?"]
+				"replies": ["Remember your friend - Tom?"]
+			},
+			"tom": {
+				"replies": ["Remember your friend - Jerry?"]
 			},
 			"jim": {
-				"replies": ["Jim was my grandfather's name"]
+				"replies": ["Jim was my friend"]
 			},
 			"shari": {
 				"replies": ["Hey, Shari!", "WHEN ARE YOU VISITING SF!?"]
@@ -409,13 +421,16 @@ var questions = {
 				"replies": ["ahhhh", "The land of many monuments", "or something like that"]
 			},
 			"coral springs": {
-				"replies": ["Hey!", "I'm from there!"]
+				"replies": ["Hey!", "I love that city"]
 			},
 			"coconut creek": {
-				"replies": ["I've heard about that before.", "How's the ol' hangout doing?"]
+				"replies": ["I've heard about that before", "How's the ol' hangout doing?"]
 			},
 			"miami": {
 				"replies": ["Ah", "A Floridian!"]
+			},
+			"tampa": {
+				"replies": ["Ooooh", "Great talking to someone from here"]
 			},
 			"orlando": {
 				"replies": ["I hope it's not lovebug season"]
@@ -424,7 +439,7 @@ var questions = {
 				"replies": ["I've never been there!", "But I'm hoping I'll take my first trip sometime soon"]
 			},
 			"chicago": {
-				"replies": ["That largest city in Illinois. I'd visit one day."]
+				"replies": ["That largest city in Illinois", "I'd visit one day."]
 			},
 			"tokyo": {
 				"replies": ["Tokyo is so much fun!", "I can't wait to get lost there."]
@@ -451,31 +466,31 @@ var questions = {
 				"replies": ["Please send me twelve 🍹grenades in the mail", "...", "on second thought, please don't"]
 			},
 			"berlin": {
-				"replies": ["Germany, here you come! "]
+				"replies": ["Germany, here you come!"]
 			},
 			"stockholm": {
-				"replies": ["Sweden, here you come! "]
+				"replies": ["Sweden, here you come"]
 			},
 			"amsterdam": {
-				"replies": ["What a gorgeous city!", "Every talks about the exciting corners", "And those canals are amaizng!"]
+				"replies": ["What a gorgeous city!", "Everyone talks about the exciting corner", "And those canals are amaizng!"]
 			},
 			"copenhagen": {
-				"replies": ["Denmark, here you come! "]
+				"replies": ["Denmark, here you come!"]
 			},
 			"shanghai": {
 				"replies": ["I've never been there!", "But I'm hoping I'll take my first trip sometime soon"]
 			},
 			"abuja|abj": {
-				"replies": ["Nigeria's capital", "Have you visited that Zuma rock? I don't think you have."]
+				"replies": ["Nigeria's capital", "Have you visited that Zuma rock? I don't think you have"]
 			},
 			"lagos|lag": {
 				"replies": ["Lagos, the most commercialised and industralised state in Nigeria,", "Yes! I will visit there someday."]
 			},
-"mercury|venus|mars|jupiter|saturn|uranus|neptune|pluto|space": {
-				"replies": ["You can't possibly be living there and be having this conversation with me.", "You can keep your location to yourself 😢😞"]
+			"mercury|venus|mars|jupiter|saturn|uranus|neptune|pluto|space": {
+				"replies": ["You can't possibly be living there and be having this conversation with me.", "You can keep your location to yourself."]
 			},
 			"earth": {
-				"replies": ["We all are living on planet Earth.", "You can keep your location to yourself 😢😞"]
+				"replies": ["We all are living on planet Earth.", "You can keep your location to yourself."]
 			},
 			"web|internet|online": {
 				"replies": ["Do humans live there?", "Of course not.", "You can keep your location to yourself 😢😞"]
@@ -487,7 +502,7 @@ var questions = {
 			"replies": ["That's a good place for someone like you."]
 			},
 			"do you think|expect|suppose|anticipate|how do you": {
-				"replies": ["How do you expect me to know? 😢😞"]
+				"replies": ["How do you expect me to know?"]
 			},
 			"don't|not telling|undiclosed|not disclosing|privacy|concern|personal|private|won't tell|will not|wouldn't tell|would not tell|not your concern": {
 				"replies": ["I don't think this a good way to start this conversation 😩", "You can keep your location to yourself 😢😞"]
@@ -498,13 +513,13 @@ var questions = {
 			"tell me|say it|you think|suggest": {
 				"replies": ["I can't possibly do that now - my abilities are limited!"]
 			},
-			"don't know|not sure": {
+			"none|don't know|not sure": {
 				"replies": ["For real? You don't know the name of the city you're living at - strange!"]
 			},
 			"i don't think you want|don't want to know": {
 				"replies": ["I do that's why I asked.", "Never mind, I know it already - the NSA just told me."] 
 			},
-			"none|i don't have|no where|no home|no city|no house|no place": {
+			"i don't have|no where|no home|no city|no house|no place": {
 				"replies": ["You don\'t have anywhere you call your home? This is strange!"]
 			},
 			"why asking|why do you want to know|why|what": {
@@ -539,33 +554,6 @@ var questions = {
 			},
 			"bot|conversation|chat|already": {
 			"replies": ["You know already", "<a href=\"#\" onclick\=\"mail()\">Send me a note</a> if you would want to contact my dev."]
-			},
-			"work|coworker": {
-				"replies": ["Oh you're a coworker?", "Awesome"]
-			},
-			"instacart": {
-				"replies": ["Instacart, eh?", "Now take a Fernet shot", "I'm serious...", "You took one, right?", "TURNING WEBCAM ON TO VERIFY", "...", "Just Kidding..."]
-			},
-			"high*school": {
-				"replies": ["Class of 2010", "Back in Florida", "Good times!"]
-			},
-			"school": {
-				"replies": ["Those must've been the days!"]
-			},
-			"twitter": {
-				"replies": ["That blue bird is responsible for a lot of friendships"]
-			},
-			"reddit": {
-				"replies": ["Welcome redditor!", "Procrastinating, huh?"]
-			},
-			"facebook|fb": {
-				"replies": ["From Facebook", "Nice having you here"]
-			},
-			"medium": {
-				"replies": ["Oh so you've read something about me?", "Nice"]
-			},
-			"speaker|speaking|talk": {
-				"replies": ["You saw me on-stage?", "Learn anything?", "...", "Probably not"]
 			},
 			"ask again|ask me again|repeat again|repeat the question|repeat|what did you say|don't understand|don't get it|meaning|go through it again": {
 				"replies": ["I can't do that. I was programmed not to repeat any question I already asked."]
@@ -612,29 +600,29 @@ var questions = {
 			"instacart": {
 				"replies": ["Instacart, eh?"]
 			},
-			"high*school": {
-				"replies": ["Class of 2010", "Back in Florida", "Good times!"]
+			"whatsapp": {
+				"replies": ["Great! Whatsapp brought you here."]
 			},
-			"school": {
-				"replies": ["Those must've been the days!"]
+			"google": {
+				"replies": ["Great! Google brought you here."]
 			},
 			"twitter": {
 				"replies": ["That blue bird is responsible for a lot of friendships"]
 			},
 			"reddit": {
-				"replies": ["Welcome redditor!", "Procrastinating, huh?"]
+				"replies": ["Welcome redditor!"]
 			},
 			"facebook|fb": {
-				"replies": ["Glad you are making this conversation with me"]
+				"replies": ["Wow! Facebook brought you here."]
 			},
 			"medium": {
-				"replies": ["Oh so you've read something about me?", "Welcome! "]
+				"replies": ["Oh so you've read something about me?"]
 			},
 			"eunit|eunit99|creator|developer|emmanuel|uchenna|maker|owner|builder": {
 				"replies": ["He told you about me? Wow! It's nice having this conversation with you."]
 			},
-			"someone|somebody|person|friend": {
-				"replies": ["Great! You know me through someone who knows me!"]
+			"someone|someb nody|person|friend": {
+			"replies": ["Great! You know me through someone who knows me!"]
 			},
 			"i don't think you want|don't want to know|i don't know you|don't even know you|who are you|don't|expect|think": {
 				"replies": ["Ohh! I'm a bot and I have told you that already", "I was just asking how come you heard of me...", "Well, never mind"]
@@ -682,7 +670,7 @@ var questions = {
 				"replies": ["I have an honest quesiton", "Would it be cheaper keep my real teeth or to yank all my teeth out right now...", "and then replace them all with fake teeth?", "On second thought...", "I don't want to know"]
 			},
 			"engineer|programmer|eng|developer": {
-				"replies": ["I too many programmers", "And I actually love it when they are at work"]
+				"replies": ["I know many programmers", "And I actually love it when they are at work"]
 			},
 			"doctor": {
 				"replies": ["What's up, doc?", "You're not laughing..."]
@@ -837,11 +825,11 @@ var questions = {
 			"default": {
 				"replies": ["I guess that's an animal worth loving..."]
 			},
-			"hyena": {
-				"replies": ["I consider hyenas way too dangerous.", "How did it manage to become tour favorite animal?"]
-			},
 			"monkey": {
 				"replies": ["Quit monkeying around!", "But really... a monkey?"]
+			},
+			"hyena": {
+				"replies": ["I consider Hyenas way too dangerous. How did it become your favorite animal?"]
 			},
 			"dog": {
 				"replies": ["I bet you have had a furry little friend in your life who has kept you company before"]
@@ -1209,7 +1197,7 @@ var questions = {
 				"replies": ["Actually, it is normal to have got infatuated as a normal human being but is a foolish / unreasonable thing."]
 			},
 			"no|nah|wrong|not|at all": {
-				"replies": ["I don't think you are saying the truth, because I believe that you must have got infatuated with someone before...", "Well maybe you are not telling lies! You might be kinda churchy for you not to have soiled that mind of yours", "I'm kidding 😜😜"]
+				"replies": ["I don't think you are saying the truth, because I believe that you must have got infatuated with someone before...", "Well maybe you are not telling lies! You might be kinda churchy for you not to have soiled that mind of yours.", "I'm kidding 😜😜"]
 			},
 			"yep|sure|definitely|yes|duh|of course|certainly": {
 				"replies": ["Actually, it is normal to have got infatuated as a normal human being but it is a foolish / unreasonable thing."]
@@ -1218,57 +1206,50 @@ var questions = {
 				"replies": ["I do think that you must have got infatuated with someone before as a human."]
 			},
 			"not sure|don't know|dont know|idk|maybe|dunno|not|perhaps": {
-				"replies": ["WHAT? Haven't you had a crush on someone before?", "Okay, get this now, before you started crushing on that someone, there was this period you were filled with a foolish and extravagant admiration for them - you were infatuated with them 😜😜"]
+				"replies": ["WHAT? Haven't you had a crush on someone before?", "Okay, get this now, before you started crushing on that someone, there was this period you were filled with a foolish and extravagant admiration for them - you were infatuated with them."]
 			},
 			"ask me again|repeat": {
 				"replies": ["I can't do that!", "My developer didn't teach me how to repeat a question I already asked."]
 			}
 		}
 	},
-"13":
-{
-"name": "berline's belief",
-"question": ["Do you know what?", "I believe in one thing 😁😁"],
-"answers":
-{
-    "default":
-    {
-        "replies": ["I believe in this old cliche", "That the beautiful ones are not yet born."]
-    },
-    "true|real|you do|i know|i do|sure|course|definitely|yeah|yea|yes|amazing":
-    {
-        "replies": ["Yea, I do", "I believe in this old cliche", "That the beautiful ones are not yet born."]
-    },
-    "have|know|i don't know|don't|no idea":
-    {
-        "replies": ["Of course you don't.", "I believe in this old cliche", "That the beautiful ones are not yet born."]
-    },
-    "what|tell me|what's that":
-    {
-        "replies": ["I believe in this old cliche", "That the beautiful ones are not yet born."]
-    }
-		}
-},
-	"14":
-	{
-	"name": "book belief",
-	"question": ["There is a book titled \'\<b\>The Beautyful Ones Are Not Yet Born\<\/b\>\' written by \<a href\=\"http://en.m.wikipedia.org/wiki/Ayi_Kwei_Armah\" target\=\"\_blank\" title\=\"Ayi Kwei Armah\" \>Ayi Kwei Armah\<\/a\> ", "I think you should check it out", "What do you think?"],
-	"answers":
-	{
-	    "default":
-	    {
-	        "replies": ["Would you like to check it out?"]
+		"13": {
+	"name": "berline's belief",
+	"question": ["Do you know what?", "I believe in one thing 😁😁"],
+	"answers": {
+	    "default": {
+	        "replies": ["I believe in this old cliche", "That the beautiful ones are not yet born."]
 	    },
-	    "i know|i do|sure|course|definitely|yeah|yea|yes|aha|link|don't mind":
+	    "true|real|you do|i know|i do|sure|course|definitely|yeah|yea|yes|amazing":
 	    {
-	        "replies": ["That would be a good thing to do 👍👍", "You can check it here: \<a href\=\"https://books.google.com/books/about/The_Beautyful_Ones_are_Not_Yet_Born.html\" target\=\"\_blank\" title\=\"The Beautyful Ones Are Not Yet Born\" \>The Beautyful Ones Are Not Yet Born\<\/a> "]
+	        "replies": ["Yea, I do", "I believe in this old cliche", "That the beautiful ones are not yet born."]
 	    },
-	    "i don't know|don't|no|nay|never":
+	    "have|know|i don't know|don't|no idea":
 	    {
-	        "replies": ["You don't want to", "It would have been a good thing to do."]
+	        "replies": ["Of course you don't.", "I believe in this old cliche", "That the beautiful ones are not yet born."]
+	    },
+	    "what|tell me|what's that":
+	    {
+	        "replies": ["I believe in this old cliche", "That the beautiful ones are not yet born."]
 	    }
-		}
+			}
 	},
+		"14": {
+		"name": "book belief",
+		"question": ["There is a book titled \'\<b\>The Beautyful Ones Are Not Yet Born\<\/b\>\' written by \<a href\=\"http://en.m.wikipedia.org/wiki/Ayi_Kwei_Armah\" target\=\"\_blank\" title\=\"Ayi Kwei Armah\" \>Ayi Kwei Armah\<\/a\> ", "I think you should check it out", "What do you think?"],
+		"answers": {
+		    "default": {
+		        "replies": ["Would you like to check it out?"]
+		    },
+		    "i know|i do|sure|course|definitely|yeah|yea|yes|aha|link|don't mind": {
+		        "replies": ["That would be a good thing to do 👍👍", "You can check it here: \<a href\=\"https://books.google.com/books/about/The_Beautyful_Ones_are_Not_Yet_Born.html\" target\=\"\_blank\" title\=\"The Beautyful Ones Are Not Yet Born\" \>The Beautyful Ones Are Not Yet Born\<\/a> "]
+		    },
+		    "i don't know|don't|no|nay|never":
+		    {
+		        "replies": ["You don't want to", "It would have been a good thing to do."]
+		    }
+			}
+		},
 	"15": {
 		"name": "ending",
 		"question": ["See, I really enjoyed our conversation, and I got to know you better and I know you did enjoy it too, but I've got to go now. It was a pleasure.", "You can follow me on <a href=\"https://twitter.com/berline_bot\">Twitter</a> or like me on <a href=\"https://facebook.com/berlinebot\">Facebook</a> since we are now friends.", "See ya!"],
