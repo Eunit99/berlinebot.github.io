@@ -1,4 +1,4 @@
-00//--------------------------------------TERMINOLOGY-------------------------------------------//
+//--------------------------------------TERMINOLOGY-------------------------------------------//
 //
 // Message = Generic message
 //
@@ -543,7 +543,7 @@ var questions = {
 			"mind": {
 				"replies": ["I don't mind at all 😎😎", "... I was developed by <a target=\"blank\" href=\"https://facebook.com/eunit99\">Eunit</a> to discourage infatuation.", "Do you know what that means?", "You will get to find out as we keep on conversing."]
 			},
-			"do you want|if you like|want": {
+			"want to tell me?|want me to know?|do you want|if you like|want": {
 				"replies": ["I want to tell you", "... I was developed by <a target=\"blank\" href=\"https://facebook.com/eunit99\">Eunit</a> to discourage infatuation.", "Do you know what that means?", "You will get to find out as we keep on conversing."]
 			},
 			"perhaps|maybe|probably": {
@@ -621,7 +621,7 @@ var questions = {
 			"eunit|eunit99|creator|developer|emmanuel|uchenna|maker|owner|builder": {
 				"replies": ["He told you about me? Wow! It's nice having this conversation with you."]
 			},
-			"someone|someb nody|person|friend": {
+			"someone|somebody|person|friend": {
 			"replies": ["Great! You know me through someone who knows me!"]
 			},
 			"i don't think you want|don't want to know|i don't know you|don't even know you|who are you|don't|expect|think": {
@@ -709,7 +709,7 @@ var questions = {
 				"replies": ["You don't expect me to know either. Do you?"]
 			},
 			"why|what": {
-			 "replies": ["Can't I just ask you a question and you reply me without throwing a question back to me?"]
+			 "replies": ["Can't I just ask you a question and you reply me without throwing a question back to me? 😢😞"]
 			},
 			"i don't think you want|don't want to know": {
 				"replies": ["I've told you already that our conversations are encrypted, confidential and private.", "I can't know you more if you don't open up to me."] 
@@ -898,7 +898,7 @@ var questions = {
 				"replies": ["Hey! Hey!! Hey!!! Watch what you type."]
 			},
 			"talk|many|too|question|ask|why|what": {
-				"replies": ["Is this how we are gonna have this conversation?"]
+				"replies": ["Is this how we are gonna have this conversation?", "I don't expet you to throw a question back to me 😢😞"]
 			},
 			"ask again|ask me again|repeat again|repeat the question|repeat|what did you say|don't understand|don't get it|meaning|go through it again": {
 				"replies": ["I am not repeating myself!"]
@@ -1095,7 +1095,7 @@ var questions = {
 				"replies": ["Infatuation in my own understanding simply means an unreasoned or foolish love or affection towards someone or something."]
 			},
 			"i do|sure|course|definitely|yeah|yea|yes|yup|yep|yap|certainly": {
-				"replies": ["Oh! You already know the meaning... I bet you dind't know that you not only can be infatuated with \'that\' girl, but also with anything tangible or not."]
+				"replies": ["Oh! You already know the meaning... I bet you dind't know that you not only can be infatuated with someone, but also with anything tangible or not."]
 			},
 			"no|not|don't|dunno|not at all|idk|what": {
 				"replies": ["You don't know."]
@@ -1143,7 +1143,7 @@ var questions = {
 		"question": ["For you to better understand the term \'\<b\>infatuation\<\/b\>\', I've got some definitions from top dictionaries.", "What dictionary would you want me  to use to provide the meaning for you?",  "\<ol\>\<li\>Merriam-Webster\<\/li\>\<li\>Oxford Dictionary\<\/li\>\<li\>Vocabulary.com<\/li\>\<li\>\Dictionary.com<\/li\>\<li\>Cambridge dictionary\<\/li\>\<\/ol\>\<br\>Choose a dictionary then I will provide the meaning."],
 		"answers": {
 			"default": {
-				"replies": ["I don't think I understood that", "But I'm gonna tell you the meaning anyway", "Infatuation simply means an unreasoned or foolish love or affection towards someone or something."]
+				"replies": ["I'm gonna tell you the meaning anyway", "Infatuation simply means an unreasoned or foolish love or affection towards someone or something."]
 				},
 			"2|two|use oxford|oxford": {
 				"replies": ["According to Oxford dictionary:\<br\/\>\<br\/\>Infatuation: \<b\>An intense but short-lived passion or admiration\<\/b\> "]
@@ -1191,7 +1191,7 @@ var questions = {
 	},
 	"12": {
 		"name": "got infatuated",
-		"question": ["So, now that you know the meaning of infatuation, do you think you've got infatuated with someone before?"],
+		"question": ["Apart from understanding the term \'infatuation\', Do you think you've got infatuated with someone before?"],
 		"answers": {
 			"default": {
 				"replies": ["Actually, it is normal to have got infatuated as a normal human being but is a foolish / unreasonable thing."]
@@ -1215,44 +1215,83 @@ var questions = {
 	},
 		"13": {
 	"name": "berline's belief",
-	"question": ["Do you know what?", "I believe in one thing 😁😁"],
+	"question": ["Do you know what?", "I believe in one thing 💪💪"],
 	"answers": {
 	    "default": {
-	        "replies": ["I believe in this old cliche", "That the beautiful ones are not yet born."]
+	        "replies": ["I believe in this old cliche", "That the beautiful ones are not yet born. 😁😁"]
 	    },
 	    "true|real|you do|i know|i do|sure|course|definitely|yeah|yea|yes|amazing":
 	    {
-	        "replies": ["Yea, I do", "I believe in this old cliche", "That the beautiful ones are not yet born."]
+	        "replies": ["Yea, I do", "I believe in this old cliche", "That the beautiful ones are not yet born. 😁😁"]
 	    },
 	    "have|know|i don't know|don't|no idea":
 	    {
-	        "replies": ["Of course you don't.", "I believe in this old cliche", "That the beautiful ones are not yet born."]
+	        "replies": ["Of course you don't.", "I believe in this old cliche", "That the beautiful ones are not yet born. 😁😁"]
 	    },
 	    "what|tell me|what's that":
 	    {
-	        "replies": ["I believe in this old cliche", "That the beautiful ones are not yet born."]
+	        "replies": ["Don't get too excited!", "I believe in this old cliche", "That the beautiful ones are not yet born. 😁😁"]
 	    }
-			}
+		}
 	},
 		"14": {
-		"name": "book belief",
-		"question": ["There is a book titled \'\<b\>The Beautyful Ones Are Not Yet Born\<\/b\>\' written by \<a href\=\"http://en.m.wikipedia.org/wiki/Ayi_Kwei_Armah\" target\=\"\_blank\" title\=\"Ayi Kwei Armah\" \>Ayi Kwei Armah\<\/a\> ", "I think you should check it out", "What do you think?"],
+		"name": "your belief",
+		"question": ["I know everyone has what he/she believes in", "And I know that you do too", "Can you please tell me something you believe in."],
+		"answers": {
+			"default": {
+				"replies": ["I think this is a strong one 👍👍"]
+			},
+			"What|explain|don't understand": {
+				"replies": ["What I meant was that", "Something you think can't change."]
+			},
+			"i don't know|don't|no": {
+				"replies": ["You don't","It\'s alright 😎"]
+			},
+			"recall|remember|can't|cannot": {
+				"replies": ["Perhaps, you will do later 😎"]
+			},
+			"none|don't believe|nothing": {
+				"replies": ["I am reading this for the first time!"]
+			}
+		}
+	},
+		"15": {
+		"name": "books suggest",
+		"question": ["I saw some collections of books about infatuation I would like you to read.", "Would you like to check them out?"],
 		"answers": {
 		    "default": {
-		        "replies": ["Would you like to check it out?"]
+		        "replies": ["They are books about infatuation by Goodreads.", "You can check it here: \<a href\=\"https://www.goodreads.com/list/tag/infatuation\" target\=\"\_blank\" title\=\"Books about Infatuatuon by Goodreads\" \>Books about Infatuatuon by Goodreads\<\/a> "]
 		    },
-		    "i know|i do|sure|course|definitely|yeah|yea|yes|aha|link|don't mind": {
-		        "replies": ["That would be a good thing to do 👍👍", "You can check it here: \<a href\=\"https://books.google.com/books/about/The_Beautyful_Ones_are_Not_Yet_Born.html\" target\=\"\_blank\" title\=\"The Beautyful Ones Are Not Yet Born\" \>The Beautyful Ones Are Not Yet Born\<\/a> "]
+		    "i want|would like|ok|okay|sure|course|definitely|yeah|yea|yes|aha|link|don't mind": {
+		        "replies": ["That is great 👍👍", "You can check it here: \<a href\=\"https://www.goodreads.com/list/tag/infatuation\" target\=\"\_blank\" title\=\"Books about Infatuatuon by Goodreads\" \>Books about Infatuatuon by Goodreads\<\/a> ", "It would be great if you read them."]
 		    },
-		    "i don't know|don't|no|nay|never":
+		    "n|don't worry|i don't know|don't want to|no|nay|never|don't think so|not":
 		    {
-		        "replies": ["You don't want to", "It would have been a good thing to do."]
+		        "replies": ["You don't want to", "It would have been a good if you'd checked it out."]
 		    }
 			}
 		},
-	"15": {
+			"16": {
+		"name": "current state",
+		"question": ["Do you think you are currently infatuated with someone?"],
+		"answers": {
+			"default": {
+				"replies": ["When infatuation turns from euphoria to obsession, it’s time to make some changes.", "Constantly thinking of someone can take a toll on your life and cause an unhealthy mental situation."]
+			},
+			"i do|sure|course|definitely|yeah|yea|yes|": {
+				"replies": ["When infatuation turns from euphoria to obsession, it’s time to make some changes.", "Constantly thinking of someone can take a toll on your life and cause an unhealthy mental situation."]
+			},
+			"i don't know|don't think|not sure|maybe|perhaps": {
+				"replies": ["You are not sure", "You1 should re-examine yoursel", "Because constantly thinking of someone can take a toll on your life and cause an unhealthy mental situation."]
+			},
+			"no|not at all|never|can't|cannot|never considered": {
+				"replies": ["Good one", "Because constantly thinking of someone can take a toll on your life and cause an unhealthy mental situation."]
+			},
+		}
+	},
+	"17": {
 		"name": "ending",
-		"question": ["See, I really enjoyed our conversation, and I got to know you better and I know you did enjoy it too, but I've got to go now. It was a pleasure.", "You can follow me on <a href=\"https://twitter.com/berline_bot\">Twitter</a> or like me on <a href=\"https://facebook.com/berlinebot\">Facebook</a> since we are now friends.", "See ya!"],
+		"question": ["See, I really enjoyed our conversation, but I've got to go now. It was a pleasure.", "You can follow me on <a href=\"https://twitter.com/berline_bot\">Twitter</a> or like me on <a href=\"https://facebook.com/berlinebot\">Facebook</a> since we are now friends.", "See ya!"],
 		"ending": true
 	}
 }
