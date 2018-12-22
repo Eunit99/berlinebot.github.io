@@ -8,8 +8,9 @@ var local = (!document.location.hostname); // check if local
 
 	       // <![CDATA[ 
 		$(document).ready(function(){
-		$("#chat-container").ready(function(){
-		        $(".loader").hide(600);   
+		$("#welcomeMsg").ready(function(){
+		        $(".loader").hide(600); 
+		 							$("#chat-container").show();  
 		
 			     });
 		});
@@ -44,7 +45,7 @@ var local = (!document.location.hostname); // check if local
  
 		$(document).ready(function(){
 		
-		/* ========Get uswrNams through promp()====================
+		/* ========Get userName through promp()====================
 		var userName = prompt("What is your name?");
 		while(userName == null || userName == "") 
 		{
@@ -165,7 +166,7 @@ function createMessage (messagesArray, i, response) {
 
 // Creates an answer input bubble
 function createAnswerField () {
-	var htmlAnswerField = "<div id=\"answer-container\" class=\"line\"><form action=\"#\" onsubmit=\"return false;\"><input type=\"text\" name=\"answer\" id=\"answer\" class=\"message message-right animated fadeInUp\" value=\"\" placeholder=\"Type a message…\"></form><div class=\"clear\"></div></div>";
+	var htmlAnswerField = "<div id=\"answer-container\" class=\"line\"><form action=\"#\" onsubmit=\"return false;\"><input required=\"required\" autocomplete=\"on\" min=\"2\" max=\"40\" formnovalidate=\"formnovalidate\" autofocus=\"autofocus\" type=\"text\" name=\"answer\" id=\"answer\" class=\"message message-right animated fadeInUp\" value=\"\" placeholder=\"Type a message…\"></form><div class=\"clear\"></div></div>";
 
 	if (questions[currentQuestion].ending) {
 		return 1;
