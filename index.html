@@ -58,6 +58,88 @@
     <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
 
+		<style>
+		
+	.loader {
+   	 position: fixed;
+   	 top: 40%;
+    	left: 40%;
+    	transform: translate (-50%, -50%);
+    	width: 160px;
+    	display: flex;
+	} 
+		
+	.loader span{
+    width: 20px;
+    height: 120px;
+    background: #ffffff;
+    margin: 0px 4px;
+    animation: loading 1200ms ease-in-out infinite;
+	}
+	
+	.loader span:nth-child(1){
+    background:#9966ff;
+    animation-delay:-700ms;
+	}
+	
+	.loader span:nth-child(2){
+    background:#9966ff;
+    animation-delay:-600ms;
+	}
+	.loader span:nth-child(3){
+    background:#9966ff;
+    animation-delay:-500ms;
+	}
+	
+	.loader span:nth-child(4){
+    background:#9966ff;
+    animation-delay:-400ms;
+	}
+	.loader span:nth-child(5){
+    background:#9966ff;
+    animation-delay:-300ms;
+	}
+	
+	.loader span:nth-child(6){
+    background:#9966ff;
+    animation-delay:-200ms;
+	}
+	.loader span:nth-child(7){
+    background: #9966ff;
+    animation-delay:-100ms;
+	}
+
+	@keyframes loading{
+    0%, 60%, 100%{
+        transform:scaleY(0.01);
+    }
+    35%{
+        transform:scale(1);
+    }
+	}
+
+
+@media screen and (max-width: 960px){
+		
+		.loader {
+   	position: fixed;
+    top: 40%;
+    left: 40%;
+    transform: translate (-50%, -50%);
+    width: 80px;
+    display: flex;
+		}
+		
+		.loader span {
+	    width: 10px;
+	    height: 60px;
+	    background: #ffffff;
+	    margin: 0px 1px;
+	    animation: loading 1200ms ease-in-out infinite;
+		}
+	}
+		</style>
+
     <!--   Scripts  -->
     <script type="text/javascript" src="/js/jquery-3.1.1.min.js"></script>
     <script type="text/javascript" src="/js/berline_bot_conversations.js"></script>
