@@ -16,6 +16,10 @@ var local = (!document.location.hostname); // check if local
 		});
 
    // ]]> 
+   
+   /** 
+   Display Menu when JS is enabled in browser
+   **/
 	       // <![CDATA[ 
 		$(document).ready(function(){
 		$("#menu").show(); 
@@ -24,6 +28,7 @@ var local = (!document.location.hostname); // check if local
 		});
 
    // ]]> 
+   
    
         // hide and show the menu for Berline bot with jQuery
 	       // <![CDATA[ 
@@ -95,7 +100,7 @@ var local = (!document.location.hostname); // check if local
 		
 		}
 						
-		$("#chat-container").ready(function(){
+		$("document").ready(function(){
 		        $("#welcomeMsg").html(greet);
 		 						$("#welcomeMsg").show();   
 			     });
@@ -166,7 +171,7 @@ function createMessage (messagesArray, i, response) {
 
 // Creates an answer input bubble
 function createAnswerField () {
-	var htmlAnswerField = "<div id=\"answer-container\" class=\"line\"><form action=\"#\" onsubmit=\"return false;\"><input required=\"required\" autocomplete=\"on\" min=\"2\" max=\"40\" formnovalidate=\"formnovalidate\" autofocus=\"autofocus\" type=\"text\" name=\"answer\" id=\"answer\" class=\"message message-right animated fadeInUp\" value=\"\" placeholder=\"Type a message…\"></form><div class=\"clear\"></div></div>";
+	var htmlAnswerField = "<div id=\"answer-container\" class=\"line\"><form action=\"#\" onsubmit=\"return false;\"><input required=\"required\" autocomplete=\"on\" min=\"2\" max=\"40\" formnovalidate=\"formnovalidate\" autofocus=\"autofocus\" type=\"text\" name=\"answer\" id=\"answer\" class=\"message message-right animated fadeInUp\" value=\"\" placeholder=\"Type your response…\"></form><div class=\"clear\"></div></div>";
 
 	if (questions[currentQuestion].ending) {
 		return 1;
