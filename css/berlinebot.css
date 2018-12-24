@@ -99,7 +99,7 @@
     background-color: #9966ff;
     border-radius: 20px;
 			box-shadow: 0 2px 32px 0 #800080;
-    padding: 20px;
+    padding: 30px;
 	}
 	
 	.noJS a {
@@ -296,6 +296,64 @@
 		margin-bottom: 32px;
 	}
 	
+	.loader {
+   	 position: fixed;
+   	 top: 40%;
+    	left: 40%;
+    	transform: translate (-50%, -50%);
+    	width: 160px;
+    	display: flex;
+	} 
+		
+	.loader span{
+    width: 20px;
+    height: 120px;
+    background: #ffffff;
+    margin: 0px 4px;
+    animation: loading 1200ms ease-in-out infinite;
+	}
+	
+	.loader span:nth-child(1){
+    background:#9966ff;
+    animation-delay:-700ms;
+	}
+	
+	.loader span:nth-child(2){
+    background:#9966ff;
+    animation-delay:-600ms;
+	}
+	.loader span:nth-child(3){
+    background:#9966ff;
+    animation-delay:-500ms;
+	}
+	
+	.loader span:nth-child(4){
+    background:#9966ff;
+    animation-delay:-400ms;
+	}
+	.loader span:nth-child(5){
+    background:#9966ff;
+    animation-delay:-300ms;
+	}
+	
+	.loader span:nth-child(6){
+    background:#9966ff;
+    animation-delay:-200ms;
+	}
+	.loader span:nth-child(7){
+    background: #9966ff;
+    animation-delay:-100ms;
+	}
+
+	@keyframes loading{
+    0%, 60%, 100%{
+        transform:scaleY(0.01);
+    }
+    35%{
+        transform:scale(1);
+    }
+	}
+
 	@media screen and (max-width: 960px){
 		.container {
 			font-family: Muli, "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -404,5 +462,22 @@
 				text-align: center;
 				font-size: 16px;
 		}
-	
- }
+
+		.loader {
+   	position: fixed;
+    top: 40%;
+    left: 40%;
+    transform: translate (-50%, -50%);
+    width: 80px;
+    display: flex;
+		}
+		
+		.loader span {
+	    width: 10px;
+	    height: 60px;
+	    background: #ffffff;
+	    margin: 0px 1px;
+	    animation: loading 1200ms ease-in-out infinite;
+		}
+		
+	}
