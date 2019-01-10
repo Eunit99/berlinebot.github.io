@@ -9,8 +9,8 @@ var local = (!document.location.hostname); // check if local
 	       // <![CDATA[ 
 		$(document).ready(function(){
 		$("#welcomeMsg").ready(function(){
-		        $(".loader").hide(600); 
-		 							$("#chat-container").show();  
+		        $(".loader").hide(600); 
+		 							$("#chat-container").show();  
 		
 			     });
 		});
@@ -34,11 +34,11 @@ var local = (!document.location.hostname); // check if local
 	       // <![CDATA[ 
 		$(document).ready(function(){
 		    $("#chat").click(function(){
-		        $("#about-container").hide();   
+		        $("#about-container").hide();   
 		    				$("#chat-container").show();
 		    	 });
 		  $("#about").click(function(){
-		        $("#chat-container").hide();
+		        $("#chat-container").hide();
 		 							$("#about-container").show();
 	     });
 		});
@@ -101,8 +101,8 @@ var local = (!document.location.hostname); // check if local
 		}
 						
 		$("document").ready(function(){
-		        $("#welcomeMsg").html(greet);
-		 						$("#welcomeMsg").show();   
+		        $("#welcomeMsg").html(greet);
+		 						$("#welcomeMsg").show();   
 			     });
 
 			}
@@ -171,7 +171,7 @@ function createMessage (messagesArray, i, response) {
 
 // Creates an answer input bubble
 function createAnswerField () {
-	var htmlAnswerField = "<div id=\"answer-container\" class=\"line\"><form action=\"#\" onsubmit=\"return false;\"><input required=\"required\" autocomplete=\"on\" min=\"2\" max=\"40\" formnovalidate=\"formnovalidate\" autofocus=\"autofocus\" type=\"text\" name=\"answer\" id=\"answer\" class=\"message message-right animated fadeInUp\" value=\"\" placeholder=\"Type your response…\"></form><div class=\"clear\"></div></div>";
+	var htmlAnswerField = "<div id=\"answer-container\" class=\"line\"><form action=\"#\" onsubmit=\"return false;\"><input required=\"required\" novalidate=\"novalidate\" autocomplete=\"on\" min=\"2\" max=\"40\" formnovalidate=\"formnovalidate\" autofocus=\"autofocus\" type=\"text\" name=\"answer\" id=\"answer\" class=\"message message-right animated fadeInUp\" value=\"\" placeholder=\"Type your response…\"></form><div class=\"clear\"></div></div>";
 
 	if (questions[currentQuestion].ending) {
 		return 1;
