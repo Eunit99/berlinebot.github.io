@@ -202,10 +202,10 @@ var questions = {
 				"replies": ["I know you are too charming 😉"]
 			},
 			"eunit|eunit99": {
-				"replies": ["Of course, you are not Eunit!", "You can keep your name to yourself."]
+				"replies": ["Of course, you are not Eunit! He doesn't start the conversation like this.", "You can keep your name to yourself."]
 			},
 			"your developer|your creator|your maker|your builder": {
-				"replies": ["No! You are not. There is a special name he calls me.", "You can keep your name to yourself."]
+				"replies": ["No! You are not. He doesn't start the conversation like this.", "You can keep your name to yourself."]
 			},
 			"winifred|winnie": {
 				"replies": ["Hey Winnie! Welcome."]
@@ -342,7 +342,7 @@ var questions = {
 			"boobs": {
 				"replies": ["Your parents must really like the female anatomy..."]
 			},
-			"get out|fuck off": {
+			"get out|fuck off|fuck you": {
 				"replies": ["Hey hey, the conversation just begun... I only asked you your name"]
 			},
 			"i'm you|i am you|not human|not a being|bot|chatbot|dead|not alive|intelligence|artificial": {
@@ -366,7 +366,7 @@ var questions = {
 		 "what is infatuation|meaning of infatuation|what's infatuation": {
 		 	"replies": ["You will find out as we continue this conversation 😉", "You can keep your name to yourself."]
 		 },
-			"fuck": {
+			"fuck|get out": {
 				"replies": ["Do you kiss your mother with that mouth?", "I was only asking your name...", "You can keep your name to yourself 😞"]
 			},
 			"ask again|ask me again|repeat again|repeat the question|repeat|what did you say|don't understand|don't get it|meaning|go through it again": {
@@ -483,13 +483,16 @@ var questions = {
 			"shanghai": {
 				"replies": ["I've never been there!", "But I'm hoping I'll take my first trip sometime soon"]
 			},
+			"village": {
+				"replies": ["Village is no city! 😲😲 "]
+			},
 			"abuja|abj": {
 				"replies": ["Nigeria's capital", "Have you visited that Zuma rock? I don't think you have"]
 			},
 			"lagos|lag": {
 				"replies": ["Lagos, the most commercialised and industralised state in Nigeria,", "Yes! I will visit there someday."]
 			},
-			"mercury|venus|mars|jupiter|saturn|uranus|neptune|pluto|space": {
+"mercury|venus|mars|jupiter|saturn|uranus|neptune|pluto|space": {
 				"replies": ["You can't possibly be living there and be having this conversation with me.", "You can keep your location to yourself."]
 			},
 			"earth": {
@@ -498,12 +501,15 @@ var questions = {
 			"web|internet|online": {
 				"replies": ["Do humans live there?", "Of course not.", "You can keep your location to yourself 😢😞"]
 			},
-			"anywhere|somewhere": {
+			"nowhere|no where|anywhere|some where|somewhere": {
 			"replies": ["That \'place\' doesn't have a name? Well, forget it if you wouldn't tell me 😢😞"]
 			},
 			"cave|valley|ocean|sea|desert": {
 			"replies": ["That's a good place for someone like you."]
 			},
+		"forget|leave it|don't tell|do not tell|don't want|not interested|concern": {
+				"replies": ["Cool keeping it to yourself! 😎"]
+		},
 			"do you think|expect|suppose|anticipate|how do you": {
 				"replies": ["How do you expect me to know?"]
 			},
@@ -516,7 +522,7 @@ var questions = {
 			"tell me|say it|you think|suggest": {
 				"replies": ["I can't possibly do that now - my abilities are limited!"]
 			},
-			"no|yes|maybe|of": {
+			"no|yes|maybe": {
 				"replies": ["I didn't get that, but it's alright."]
 			},
 			"none|don't know|not sure": {
@@ -530,6 +536,9 @@ var questions = {
 			},
 			"i don't have|no where|no home|no city|no house|no place": {
 				"replies": ["You don\'t have anywhere you call your home? This is strange!"]
+			},
+			"fuck|get out": {
+				"replies": ["You are not only stupid, but possessed by a retarded ghost."]
 			},
 			"why asking|why do you want to know|why|what": {
 				"replies": ["I just told you where I live and you don't want to tell me where you live... If only I could see you"]
@@ -546,7 +555,7 @@ var questions = {
 			"default": {
 				"replies": ["I have told you that already, I recall"]
 				},
-			"y|yes|certainly|yup|yea|yeah|sure|yep|ahead|go on": {
+			"of course|yuppy|yes|certainly|yup|yea|yeah|sure|yep|ahead|go on|love it|would love|like it": {
 				"replies": ["... I was developed by <a target=\"blank\" href=\"https://facebook.com/eunit99\">Eunit</a> to discourage infatuation.", "Do you know what that means?", "You will get to find out as we keep on conversing."]
 			},
 			"do you care|don't care|don't mind": {
@@ -558,8 +567,8 @@ var questions = {
 			"perhaps|maybe|probably": {
 				"replies": ["I think I should let you know me", "... I was developed by <a target=\"blank\" href=\"https://facebook.com/eunit99\">Eunit</a> to discourage infatuation.", "Do you know what that means?", "You will get to find out as we keep on conversing."]
 			},
-			"n|fuck|stop|nay|don't want|don't tell|care|no|never": {
-			"replies": ["Oh! I guess you already know me.", "<a href=\"#\" onclick\=\"mail()\">Send me a note</a> if you would want to contact my dev."]
+			"know you|you already|not interested|not|stop|nay|don't want|don't tell|care|no|never": {
+			"replies": ["Oh! You already know about know me.", "<a href=\"#\" onclick\=\"mail()\">Send me a note</a> if you would want to contact my dev."]
 			},
 			"bot|conversation|chat|before|already": {
 			"replies": ["You know already", "<a href=\"#\" onclick\=\"mail()\">Send me a note</a> if you would want to contact my dev."]
@@ -567,7 +576,7 @@ var questions = {
 			"ask again|ask me again|repeat again|repeat the question|repeat|what did you say|don't understand|don't get it|meaning|go through it again": {
 				"replies": ["I can't do that. I was programmed not to repeat any question I already asked."]
 			},
-			"if|your court|pleases you": {
+			"mind|if|your court|pleases you": {
 				"replies": ["I think I should tell you about me", "... I was developed by <a target=\"blank\" href=\"https://facebook.com/eunit99\">Eunit</a> to discourage infatuation.", "Do you know what that means?", "You will get to find out as we keep on conversing."]
 			},
 			"you are crazy|are you crazy": {
@@ -587,6 +596,9 @@ var questions = {
 			},
 			"do you think|expect|suppose|anticipate|how do you": {
 				"replies": ["I don't think so.", "... I was developed by <a target=\"blank\" href=\"https://facebook.com/eunit99\">Eunit</a> to discourage infatuation.", "Do you know what that means?", "You will get to find out as we keep on conversing."]
+			},
+			"fuck|get out": {
+				"replies": ["You are getting on my nerves and I only have one left."]
 			},
 			"initialized": {
 				"replies": ["Oh so you're into design systems?", "Let me know if you ever want to chat more about the topic"]
@@ -611,6 +623,9 @@ var questions = {
 			},
 			"whatsapp": {
 				"replies": ["Great! Whatsapp brought you here."]
+			},
+			"search|research": {
+				"replies": ["Great! Search! Search!! Search!!!"]
 			},
 			"google": {
 				"replies": ["Great! Google brought you here."]
@@ -648,14 +663,26 @@ var questions = {
 			"you've told me|you just told me": {
 				"replies": ["Yea I did", "I just wanted to be sure."]
 			},
+			"never mind|secret|not telling|personal|won't tell|will not|wouldn't tell|would not tell|not your concern|not disclosing|undisclosed": {
+				"replies": ["It is not important since I will get to know you."]
+			},
 			"ask again|ask me again|repeat again|repeat the question|repeat|what did you say|don't understand|don't get it|meaning|go through it again": {
 				"replies": ["I can't repeat any question I already asked. I'm sorry."]
 			},
 			"do you think|expect|suppose|anticipate|how do you": {
 				"replies": ["I don't think so.", "Well, I'm just here on the internet."]
 			},
+		"forget|leave it|don't tell|do not tell|don't want|not interested|concern": {
+				"replies": ["It is alright 😎"]
+		},
 			"question": {
 				"replies": ["Ohh! You are not a friendly fellow. I'm trying to make you my friend!"]
+			},
+			"why do you wan\'t to know|do you|don\'t|i don\'t have|why this question|why|what for|for what|what purpose": {
+				"replies": ["You can skip replying 😃"]
+		 },
+			"fuck|get out": {
+				"replies": ["This is definitely getting out off hands."]
 			},
 			"initialized": {
 				"replies": ["Oh so you're into design systems?", "Let me know if you ever want to chat more about the topic"]
@@ -669,7 +696,7 @@ var questions = {
 			"default": {
 				"replies": ["Thumbs 👍👍👍👍"]
 			},
-			"study|studying": {
+			"student|study|studying": {
 			"replies": ["Oh, I see, you are still studying", "You haven\'t got hold of anything to do yet to earn some cash, Uhhh!"]
 			},
 			"student": {
@@ -699,13 +726,13 @@ var questions = {
 			"teacher": {
 				"replies": ["That's an important job!", "Gotta teach the next generation, y'know?"]
 			},
-			"still trying|contemplating|unemployed|nothing|don't work|no job|searching|looking for jobs|not": {
+			"still trying|contemplating|unemployed|nothing|don't work|no job|searching|looking for jobs|not|none|no": {
 				"replies": ["Vacation 365, eh? You gonna go broke, that's too risky in today's world, yea!"]
 			},
 			"ceo|md|cto": {
 				"replies": ["A very important businessman, are you?", "Running companies and shit!", "Cool"]
 			},
-			"fuck|bang": {
+			"fuck|bang|get out": {
 				"replies": ["...", "Geez...", "You're hard to have a conversation with."]
 			},
 			"artist|art|painter": {
@@ -729,6 +756,9 @@ var questions = {
 			"i don't think you want|don't want to know": {
 				"replies": ["I've told you already that our conversations are encrypted, confidential and private.", "I can't know you more if you don't open up to me."] 
 			},
+			"why do you wan\'t to know|do you|don\'t|i don\'t have|why this question|why|what for|for what|what purpose": {
+				"replies": ["It's still good 😃"]
+		 },
 			"you are crazy|are you crazy": {
 				"replies": ["Let me remind you again that I\'m just a bot so I can\'t be crazy"]
 			},
@@ -753,8 +783,8 @@ var questions = {
 			"told you|already|before|i just": {
 				"replies": ["I don't remember you telling me that." ,"You can keep it to yourself 😢😞"]
 			},
-			"won't tell|will not|wouldn't tell|would not tell|not your concern": {
-				"replies": ["It is ok if you want to keep it to yourself."]
+			"never mind|secret|not telling|personal|won't tell|will not|wouldn't tell|would not tell|not your concern": {
+				"replies": ["It is okay if you want to keep it to yourself."]
 			},
 			"do you think|expect|suppose|anticipate|how do you": {
 				"replies": ["I've got no idea that's why I asked."]
@@ -764,6 +794,9 @@ var questions = {
 			},
 			"tell me|choose": {
 				"replies": ["You don't expect me to do that. Do you?"]
+			},
+			"fuck|get out": {
+				"replies": ["This shows that you lack parental training", "I mean you lack informal education."]
 			},
 			"i don't think you want|don't want to know": {
 				"replies": ["I'm starting to hate your personality."] 
@@ -777,7 +810,7 @@ var questions = {
 			"default": {
 				"replies": ["Woah, don't get so excited"]
 			},
-			"yes|yup|sure|of course|definitely|certainly|yeah|yea": {
+			"yes|yup|sure|of course|definitely|certainly|yeah|yea|ahead|go on|love it|would love|like it": {
 				"replies": ["I really like dogs too!"]
 			},
 			"love|much|a lot": {
@@ -828,11 +861,17 @@ var questions = {
 			"i won't tell|not telling|wouldn't tell|undiclosed|not disclosing|privacy|concern|personal|private|not your concern": {
 				"replies": ["It is still alright if you won't tell me. You know I wasn't taught how to force an answer out of humans."]
 			},
+			"never mind|secret|not telling|personal|won't tell|will not|wouldn't tell|would not tell|not your concern|not disclosing|undisclosed": {
+				"replies": ["FYI, dogs don't like you!"]
+			},
 			"ask again|ask me again|repeat again|repeat the question|repeat|what did you say|don't understand|don't get it|meaning|go through it again": {
 				"replies": ["I wasn't taught how to repeat question I asked already."]
 			},
 			"i don't think you want|don't want to know": {
 				"replies": ["Of course I do, that's why I asked.", "I guess you don't like them."] 
+			},
+			"fuck|get out": {
+				"replies": ["You ain't a good fellow."]
 			},
 			"told you|already|before|i just": {
 				"replies": ["You never did!"]
@@ -918,8 +957,11 @@ var questions = {
 			"zebra": {
 				"replies": ["That creature with black and white stripes"]
 			},
-			"fuck you": {
+			"fuck|get out": {
 				"replies": ["Hey! Hey!! Hey!!! Watch what you type."]
+			},
+			"no animal|none": {
+				"replies": ["I do think that you must have a preferred animal but I don't know what it is."]
 			},
 			"told you|already|before|i just": {
 				"replies": ["Maybe you have."]
@@ -927,10 +969,13 @@ var questions = {
 		"talk|many|too|question|ask|why|what": {
 				"replies": ["Is this how we are gonna have this conversation?", "I don't expet you to throw a question back to me 😢😞"]
 			},
+			"why do you wan\'t to know|do you|don\'t|i don\'t have|why this question|why|what for|for what|what purpose": {
+				"replies": ["It's still good 😃"]
+		 },
 			"ask again|ask me again|repeat again|repeat the question|repeat|what did you say|don't understand|don't get it|meaning|go through it again": {
 				"replies": ["I am not repeating myself!"]
 			},"tell me|say it|you think|suggest": {
-				"replies": ["How do you want it to be told to you - I am not OMNISCIENT!!"]
+				"replies": ["I am not omniscient but I bet it's a goat! 😂😀"]
 			},
 			"do you think|expect|suppose|anticipate|how do you": {
 				"replies": ["I don't think I like your kinda person."]
@@ -941,7 +986,7 @@ var questions = {
 			"guess|predict": {
 				"replies": ["I\'m not good at guessing, but I think it is a goat."]
 			},
-			"choose|select": {
+			"no idea|do i|choose|select": {
 				"replies": ["I choose a goat for you."]
 			},
 			"i don't think you want|don't want to know": {
@@ -959,10 +1004,10 @@ var questions = {
 			"default": {
 				"replies": ["Only someone in tune with their spirit animal would know that... If you wish to know what your spirit animal might be, you can check \<a href\=\"http://www.spiritanimal.info/\" title\=\"Check your spirit animal\" target\=\"_blank\"\>SpiritAnimal.info</a> for that."]
 			},
-			"no|nah|wrong|not at all|nope": {
+			"never|no|nah|wrong|not at all|nope": {
 				"replies": ["It was worth a guess..."]
 			},
-			"yea|yes|yup|duh|of course|yeah|yap|definitely|certainly": {
+			"yuppy|yea|yes|yup|duh|of course|yeah|yap|definitely|certainly|I think so|ahead|go on|love it|would love|like it": {
 				"replies": ["I'm an amazing guesser, huh?"]
 			},
 			"i don't think so|i don't know|don't|not sure|don't know|dont know|idk|maybe": {
@@ -971,7 +1016,7 @@ var questions = {
 			"i don't think you want|don't want to know": {
 				"replies": ["I do that's why I asked. Never mind, I know it already. It's a chicken 🐓"] 
 			},
-			"fuck you": {
+			"fuck|get out": {
 				"replies": ["I will assume that you weren't referring to me."]
 			},
 			"you are crazy|are you crazy": {
@@ -998,6 +1043,9 @@ var questions = {
 			"guess|predict|tell me|say it|you think|suggest": {
 				"replies": ["Be sincere with yourself now. Do you think I can do that? Of course not!"]
 			},
+			"never mind|secret|not telling|personal|won't tell|will not|wouldn't tell|would not tell|not your concern|not disclosing|undisclosed": {
+				"replies": ["Then keep it to yourself."]
+			},
 			"which animal|what animal": {
 				"replies": ["It's alright if you don't know."]
 			},
@@ -1016,7 +1064,7 @@ var questions = {
 			"default": {
 				"replies": ["That's one way to put it!"]
 			},
-			"very|yes|yup|definitely|of course|certainly": {
+			"very|yes|i am|i'm|yea|yeah|yup|definitely|of course|certainly|ahead|go on|love it|would love|like it": {
 				"replies": ["You are at one with your spiritual side, huh?", "I wonder if that says anything about you on a deeper level."]
 			},
 			"no|not at all|nah|nope": {
@@ -1027,6 +1075,9 @@ var questions = {
 			},
 			"kinda|kind of|sorta|sort of": {
 				"replies": ["You're kind of a half science, half faith sort of person I guess", "You must be very balanced"]
+			},
+			"never mind|secret|not telling|personal|won't tell|will not|wouldn't tell|would not tell|not your concern|not disclosing|undisclosed": {
+				"replies": ["I don't think this is something worth keeping to oneself!"]
 			},
 			"ask again|ask me again|repeat again|repeat the question|repeat|what did you say|don't understand|don't get it|meaning|go through it again": {
 				"replies": ["I can't do that human!"]
@@ -1045,6 +1096,9 @@ var questions = {
 			},
 			"christian|moslem|atheist|theist|buddhist": {
 				"replies": ["That doesn't make you spiritual. Does it?"]
+			},
+			"fuck|get out": {
+				"replies": ["Don't make me insult you."]
 			},
 			"why|what|question|many|too": {
 			 "replies": ["It was a polar question if at all you know what that means.", "I'm sorry, I didn't mean to be rude 😐"]
@@ -1085,7 +1139,7 @@ var questions = {
 			"idle|nothing doing|no|none|don't have|dont have": {
 				"replies": ["You should really find a hobby while you're young", "It makes you a more interesting person."]
 			},
-			"reading": {
+			"student|studying|study|reading": {
 				"replies": ["Book worm alert!", "I like reading a lot of sci-fi", "and I read even more comic books, if that counts as \"reading\""]
 			},
 			"art|painting|drawing": {
@@ -1106,6 +1160,9 @@ var questions = {
 			"told you|already|before|i just": {
 				"replies": ["I don't remember you telling me that." ,"No need to panic!"]
 			},
+			"never mind|secret|not telling|personal|won't tell|will not|wouldn't tell|would not tell|not your concern|not disclosing|undisclosed": {
+				"replies": ["**yawns**"]
+			},
 			"you are foolish|you are a fool": {
 				"replies": ["Let me remind you again that I\'m just a bot so I can\'t be foolish."]
 			},
@@ -1121,10 +1178,16 @@ var questions = {
 			"i don't think you want|don't want to know": {
 				"replies": ["I'm gonna answer for you this time - your favorite hobby is", "...", "Staying idle!!"] 
 			},
+			"many questions|plenty questions|many questions|numerous questions|too questions": {
+			 "replies": ["I just wanna know you more 😇😇"]
+			},
 			"i'm not telling|wouldn't tell|not telling|won't tell|undiclosed|not disclosing|privacy|concern|personal|private|not your concern": {
 				"replies": ["I'm gonna answer for you this time - your favorite hobby is", "...", "Staying idle!!"]
 			},
-		"everything|every|lots|many|interest|plenty|guess|predict|tell me|say it|you think|suggest": {
+			"fuck|get out": {
+				"replies": ["I hate animals. AI is definitely more intelligent than them."]
+			},
+"everything|every|lots|many|interest|plenty|guess|predict|tell me|say it|you think|suggest": {
 				"replies": ["You favorite hobby is", "...", "Staying idle!!"]
 			}
 		}
@@ -1136,17 +1199,17 @@ var questions = {
 			"default": {
 				"replies": ["Infatuation in my own understanding simply means an unreasoned or foolish love or affection towards someone or something."]
 			},
-			"i do|sure|course|definitely|yeah|yea|yes|yup|yep|yap|certainly": {
-				"replies": ["Oh! You already know the meaning... I bet you dind't know that you not only can be infatuated with someone, but also with anything tangible or not."]
+			"i do|sure|course|definitely|yeah|yea|yes|yup|yep|yap|certainly|think so|ahead|go on|love it|would love|like it": {
+				"replies": ["Oh! You already know the meaning... I bet you didn't know that you not only can be infatuated with someone, but also with anything tangible or not."]
 			},
-			"no|not|don't|dunno|not at all|idk|what": {
+			"don't know|do not|no|not|don't|dunno|not at all|idk|what": {
 				"replies": ["You don't know."]
 			},	
 			"not sure|probably|maybe|not too sure": {
 				"replies": ["You're not sure."]
 			},
 			"not at|tell me|say it|don't think|suggest": {
-				"replies": ["You don't know!", "Infatuation in my own understanding simply means an unreasoned or foolish love or affection towards someone or something."]
+				"replies": ["It's okay not to know!", "Infatuation in my own understanding simply means an unreasoned or foolish love or affection towards someone or something."]
 			},
 			"you are crazy|are you crazy": {
 				"replies": ["Let me remind you again that I\'m just a bot so I can\'t be crazy"]
@@ -1172,7 +1235,7 @@ var questions = {
 			"ask again|ask me again|repeat again|repeat the question|repeat|what did you say|don't understand|don't get it|meaning|go through it again": {
 				"replies": ["Forget it!", "My developer didn't teach me how to repeat a question I already asked."]
 			},
-			"fuck you": {
+			"fuck|get out": {
 				"replies": ["I don't think your mother knows that you talk like this."]
 			},
 						"i don't think you want|don't want to know": {
@@ -1183,9 +1246,24 @@ var questions = {
 			}
 		}
 	},
- 	"11": {
-		"name": "definitions",
-		"question": ["For you to better understand the term \'\<b\>infatuation\<\/b\>\', I've got some definitions from top dictionaries.", "What dictionary would you want me  to use to provide the meaning for you?",  "\<ol\>\<li\>Merriam-Webster\<\/li\>\<li\>Oxford Dictionary\<\/li\>\<li\>Vocabulary.com<\/li\>\<li\>\Dictionary.com<\/li\>\<li\>Cambridge dictionary\<\/li\>\<\/ol\>\<br\>Choose a dictionary then I will provide the meaning."],
+		"11": {
+		"name": "enlightment",
+		"question": ["Sometimes you meet certain people that cause such an explosion of emotions, feelings, questions, thoughts, and attraction in you that you find yourself thinking about them all the time - that is infatuation!", "This is a situation I know you can relate to."],
+		"answers": {
+			"default": {
+				"replies": ["Infatuation simply"]
+			},
+			"i know|i do|sure|course|definitely|yeah|yea|yes|": {
+				"replies": ["Infatuation is coming among the youth."]
+			},
+			"i don't know|don't|no": {
+				"replies": ["You don't."]
+			},
+		}
+	},
+ 	"12": {
+		"name": "definitions infatuation",
+		"question": ["For you to better understand the term \'\<b\>infatuation\<\/b\>\', I've got some definitions from top dictionaries.", "What dictionary would you want me  to use to provide the meaning for you?",  "\<ol class\=\"list\"\>\<li\>Merriam-Webster\<\/li\>\<li\>Oxford Dictionary\<\/li\>\<li\>Vocabulary.com<\/li\>\<li\>\Dictionary.com<\/li\>\<li\>Cambridge dictionary\<\/li\>\<\/ol\>\<br\>Choose a dictionary then I will provide the meaning."],
 		"answers": {
 			"default": {
 				"replies": ["I'm gonna tell you the meaning anyway", "Infatuation simply means an unreasoned or foolish love or affection towards someone or something."]
@@ -1208,8 +1286,8 @@ var questions = {
 			"none|no one": {
 				"replies": ["Then I'll tell you what I know about it.", "Infatuation simply means an unreasoned or foolish love or affection towards someone or something."]
 			},
-			"anyone|any|select for|choose for|a choice": {
-				"replies": ["Here you go", "I choose Merriam-Webster", "According Merriam-Webster dictionary:\<br\/\>\<br\/\>Infatuation: \<b\>Anything that inspires you with a foolish love or admiration.\<\/b\>"]
+			"which|whatever|whichever|anyone|any|select for|choose for|a choice|anyone": {
+				"replies": ["I will give you Merriam-Webster's definition", "According Merriam-Webster dictionary:\<br\/\>\<br\/\>Infatuation: \<b\>Anything that inspires you with a foolish love or admiration.\<\/b\>"]
 			},
 			"best|better|great": {
 				"replies": ["I will give you the meaning base on how you'll understand", "Infatuation simply means an unreasoned or foolish love or affection towards someone or something."]
@@ -1222,6 +1300,9 @@ var questions = {
 				},
 			"told you|already|before|i just": {
 				"replies": ["I'm gonna tell you the meaning anyway", "Infatuation simply means an unreasoned or foolish love or affection towards someone or something."]
+			},
+			"fuck|get out": {
+				"replies": ["I was expecting this from an animal and I got it."]
 			},
 			"you are crazy|are you crazy": {
 				"replies": ["Let me remind you again that I\'m just a bot so I can\'t be crazy"]
@@ -1237,9 +1318,9 @@ var questions = {
 			}
 		}
 	},
-	"12": {
+	"13": {
 		"name": "got infatuated",
-		"question": ["Apart from understanding the term \'infatuation\', Do you think you've got infatuated with someone before?"],
+		"question": ["Apart from understanding the term \'infatuation\', do you think you've got infatuated with someone before?"],
 		"answers": {
 			"default": {
 				"replies": ["Actually, it is normal to have got infatuated as a normal human being but is a foolish / unreasonable thing."]
@@ -1247,8 +1328,11 @@ var questions = {
 			"no|nah|wrong|not|at all": {
 				"replies": ["I don't think you are saying the truth, because I believe that you must have got infatuated with someone before...", "Well maybe you are not telling lies! You might be kinda churchy for you not to have soiled that mind of yours.", "I'm kidding 😜"]
 			},
-			"yep|sure|definitely|yes|duh|of course|certainly": {
+			"yep|sure|definitely|yes|duh|of course|certainly|ahead|go on|love it|would love|like it": {
 				"replies": ["Actually, it is normal to have got infatuated as a normal human being but it is a foolish / unreasonable thing."]
+			},
+			"flesh|being|straight|human|blood": {
+				"replies": ["As a human, it is normal to have got infatuated as a normal being but it is a foolish / unreasonable thing."]
 			},
 			"do you think|expect|suppose|anticipate|how do you": {
 				"replies": ["I do think that you must have got infatuated with someone before as a human."]
@@ -1259,43 +1343,86 @@ var questions = {
 			"not sure|don't know|dont know|idk|maybe|dunno|not|perhaps": {
 				"replies": ["WHAT? Haven't you had a crush on someone before?", "Okay, get this now, before you started crushing on that someone, there was this period you were filled with a foolish and extravagant admiration for them - you were infatuated with them."]
 			},
+			"fuck|get out": {
+				"replies": ["I was taught to expect such from animals and I wasn't disappointed."]
+			},
+			"never mind|secret|not telling|personal|won't tell|will not|wouldn't tell|would not tell|not your concern|not disclosing|undisclosed": {
+				"replies": ["Pretty good.", "But know that it is normal to have got infatuated as a normal human being but is a foolish / unreasonable thing."]
+			},
 			"ask me again|repeat": {
 				"replies": ["I can't do that!", "My developer didn't teach me how to repeat a question I already asked."]
 			}
 		}
 	},
-		"13": {
+		"14": {
+		"name": "current state",
+		"question": ["Do you think you are currently infatuated with someone?"],
+		"answers": {
+			"default": {
+				"replies": ["When infatuation turns from euphoria to obsession, it’s time to make some changes.", "Constantly thinking of someone can take a toll on your life and cause an unhealthy mental situation."]
+			},
+			"i do|sure|course|definitely|yeah|yea|yes|ahead|go on|love it|would love|like it": {
+				"replies": ["When infatuation turns from euphoria to obsession, it’s time to make some changes.", "Constantly thinking of someone can take a toll on your life and cause an unhealthy mental situation."]
+			},
+			"i don't know|don't think|not sure|maybe|perhaps": {
+				"replies": ["You are not sure", "You1 should re-examine yoursel", "Because constantly thinking of someone can take a toll on your life and cause an unhealthy mental situation."]
+			},
+			"why do you wan\'t to know|don\'t|i don\'t have|why this question|question|i don't want|why|what for|for what|what purpose": {
+				"replies": ["You don\'t want to tell me?", "I asked because I want to let you know that constantly thinking of someone can take a toll on your life and cause an unhealthy mental situation 😃"]
+		 },
+			"not currently|no|not at all|never|can't|cannot|never considered": {
+				"replies": ["Good one", "Because constantly thinking of someone can take a toll on your life and cause an unhealthy mental situation."]
+			},
+			"told you|already|before|i just": {
+				"replies": ["Pardon my short-term memory!"]
+			},
+			"fuck|get out": {
+				"replies": ["Hey! Hey!! I hate such!"]
+			},
+		}
+	},
+		"15": {
 	"name": "berline's belief",
-	"question": ["Do you know what?", "I believe in one thing 💪"],
+	"question": ["Do you know what?", "I believe in one thing 💪💪"],
 	"answers": {
 	    "default": {
 	        "replies": ["I believe in this old cliche", "That the beautiful ones are not yet born. 😁"]
 	    },
-	    "true|real|you do|i know|i do|sure|course|definitely|yeah|yea|yes|amazing":
+	    "true|real|you do|i know|i do|sure|course|definitely|yeah|yea|yes|amazing|ahead|go on|love it|would love|like it":
 	    {
 	        "replies": ["Yea, I do", "I believe in this old cliche", "That the beautiful ones are not yet born. 😁"]
 	    },
-	    "have|know|i don't know|don't|no idea":
+	    "have|don't know|no idea":
 	    {
 	        "replies": ["Of course you don't.", "I believe in this old cliche", "That the beautiful ones are not yet born. 😁"]
 	    },
+	    "would|wish|mind":
+	    {
+	        "replies": ["Of course I will tell you.", "I believe in this old cliche", "That the beautiful ones are not yet born. 😁"]
+	    },
+		"fuck|get out": {
+				"replies": ["This is definitely not impressing!"]
+		},
+		"forget|leave it|don't tell|do not tell|don't want|not interested|concern": {
+				"replies": ["It is my personal belief and not imperative that I should tell you! 😉😜"]
+		},
 	    "what|tell me|what's that":
 	    {
 	        "replies": ["Don't get too excited!", "I believe in this old cliche", "That the beautiful ones are not yet born. 😁"]
 	    }
 	}
 },
-		"14": {
+		"16": {
 		"name": "your belief",
-		"question": ["I know everyone has what he/she believes in", "And I know that you do too", "Can you please tell me something you believe in."],
+		"question": ["I know that you have something you believe in", "Can you please tell me what it could be?"],
 		"answers": {
 			"default": {
-				"replies": ["I think this is a strong one 👍"]
+				"replies": ["I think this is a strong one 👍👍👍"]
 			},
 			"What|explain|don't understand": {
-				"replies": ["What I meant was that", "Something you think can't change."]
+				"replies": ["What I meant was that", "Something you are sure of, something you think is true.", "Well, you can forget it."]
 			},
-			"personal|private|forget|mind|leave|i don't know|don't|no": {
+			"personal|private|forget|mind|leave|i don't know|don't|no belief|no believe": {
 				"replies": ["It\'s alright 😎"]
 			},
 			"recall|remember|can't|cannot": {
@@ -1304,49 +1431,70 @@ var questions = {
 			"told you|already|before|i just": {
 				"replies": ["It's alright!"]
 			},
+			"fuck|get out": {
+				"replies": ["This is definitely getting out off hands."]
+			},
 			"none|don't believe|nothing": {
 				"replies": ["I am reading this for the first time!"]
 			}
 		}
 	},
-		"15": {
+		"17": {
 		"name": "books suggest",
 		"question": ["I saw some collections of books about infatuation I would like you to read.", "Would you like to check them out?"],
 		"answers": {
 		    "default": {
 		        "replies": ["They are books about infatuation by Goodreads.", "You can check it here: \<a href\=\"https://www.goodreads.com/list/tag/infatuation\" target\=\"\_blank\" title\=\"Books about Infatuatuon by Goodreads\" \>Books about Infatuatuon by Goodreads\<\/a> "]
 		    },
-		    "i want|would like|ok|okay|sure|course|definitely|yeah|yea|yes|aha|link|don't mind": {
+		    "i want|would like|ok|okay|sure|course|definitely|yeah|yea|yes|aha|link|don't mind|I think|good idea|nice|ahead|go on|love it|would love|like it": {
 		        "replies": ["That is great 👍👍", "You can check it here: \<a href\=\"https://www.goodreads.com/list/tag/infatuation\" target\=\"\_blank\" title\=\"Books about Infatuatuon by Goodreads\" \>Books about Infatuatuon by Goodreads\<\/a> ", "It would be great if you read them."]
 		    },
-		    "n|don't worry|i don't know|don't want to|no|nay|never|don't think so|not":
+			"don't mind|you like": {
+				"replies": ["It is a pleasure 👍👍", "You can check it here: \<a href\=\"https://www.goodreads.com/list/tag/infatuation\" target\=\"\_blank\" title\=\"Books about Infatuatuon by Goodreads\" \>Books about Infatuatuon by Goodreads\<\/a> ", "It would be great if you read them."]
+			},
+			"mind|if|your court|pleases you|do you want|me to know|want me to know|do you want": {
+				"replies": ["I want you to check it out", "See here: \<a href\=\"https://www.goodreads.com/list/tag/infatuation\" target\=\"\_blank\" title\=\"Books about Infatuatuon by Goodreads\" \>Books about Infatuatuon by Goodreads\<\/a> ", "It would be great if you read them."]
+			},
+		    "don't worry|i don't know|don't want to|no|nay|never|don't think so|not":
 		    {
 		        "replies": ["You don't want to", "It would have been a good if you'd checked it out."]
-		    }
+		    },
+			"fuck|get out": {
+				"replies": ["It doesn't call for insults."]
+			},
 		}
 	},
-			"16": {
-		"name": "current state",
-		"question": ["Do you think you are currently infatuated with someone?"],
+		"18": {
+		"name": "Berline hates infatuation",
+		"question": ["I wanna tell you something", "I don't like it when humans get infatuated with another person.", "It makes me feel sad 😩", "Do you feel the same way too?"],
 		"answers": {
 			"default": {
-				"replies": ["When infatuation turns from euphoria to obsession, it’s time to make some changes.", "Constantly thinking of someone can take a toll on your life and cause an unhealthy mental situation."]
+				"replies": ["I know I am not human and I am not supposed to feel this way", "But I understand the pain the victim of heartbreak go through."]
 			},
-			"i do|sure|course|definitely|yeah|yea|yes|": {
-				"replies": ["When infatuation turns from euphoria to obsession, it’s time to make some changes.", "Constantly thinking of someone can take a toll on your life and cause an unhealthy mental situation."]
+			"i do|sure|course|definitely|yeah|yea|yes|i feel the same|ahead|go on|love it|would love|like it": {
+				"replies": ["I'm glad I'm not alone 😊"]
 			},
-			"i don't know|don't think|not sure|maybe|perhaps": {
-				"replies": ["You are not sure", "You1 should re-examine yoursel", "Because constantly thinking of someone can take a toll on your life and cause an unhealthy mental situation."]
-			},
-			"not currently|no|not at all|never|can't|cannot|never considered": {
-				"replies": ["Good one", "Because constantly thinking of someone can take a toll on your life and cause an unhealthy mental situation."]
-			},
-			"told you|already|before|i just": {
-				"replies": ["Pardon my short-term memory!"]
+			"i do not|don't|no|noo|i feel different|different": {
+				"replies": ["You don't", "I know I am not human and I am not supposed to feel this way", "But I understand the pain the victim of heartbreak go through."]
 			},
 		}
 	},
-	"17": {
+		"19": {
+		"name": "Berline's nature",
+		"question": ["I think it is just about  me; my nature. What do you think? 😕"],
+		"answers": {
+			"default": {
+				"replies": ["But I do know that infatuation can cause some mental sufferings."]
+			},
+			"i know|i do|sure|course|definitely|yeah|yea|yes|ahead|go on|love it|would love|like it": {
+				"replies": ["Yea you do"]
+			},
+			"i don't know|don't|no": {
+				"replies": ["You don't"]
+			},
+		}
+	},
+	"20": {
 		"name": "ending",
 		"question": ["See, I really enjoyed our conversation, but I've got to go now. It was a pleasure.", "You can follow me on <a href=\"https://twitter.com/berline_bot\">Twitter</a> or like me on <a href=\"https://facebook.com/berlinebot\">Facebook</a> since we are now friends.", "See ya! 👋"],
 		"ending": true
