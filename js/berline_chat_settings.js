@@ -4,13 +4,14 @@ var currentQuestion = 0,
 
 var local = (!document.location.hostname); // check if local
 // --------------------------------------- //
-     // hide the loader for Berline bot with jQuery
+     
+     // fadeOut the loader for Berline bot with jQuery
 
 	       // <![CDATA[ 
 		$(document).ready(function(){
-		$("#welcomeMsg").ready(function(){
-		        $(".loader").hide(600); 
-		 							$("#chat-container").show();  
+				$("#chat-container").ready(function(){
+		      $(".loader").fadeOut(600); 
+		 							$("#chat-container").fadeIn(600);  
 		
 			     });
 		});
@@ -22,24 +23,60 @@ var local = (!document.location.hostname); // check if local
    **/
 	       // <![CDATA[ 
 		$(document).ready(function(){
-		$("#menu").show(); 
-		$("div").removeClass("displayNone");
-		
+				$("#menu").show(); 
+						$("div").removeClass("hideMenu");
 		});
 
    // ]]> 
    
    
+   /* *********** 
+   			Hide() the menu when Berline's image is clicked.
+   			Show() the menu when #closeModais clicked.
+   ************ */
+   			//For BerlineImg1
+	       // <![CDATA[ 
+		$(document).ready(function(){
+		   $("#BerlineImg1").click(function(){
+		     $("#menu").hide();   
+		    		$("#chat-container").hide();
+		    			$("#about-container").hide();
+		    	 });
+		  $("#closeModal").click(function(){
+		     $("#chat-container").show();
+		     		$("#about-container").hide();
+		 						$("#menu").show();
+	     });
+		});
+   // ]]> 
+   					 //For BerlineImg2
+	       // <![CDATA[ 
+		$(document).ready(function(){
+		   $("#BerlineImg2").click(function(){
+		     $("#menu").hide();   
+		    		$("#chat-container").hide();
+		    			$("#about-container").hide();
+		    	 });
+		  $("#closeModal").click(function(){
+		     $("#chat-container").show();
+		     		$("#about-container").hide();
+		 						$("#menu").show();
+	     });
+		});
+   // ]]> 
+   
+      
+   
         // hide and show the menu for Berline bot with jQuery
 	       // <![CDATA[ 
 		$(document).ready(function(){
-		    $("#chat").click(function(){
-		        $("#about-container").hide();   
-		    				$("#chat-container").show();
+		   $("#chat").click(function(){
+		     $("#about-container").hide();   
+		    		$("#chat-container").show();
 		    	 });
 		  $("#about").click(function(){
-		        $("#chat-container").hide();
-		 							$("#about-container").show();
+		     $("#chat-container").hide();
+		 					$("#about-container").show();
 	     });
 		});
 
@@ -59,7 +96,7 @@ var local = (!document.location.hostname); // check if local
 		=============================== */
 		
 
-		window.onload=function greet(){
+	//	window.onload=function greet(){
 		var greet;
 		var date = new Date();
 		var sec = date.getSeconds();
@@ -101,18 +138,82 @@ var local = (!document.location.hostname); // check if local
 		}
 						
 		$("document").ready(function(){
-		        $("#welcomeMsg").html(greet);
-		 						$("#welcomeMsg").show();   
+		     $("#welcomeMsg").html(greet);
+		 						$("#welcomeMsg").fadeIn(600);   
 			     });
-
-			}
 			
 		});
 		
 	
  
- //Greetings End
+ // *************Greetings End ************* //
 
+
+		// *********** Fullscreen Mode Start ************ //
+					$(document).ready(function(){
+            $(".openFullScreen").click(function() {
+                $("body").fullscreen();
+$(".closeFullScreen").show();
+$("a").removeClass("hideScreen");
+$(".openFullScreen").hide(); 
+            });
+            $(".closeFullScreen").click(function() {
+                $.fullscreen.exit();
+                $(".openFullScreen").show();
+                $(".closeFullScreen").hide();
+                $("body").fullscreen().css("background-color", "#ffffff");
+            });
+        });
+        
+    // ****************FullScreen Mode Stop **********//
+    
+    
+    					$(document).ready(function(){
+					// *************** Get the modal ********** //
+var modal = document.getElementById('myModal');
+
+//Get the image and insert it inside the modal - use its "alt" text as a caption
+var img1 = document.getElementById('BerlineImg1');
+var modalImg = document.getElementById("BerlineModal");
+var captionText = document.getElementById("caption");
+img1.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    modalImg.alt = this.alt;
+   /* captionText.innerHTML = this.alt; 
+    Sets caption text as alt of Image. In this case; I'm Berline bot.
+   Uncomment caption CSS if you are going tuse this! */
+    captionText.innerHTML = '<div class="line"><div class="message message-left animated bubbleLeft fadeIn">Hi. I\'m Berline </div></div> <div class="line"><div class="message message-left animated bubbleLeft fadeIn">Please click on <span class="highlight">×</span> above to continue your chat. </div></div>'; // Sets caption text
+}
+
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img2 = document.getElementById('BerlineImg2');
+var modalImg = document.getElementById("BerlineModal");
+var captionText = document.getElementById("caption");
+img2.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    modalImg.alt = this.alt;
+    modalImg.alt = this.alt;
+   /* captionText.innerHTML = this.alt; 
+    Sets caption text as alt of Image. In this case; I'm Berline bot.
+   Uncomment caption CSS if you are going tuse this! */
+    captionText.innerHTML = '<div class="line"><div class="message message-left animated bubbleLeft fadeIn">Hi. I\'m Berline. </div></div> <div class="line"><div class="message message-left animated bubbleLeft fadeIn">Please click on <span class="highlight">×</span> above to continue your chat. </div></div>'; // Sets caption text
+    }
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+    modal.style.display = "none";
+}
+				});
+				
+				
+				// ********** Chat Settings Start ********//
+    
 function storyController (questions) {
 	current = 0;
 
