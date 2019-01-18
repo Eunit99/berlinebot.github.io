@@ -5,8 +5,12 @@
 			user-select: none; /* Disables text selection */
 			margin: 0; padding: 0; /* Remove margins and paddings on elements */
 			box-sizing: border-box; /* Generate paddings inside elements */ 
+			background-color: #ffffff;
 	}
-	body {
+	body, .screen {
+		background-color: #ffffff;
+		height: 100%;
+		width: 100%;
 		font-family: Muli, Helvetica "Helvetica Neue", Arial, sans-serif,
 		-webkit-font-smoothing: antialiased;
 		cursor: pointer; /* Changes the cursor into a pointing hand on PCs  */
@@ -34,12 +38,13 @@
 	
 	a:active {
 		color: #800080;
-			text-decoration: none;
+		text-decoration: none;
 	}
-	
+
 	.fa {
 		display: block !important;
 		padding: 11px;
+		background-color: inherit;
 		
 	}
 	.fa:hover {
@@ -47,7 +52,8 @@
 	}
 	
 	.highlight{
-		color: #9966ff !important;
+		color: #9966ff;
+		background-color: inherit;
 	}
 	
 	.clear {
@@ -105,12 +111,23 @@
 	.noJS a {
 			text-decoration: none;
 			border-bottom: 2px dotted #ffffff;
+			background-color: inherit;
 	}
 	
 	.noJSText {
 			color: #ffffff;
 			text-align: center;
 			font-size: 26px;
+			background-color: #9966ff;
+	}
+	
+	.message a, .message b, .message i, .message u, .message h1, .mesaage h2, .mesaage h3, .mesaage h4, .message h5, .message h6, .message p .message ul, .message li, .message ol, .message img, .message font {
+			background-color: inherit;
+	}
+	
+	.message ul, .message ol {
+			/*text-indent: 18px;*/
+			margin: 18px;
 	}
 	
 	.message {
@@ -139,12 +156,31 @@
 		font-style: normal !important;
 	}
 	
+	   					/**********Full screen CSS**********/
+   					
+	/* Chrome, Safari and Opera syntax */
+	::-webkit-full-screen {
+	background-color: #ffffff;
+	}
+	/* Firefox syntax */
+	::-moz-full-screen {
+	background-color: #ffffff;
+	}
+	/* IE/Edge syntax */
+	::-ms-fullscreen {
+	background-color: #ffffff;
+	}
+	/* Standard syntax */
+	::fullscreen {
+	background-color : #ffffff;
+	}
+	
 	.displayOff {
 		display: none;
 	}
 	
-	.displayNone {
-		display: none !important;
+	.hideMenu, .hideScreen {
+		visibility: hidden !important;
 	}
 	
 	::-webkit-input-placeholder {
@@ -161,6 +197,99 @@
 		background-color: #fdf5fc;
 		}
 	
+	#BerlineImg1, #BerlineImg2 {
+			transition: 0.3;
+	}
+	
+		#BerlineImg1:hover, #BerlineImg2:hover {
+		opacity: 0.7;
+	}
+
+/* The Modal (background) */
+	.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: #ffffff; /* Fallback color */
+    background-color: #ffffff; /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 75%;
+    max-width: 700px;
+		}
+		
+		#caption {
+			position: relative;
+    top: 2%;
+    left: 17%;
+		}
+
+
+/* Caption of Modal Image ***Alt text of image***
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #9966ff;
+    padding: 10px 0;
+    height: 150px;
+}
+  */
+
+/* Add Animation */
+.modal-content, #caption {    
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #9966ff;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #999999;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+    .modal-content {
+        width: 75%;
+    }
+}
 	#menu {
 		height: 100%;
 		width: 90px;
@@ -201,20 +330,33 @@
 	
 	#menu ul li a:hover {
 		cursor: pointer;
-		color: #999999;
-		background-color: #fdf5fc;
+		color: #cc99ff;
+		font-size: 13px;
 		font-style: 700 !important;
+		background-color: #ffffff;
+		}
+	
+	#menu ul:hover, #menu li:hover, #menu a:hover {
+	}
+	
+	#menu ul li:hover {
+		background-color: inherit;
 	}
 	
 	#menu ul li a:active {
 		cursor: pointer;
-		background-color: #ffffff;
 		font-style: 700;
+		font-size: 12px;
+		background-color: #ffffff;
+		border: 0 solid #fdf5fc;
+		border-radius: 50% !important;
+
 	}
 	
 	#menu ul li.active a {
 		color: #9966ff;
 		background-color: #ffffff;
+		border: 0 solid #ffffff;
 	}
 	#menu ul li a {
 		color: #999999;
@@ -299,11 +441,11 @@
 	.loader {
    	 position: fixed;
    	 top: 40%;
-    	left: 40%;
-    	transform: translate (-50%, -50%);
-    	width: 160px;
-    	display: flex;
-	} 
+   	 left: 40%;
+   	 transform: translate (-50%, -50%);
+   	 width: 160px;
+   	 display: flex;
+   } 
 		
 	.loader span{
     width: 20px;
@@ -414,8 +556,7 @@
 	
 		#menu ul li {
 			float: left;
-			width: 33.3%;
-		}
+			width: 25%;		}
 	
 		#menu ul li a {
 			display: block;
@@ -448,7 +589,7 @@
 	    max-height: 70%;
 	    max-width: 70%;
 	    transform: translate (-50%, -50%);
-	    background-color: #9966ff;
+	    background-color: #9966ff !important;
 	    border-radius: 20px;
 				box-shadow: 0 1px 16px 0 #800080;
 	    padding: 10px;
@@ -456,11 +597,13 @@
 			.noJS a {
 				text-decoration: none;
 				border-bottom: 1px dotted #ffffff;
+				background-color: inherit;
 		}
 			.noJSText {
 				color: #ffffff;
 				text-align: center;
 				font-size: 16px;
+				background-color: #9966ff;
 		}
 
 		.loader {
