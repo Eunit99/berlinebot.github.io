@@ -1254,7 +1254,7 @@ var questions = {
 				"replies": ["Infatuation simply"]
 			},
 			"i know|i do|sure|course|definitely|yeah|yea|yes|": {
-				"replies": ["Infatuation is coming among the youth."]
+				"replies": ["Infatuation is common among the youth."]
 			},
 			"i don't know|don't|no": {
 				"replies": ["You don't."]
