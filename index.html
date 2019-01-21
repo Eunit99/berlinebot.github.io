@@ -111,6 +111,18 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <span></span>
     </div>
     
+    
+        
+    
+    
+    
+<div id="mySidenav" class="sidenav">
+ <div class="line"><a title="Report a bug to the developer" href="#"><div class="text message message-left animated bubbleLeft fadeIn">Report a bug</div></a></div>		
+  <div class="line"><a title="Request a feature from the developer" href="#"><div class="text message message-left animated bubbleLeft fadeIn">Request a feature</div></a></div>		
+  <div class="line"><a title="Read our privacy policy" href="#"><div class="text message message-left animated bubbleLeft fadeIn">Privacy policy</div></a></div>		
+  <div class="line"><a title="Contact the developer" href="#"><div class="text message message-left animated bubbleLeft fadeIn">Contact</div></a></div>			
+</div>    
+    
 	<!-- Google Tag Manager (noscript) -->
 	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KCW4FL3"
 	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -142,7 +154,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 <p>If he is not coding or programming, he will be found reading his anatomical books.</p>
              </div>
              
-            <div class="section">
+            
+            
+          	<div class="section">
 					<h1>Get in touch with Berline</h1>
 					<div>
 						<a title="Berline bot on Facebook" target="_blank" href="https://facebook.com/berlinebot" class="big-link">https://facebook.com/berlinebot</a>
@@ -151,36 +165,46 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 						<a title="Berline bot on Twitter" target="_blank" href="https://www.twitter.com/berline_bot" class="big-link">https://www.twitter.com/berline_bot</a>
 					</div>
 					<div>
-						<a title="Mail Berline bot" target="_blank" href="mailto:berlinebot@gmail.com" class="big-link">berlinebot@gmail.com</a>
+						<a title="Mail Berline bot" target="_self" href="javascript:void(0)" onclick="mail()" class="big-link">berlinebot@gmail.com</a>
 					</div>
 				</div>
 			</div>
 			<div class="hideMenu" id="menu">
             <ul>
+            <li id="openNav">
+                <a href="javascript:void(0)" title="Open navigation" onclick="openNav()">
+                        <i class="fa fa-bars fa-2x"></i> Opeb 
+                    </a>
+                </li>
+                <li id="closeNav" class="displayOff">
+                    <a href="javascript:void(0)" title="Close navigation" onclick="closeNav()">
+                        <i class="fa fa-close fa-2x"></i> Close 
+                    </a>
+                </li>
                 <li id="chat" class="active">
-                    <a href="#chat-container" title="Chat with Berline bot" onclick="chat()">
+                    <a href="#chat-container" title="Chat with Berline bot" onclick="closeNav()">
                         <i class="fa fa-comments-o fa-2x"></i>
                         Chat
                     </a>
                 </li>
                 <li id="about">
-                    <a href="#about-container" title="About Berline bot" onclick="about()">
+                    <a href="#about-container" title="About Berline bot" onclick="closeNav()">
                         <i class="fa fa-info-circle fa-2x"></i>
                         About
                     </a>
                 </li>
-                <li id="mail">
-                    <a href="#" title="Mail Berline bot" onclick="mail()">
+                <!--<li id="mail">
+                    <a href="javascript:void(0)" title="Mail Berline bot" onclick="mail()">
                         <i class="fa fa-envelope-o fa-2x"></i>	Mail
                     </a>
-                </li>
+                </li>-->
                 <li id="openFullScreen">
-                    <a href="#" title="Open fullscreen" class="active screen openFullScreen">
+                    <a href="javascript:void(0)" title="Open fullscreen" class="active screen openFullScreen">
                         <i class="fa fa-arrows-alt fa-2x"></i>	Open
                     </a>
                 </li>
                 <li id="closeFullScreen">
-                    <a href="#" class="screen hideScreen closeFullScreen" title="Close fullscreen">
+                    <a href="javascript:void(0)" class="screen hideScreen closeFullScreen" title="Close fullscreen">
 
                         <i class="fa fa-arrows fa-2x"></i>	Close
                     </a>
@@ -188,7 +212,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             </ul>
         </div>
         
-      <div id="footer"></div>
+        
+    <div id="footer"></div>
         <noscript>
             <div class="noJS noJSText">
                 <i class="fa fa-exclamation-triangle fa-3x"></i>
