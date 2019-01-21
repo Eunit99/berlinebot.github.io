@@ -126,8 +126,8 @@
 	}
 	
 	.message ul, .message ol {
-			/*text-indent: 18px;*/
-			margin: 18px;
+			text-indent: 5px;
+			margin-left: 18px;
 	}
 	
 	.message {
@@ -176,10 +176,10 @@
 	}
 	
 	.displayOff {
-		display: none;
+		display: none !important;
 	}
 	
-	.hideMenu, .hideScreen {
+	.hideMenu, .hideScreen, .hidden {
 		visibility: hidden !important;
 	}
 	
@@ -266,22 +266,97 @@
     to {transform:scale(1)}
 }
 
-/* The Close Button */
-.close {
-    position: absolute;
-    top: 15px;
-    right: 35px;
+/* The Close Buttons */
+
+.close, .closebtn {
     color: #9966ff;
     font-size: 40px;
     font-weight: bold;
     transition: 0.3s;
 }
 
-.close:hover,
-.close:focus {
+.closebtn {
+    position: absolute;
+    top: 0;
+    right: 27px;
+    margin-left: 50px;
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+}
+
+.close:hover, .close:focus, .closebtn:hover, .closebtn:focus {
     color: #999999;
     text-decoration: none;
     cursor: pointer;
+}
+
+		/** Close buttons End **/
+
+.sidenav a:hover, .offcanvas a:focus {
+		font-size: 20px;
+}
+.sidenav .text {
+			width: 70%;
+    padding: 8px 8px 12px 32px;
+    margin-left: 150px;
+}
+
+.sidenav .text:hover {
+			width: 73%;
+    color: #ffffff;
+    background-color: #bb99ff;
+    font-weight: 500;
+    transition: 0.3s;
+			font-size: 25px;
+    padding: 8px 8px 12px 32px;
+    margin-left: 150px;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #ffffff;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+				/* ===Eunit will get back to you soon!===
+				
+.sidenav a {
+    background-color: #ffffff;
+    padding: 8px 8px 8px 32px;
+    margin-left: 60px;
+    text-decoration: none;
+    font-size: inherit;
+    color: #818181;
+    display: block;
+    transition: 0.3s
+}
+
+.sidenav a:hover, .offcanvas a:focus{
+		cursor: pointer;
+		color: #cc99ff;
+		font-size: 20px;
+		font-weight: 500 !important;
+		background-color: #ffffff;
+}
+					*/
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {
+  		font-size: inherit
+  		color: inherit;
+  }
 }
 
 /* 100% Image Width on Smaller Screens */
@@ -328,14 +403,6 @@
 		height: 64px;
 	}
 	
-	#menu ul li a:hover {
-		cursor: pointer;
-		color: #cc99ff;
-		font-size: 13px;
-		font-style: 700 !important;
-		background-color: #ffffff;
-		}
-	
 	#menu ul:hover, #menu li:hover, #menu a:hover {
 	}
 	
@@ -353,6 +420,14 @@
 
 	}
 	
+	#menu ul li a:hover {
+		cursor: pointer;
+		color: #cc99ff;
+		font-size: 13px;
+		font-weight: 500 !important;
+		background-color: #ffffff;
+		}
+		
 	#menu ul li.active a {
 		color: #9966ff;
 		background-color: #ffffff;
@@ -622,5 +697,38 @@
 	    margin: 0px 1px;
 	    animation: loading 1200ms ease-in-out infinite;
 		}
+		
+		.sidenav a:hover, .offcanvas a:focus {
+		font-size: 13px;
+}
+.sidenav .text {
+			width: 70%;
+    padding: 8px 8px 12px 32px;
+    margin-left: 60px;
+}
+
+.sidenav .text:hover {
+			width: 73%;
+    color: #ffffff;
+    background-color: #bb99ff;
+    font-weight: 500;
+    transition: 0.3s;
+			font-size: 17px;
+    padding: 8px 8px 12px 32px;
+    margin-left: 60px;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #ffffff;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
 		
 	}
