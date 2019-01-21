@@ -23,7 +23,7 @@ var local = (!document.location.hostname); // check if local
    **/
 	       // <![CDATA[ 
 		$(document).ready(function(){
-				$("#menu").show(); 
+				$("#menu").show(300); 
 						$("div").removeClass("hideMenu");
 		});
 
@@ -38,14 +38,14 @@ var local = (!document.location.hostname); // check if local
 	       // <![CDATA[ 
 		$(document).ready(function(){
 		   $("#BerlineImg1").click(function(){
-		     $("#menu").hide();   
-		    		$("#chat-container").hide();
-		    			$("#about-container").hide();
+		     $("#menu").hide(300);   
+		    		$("#chat-container").hide(300);
+		    			$("#about-container").hide(300);
 		    	 });
 		  $("#closeModal").click(function(){
-		     $("#chat-container").show();
-		     		$("#about-container").hide();
-		 						$("#menu").show();
+		     $("#chat-container").show(300);
+		     		$("#about-container").hide(300);
+		 						$("#menu").show(300);
 	     });
 		});
    // ]]> 
@@ -53,14 +53,14 @@ var local = (!document.location.hostname); // check if local
 	       // <![CDATA[ 
 		$(document).ready(function(){
 		   $("#BerlineImg2").click(function(){
-		     $("#menu").hide();   
-		    		$("#chat-container").hide();
-		    			$("#about-container").hide();
+		     $("#menu").hide(300);   
+		    		$("#chat-container").hide(300);
+		    			$("#about-container").hide(300);
 		    	 });
 		  $("#closeModal").click(function(){
-		     $("#chat-container").show();
-		     		$("#about-container").hide();
-		 						$("#menu").show();
+		     $("#chat-container").show(300);
+		     		$("#about-container").hide(300);
+		 						$("#menu").show(300);
 	     });
 		});
    // ]]> 
@@ -71,17 +71,53 @@ var local = (!document.location.hostname); // check if local
 	       // <![CDATA[ 
 		$(document).ready(function(){
 		   $("#chat").click(function(){
-		     $("#about-container").hide();   
-		    		$("#chat-container").show();
+		     $("#about-container").hide(300);   
+		    		$("#chat-container").show(300);
+		    			$("#closeNav").hide(300);
+		 							$("#openNav").show(300);
 		    	 });
 		  $("#about").click(function(){
-		     $("#chat-container").hide();
-		 					$("#about-container").show();
+		    $("#chat-container").hide(300);
+		 				$("#about-container").show(300);
+		 					$("#about-container").removeClass("displayOff");
+		 							$("#closeNav").hide(300);
+		 								$("#openNav").show(300);
 	     });
 		});
 
+
    // ]]> 
- 
+    
+        // hide and show the Navigation for Berline bot with jQuery
+	       // <![CDATA[ 
+		$(document).ready(function(){
+		   $("#openNav").click(function(){
+		     $("#openNav").hide(300);   
+		    		$("#closeNav").show(300);
+		    		 	$("#chat-container").hide(300);
+		     				$("#about-container").hide(300);
+		    					$("#closeNav").removeClass("displayOff");
+		    	 });
+		  $("#closeNav").click(function(){
+		     $("#closeNav").hide(300);
+		 					$("#openNav").show(300);
+		 						$("#chat-container").show(300);
+		     				$("#about-container").show(300);
+		     					$("#about-container").addClass("displayOff");
+
+	     });
+		});
+			
+					function openNav() {
+	 document.getElementById("mySidenav").style.width = "100%";
+	}
+	function closeNav() {
+	 document.getElementById("mySidenav").style.width = "0";
+	}
+	
+   // ]]> 
+   
+   
  //Greetings Start
  
  
@@ -153,14 +189,14 @@ var local = (!document.location.hostname); // check if local
 					$(document).ready(function(){
             $(".openFullScreen").click(function() {
                 $("body").fullscreen();
-$(".closeFullScreen").show();
+$(".closeFullScreen").show(300);
 $("a").removeClass("hideScreen");
-$(".openFullScreen").hide(); 
+$(".openFullScreen").hide(300); 
             });
             $(".closeFullScreen").click(function() {
                 $.fullscreen.exit();
-                $(".openFullScreen").show();
-                $(".closeFullScreen").hide();
+                $(".openFullScreen").show(300);
+                $(".closeFullScreen").hide(300);
                 $("body").fullscreen().css("background-color", "#ffffff");
             });
         });
