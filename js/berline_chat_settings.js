@@ -5,7 +5,7 @@ var currentQuestion = 0,
 var local = (!document.location.hostname); // check if local
 // --------------------------------------- //
      
-   /*  // fadeOut the loader for Berline bot with jQuery
+    // fadeOut the loader for Berline bot with jQuery
 
 	       // <![CDATA[ 
 		$(document).ready(function(){
@@ -16,20 +16,9 @@ var local = (!document.location.hostname); // check if local
 			     });
 		});
 
-   // ]]> */
+   // ]]> 
    
    
-    // fadeOut the loader for Berline bot with jQuery
-   
-$(window).on('load', function() { 
-	$(".loader").fadeOut(); 
-	$(".loader").delay(3000).fadeOut("slow");
-	$("#chat-container").delay(4000).fadeIn("slow");
-	$("#BerlineImg1").delay(4000).fadeIn("slow");
-	$("#welcomeMsg").delay(4000).fadeIn("slow");
-	
-	});
-	
    /** 
    Display Menu when JS is enabled in browser
    **/
