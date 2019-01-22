@@ -5,7 +5,7 @@ var currentQuestion = 0,
 var local = (!document.location.hostname); // check if local
 // --------------------------------------- //
      
-     // fadeOut the loader for Berline bot with jQuery
+   /*  // fadeOut the loader for Berline bot with jQuery
 
 	       // <![CDATA[ 
 		$(document).ready(function(){
@@ -16,14 +16,24 @@ var local = (!document.location.hostname); // check if local
 			     });
 		});
 
-   // ]]> 
+   // ]]> */
    
+   
+    // fadeOut the loader for Berline bot with jQuery
+   
+$(window).on('load', function() { 
+	$(".loader").fadeOut(); 
+	$(".loader").delay(3000).fadeOut("slow");
+	$("#chat-container").delay(3000).fadeIn("slow");
+	
+	});
+	
    /** 
    Display Menu when JS is enabled in browser
    **/
 	       // <![CDATA[ 
 		$(document).ready(function(){
-				$("#menu").show(300); 
+				$("#menu").show(); 
 						$("div").removeClass("hideMenu");
 		});
 
@@ -32,20 +42,20 @@ var local = (!document.location.hostname); // check if local
    
    /* *********** 
    			Hide() the menu when Berline's image is clicked.
-   			Show() the menu when #closeModais clicked.
+   			Show() the menu when #closeModals clicked.
    ************ */
    			//For BerlineImg1
 	       // <![CDATA[ 
 		$(document).ready(function(){
 		   $("#BerlineImg1").click(function(){
-		     $("#menu").hide(300);   
-		    		$("#chat-container").hide(300);
-		    			$("#about-container").hide(300);
+		     $("#menu").hide();   
+		    		$("#chat-container").hide();
+		    			$("#about-container").hide();
 		    	 });
 		  $("#closeModal").click(function(){
-		     $("#chat-container").show(300);
-		     		$("#about-container").hide(300);
-		 						$("#menu").show(300);
+		     $("#chat-container").show();
+		     		$("#about-container").hide();
+		 						$("#menu").show();
 	     });
 		});
    // ]]> 
@@ -53,14 +63,14 @@ var local = (!document.location.hostname); // check if local
 	       // <![CDATA[ 
 		$(document).ready(function(){
 		   $("#BerlineImg2").click(function(){
-		     $("#menu").hide(300);   
-		    		$("#chat-container").hide(300);
-		    			$("#about-container").hide(300);
+		     $("#menu").hide();   
+		    		$("#chat-container").hide();
+		    			$("#about-container").hide();
 		    	 });
 		  $("#closeModal").click(function(){
-		     $("#chat-container").show(300);
-		     		$("#about-container").hide(300);
-		 						$("#menu").show(300);
+		     $("#chat-container").show();
+		     		$("#about-container").hide();
+		 						$("#menu").show();
 	     });
 		});
    // ]]> 
@@ -71,17 +81,17 @@ var local = (!document.location.hostname); // check if local
 	       // <![CDATA[ 
 		$(document).ready(function(){
 		   $("#chat").click(function(){
-		     $("#about-container").hide(300);   
-		    		$("#chat-container").show(300);
-		    			$("#closeNav").hide(300);
-		 							$("#openNav").show(300);
+		     $("#about-container").hide();   
+		    		$("#chat-container").show();
+		    			$("#closeNav").hide();
+		 						$("#openNav").show();
 		    	 });
 		  $("#about").click(function(){
-		    $("#chat-container").hide(300);
-		 				$("#about-container").show(300);
+		    $("#chat-container").hide();
+		 				$("#about-container").show();
 		 					$("#about-container").removeClass("displayOff");
-		 							$("#closeNav").hide(300);
-		 								$("#openNav").show(300);
+		 						$("#closeNav").hide();
+		 							$("#openNav").show();
 	     });
 		});
 
@@ -92,17 +102,17 @@ var local = (!document.location.hostname); // check if local
 	       // <![CDATA[ 
 		$(document).ready(function(){
 		   $("#openNav").click(function(){
-		     $("#openNav").hide(300);   
-		    		$("#closeNav").show(300);
-		    		 	$("#chat-container").hide(300);
-		     				$("#about-container").hide(300);
+		     $("#openNav").hide();   
+		    		$("#closeNav").show();
+		    		 	$("#chat-container").hide();
+		     				$("#about-container").hide();
 		    					$("#closeNav").removeClass("displayOff");
 		    	 });
 		  $("#closeNav").click(function(){
-		     $("#closeNav").hide(300);
-		 					$("#openNav").show(300);
-		 						$("#chat-container").show(300);
-		     				$("#about-container").show(300);
+		     $("#closeNav").hide();
+		 					$("#openNav").show();
+		 						$("#chat-container").show();
+		     				$("#about-container").show();
 		     					$("#about-container").addClass("displayOff");
 
 	     });
@@ -189,14 +199,14 @@ var local = (!document.location.hostname); // check if local
 					$(document).ready(function(){
             $(".openFullScreen").click(function() {
                 $("body").fullscreen();
-$(".closeFullScreen").show(300);
+$(".closeFullScreen").show();
 $("a").removeClass("hideScreen");
-$(".openFullScreen").hide(300); 
+$(".openFullScreen").hide(); 
             });
             $(".closeFullScreen").click(function() {
                 $.fullscreen.exit();
-                $(".openFullScreen").show(300);
-                $(".closeFullScreen").hide(300);
+                $(".openFullScreen").show();
+                $(".closeFullScreen").hide();
                 $("body").fullscreen().css("background-color", "#ffffff");
             });
         });
