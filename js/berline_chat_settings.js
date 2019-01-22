@@ -23,7 +23,7 @@ var local = (!document.location.hostname); // check if local
    
 $(window).on('load', function() { 
 	$(".loader").fadeOut(); 
-	$(".loader").delay(3000).fadeOut("slow");
+	$(".loader").delay(2000).fadeOut("slow");
 	$("#chat-container").delay(3000).fadeIn("slow");
 	
 	});
