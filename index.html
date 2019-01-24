@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, width=device-width">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="title" content="Berline | Conversational bot">
 
 
     <title>Berline | Conversational bot</title>
@@ -15,28 +16,29 @@
     <meta name="apple-touch-fullscreen" content="yes">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="purple">
-        <link rel="apple-touch-icon" href="/berlinebot.jpg">
+        <link rel="apple-touch-icon" href="https://berlinebot.github.io/img/berlinebot.jpg">
     <meta name="msapplication-TileColor" content="#9966ff">
-    <meta name="msapplication-TileImage" content="/img/berlinebot.jpg">
+    <meta name="msapplication-TileImage" content="https://berlinebot.github.io/img/berlinebot.jpg">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@Berline_bot">
     <meta name="twitter:creator" content="@eunit99">
     <meta name="twitter:title" content="Berline | Conversational bot">
     <meta name="twitter:description" content="Berline is a conversational bot which discourages you from getting infatuated.">
-    <meta name="twitter:image" content="/img/berlinebot.jpg">
-    <link rel="icon" href="/img/berlinebot.jpg" class="js-favicon">
+    <meta name="twitter:image" content="https://berlinebot.github.io/img/berlinebot.jpg">
+    <link rel="icon" href="https://berlinebot.github.io/img/berlinebot.jpg" class="js-favicon">
     <link rel="apple-touch-icon" sizes="152x152" href="">
-    <link rel="apple-touch-icon" sizes="120x120" href="/img/berlinebot.jpg">
-    <link rel="apple-touch-icon" sizes="76x76" href="/img/berlinebot.jpg">
-    <link rel="apple-touch-icon" sizes="60x60" href="/img/berlinebot.jpg">
+    <link rel="apple-touch-icon" sizes="120x120" href="https://berlinebot.github.io/img/berlinebot.jpg">
+    <link rel="apple-touch-icon" sizes="76x76" href="https://berlinebot.github.io/img/berlinebot.jpg">
+    <link rel="apple-touch-icon" sizes="60x60" href="https://berlinebot.github.io/img/berlinebot.jpg">
     <link rel="mask-icon" href="/berlinebot.jpg" color="#9966ff">
+    <meta name="google-analytics" content="UA-131082881-1">
 
     <!-- Open Graph data -->
     <meta property="og:title" content="Berline | Conversational bot">
     <meta property="og:url" content="https://berlinebot.github.io">
     <meta property="og:description" content="Berline is a conversational bot which discourages you from getting infatuated.">
     <meta property="og:site_name" content="Berline | Conversational bot">
-    <meta property="og:image" content="/img/berlinebot.jpg">
+    <meta property="og:image" content="https://berlinebot.github.io/img/berlinebot.jpg">
     <meta name="og:locale" content="en_UK">
     <meta name="fb:admins" content="2266763106901752">
     <meta name="og:type" content="website">
@@ -50,8 +52,8 @@
     <meta name="google-site-verification" content="vzSs42zj8UfMn1Et-qjDLn_UMTvIoFpx-MOhIcP31QI" />
     <meta name="google-site-verification" content="1vaQrJWZphkwNxBGkX-j63-h4DlJBKX1-rDXVMx5a0w" />
     <link rel="shortcut icon" href="/img/berlinebot.jpg" type="image/x-icon">
-    <link rel="icon" href="/img/berlinebot.jpg" type="image/x-icon">
-    <link rel="shortcut icon" href="/img/berlinebot.jpg">
+    <link rel="icon" href="https://berlinebot.github.io/img/berlinebot.jpg" type="image/x-icon">
+    <link rel="shortcut icon" href="https://berlinebot.github.io/img/berlinebot.jpg">
 
     <!--  Stylesheets -->
     <!--<link rel="stylesheet" type="text/css" media="all" href="/css/reset.css">-->
@@ -71,6 +73,13 @@
     <script type="text/javascript" src="/js/berline_contact.js"></script>
     <script type="text/javascript" src="/js/berline_chat_settings.js"></script>
     <script type="text/javascript" src="/js/jquery.fullscreen.js"></script>
+     <script type="text/javascript" src="/js/color.js"></script>
+        <script type="text/javascript" src="/js/typed.js"></script>
+    <!--[if lt IE 9]>
+	  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+
     
     <!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -118,11 +127,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <span></span>
     </div>
     
-    
-        
-    
-    
-    
+
 <div id="mySidenav" class="sidenav">
  <div class="line"><a title="Report a bug to the developer" href="#"><div class="text message message-left animated bubbleLeft fadeIn">Report a bug</div></a></div>		
   <div class="line"><a title="Request a feature from the developer" href="#"><div class="text message message-left animated bubbleLeft fadeIn">Request a feature</div></a></div>		
@@ -145,7 +150,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 <div class="section">
                     <img id="BerlineImg2" src="/img/berlinebot.jpg" title="Berline's image" alt="I am Berline bot">
 
-                    <h1>Berline is a conversational bot which discourages you from getting infatuated.</h1>
+                    <h1><span id="aboutHeading">Berline is a conversational bot. It discourages you from getting infatuated.</span><span class="typed-cursor"></span></h1>
 
                     <p>Berline was developed by <a target="_blank" title="Eunit on Github" href="https://github.com/eunit99/">Eunit</a> because he believes that <b>infatuation</b> is a foolish and unreasoned love.</p>
 
@@ -153,7 +158,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 </div>
 
 
-                <h1>About the developer</h1>
+                <h1><span id="aboutHeading1">About the developer</span><span class="typed-cursor"></span></h1>
 
                 <p>Emmanuel Uchenna, popularly known as Eunit is a web developer from Nigeria. He is a programming nerd who loves and savvies everything relating to science and technology.</p>
                 <p>He is an enthusiastic learner and coder, hence, he can be found coding in his free time.</p>
@@ -164,7 +169,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             
             
           	<div class="section">
-					<h1>Get in touch with Berline</h1>
+					<h1><span id="aboutHeading2">Get in touch with Berline</span><span class="typed-cursor"></span></h1>
 					<div>
 						<a title="Berline bot on Facebook" target="_blank" href="https://facebook.com/berlinebot" class="big-link">https://facebook.com/berlinebot</a>
 					</div>
@@ -200,7 +205,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                         About
                     </a>
                 </li>
-                <!--<li id="mail">
+                <!--
+                Why abusing this feature?
+                <li id="mail">
                     <a href="javascript:void(0)" title="Mail Berline bot" onclick="mail()">
                         <i class="fa fa-envelope-o fa-2x"></i>	Mail
                     </a>
