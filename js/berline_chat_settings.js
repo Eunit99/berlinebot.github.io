@@ -5,7 +5,38 @@ var currentQuestion = 0,
 var local = (!document.location.hostname); // check if local
 // --------------------------------------- //
      
+    
+	/*------------------
+		TYPED JS
+	--------------------*/
+			$(document).ready(function(){
+	$("#aboutHeading").typed({
+		strings: ["Berline is a conversational bot.", "It discourages you from getting infatuated."],
+		typeSpeed: 10,
+		loop:true,
+		backDelay: 3000
+	});
+
+	$("#aboutHeading1").typed({
+		strings: ["About the developer"],
+		typeSpeed: 10,
+		loop:true,
+		backDelay: 3000
+	});
+	
+	$("#aboutHeading2").typed({
+		strings: ["Get in touch with Berline"],
+		typeSpeed: 10,
+		loop:true,
+		backDelay: 3000
+	});
+	});
+
+
+    
+    
     // fadeOut the loader for Berline bot with jQuery
+    
 
 	       // <![CDATA[ 
 		$(document).ready(function(){
@@ -193,15 +224,17 @@ var local = (!document.location.hostname); // check if local
 $(".closeFullScreen").show();
 $("a").removeClass("hideScreen");
 $(".openFullScreen").hide(); 
+$("#chat-container").addClass("chatPadding"); // Add padding so your mobile keyboard can...
             });
             $(".closeFullScreen").click(function() {
                 $.fullscreen.exit();
                 $(".openFullScreen").show();
                 $(".closeFullScreen").hide();
                 $("body").fullscreen().css("background-color", "#ffffff");
+                $("#chat-container").removeClass("chatPadding"); // Remove padding since you can...
+
             });
-        });
-        
+        });                       
     // ****************FullScreen Mode Stop **********//
     
     
