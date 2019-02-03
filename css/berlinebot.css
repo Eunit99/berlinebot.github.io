@@ -55,6 +55,37 @@
 		color: #9966ff;
 		background-color: inherit;
 	}
+.typed-cursor {
+	opacity: 1;
+	-webkit-animation: blink 1s infinite;
+	animation: blink 1s infinite;
+	}
+	@keyframes blink {
+			0% {
+				opacity: 1;
+	}
+			50% {
+				opacity: 0;
+	}
+			100% {
+				opacity: 1;
+	}
+}
+@-webkit-keyframes blink {
+	0% {
+		opacity: 1;
+	}
+	50% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+	.cancelMgTop {
+			margin-top: -12px !important;
+	}
 	
 	.clear {
 		clear: both;
@@ -121,7 +152,7 @@
 			background-color: #9966ff;
 	}
 	
-	.message a, .message b, .message i, .message u, .message h1, .mesaage h2, .mesaage h3, .mesaage h4, .message h5, .message h6, .message p .message ul, .message li, .message ol, .message img, .message font {
+	.message a, .message b, .message i, .message u, .message h1, .mesaage h2, .mesaage h3, .mesaage h4, .message h5, .message h6, .message p .message ul, .message li, .message ol, .message img, .message font, .message span {
 			background-color: inherit;
 	}
 	
@@ -155,7 +186,6 @@
 		float: right;
 		font-style: normal !important;
 	}
-	
 	   					/**********Full screen CSS**********/
    					
 	/* Chrome, Safari and Opera syntax */
@@ -177,6 +207,11 @@
 	
 	.displayOff {
 		display: none !important;
+	}
+	
+	.displayNone {
+		display: none;
+		transition: 0.3s !important;
 	}
 	
 	.hideMenu, .hideScreen, .hidden {
@@ -299,21 +334,28 @@
 .sidenav a:hover, .offcanvas a:focus {
 		font-size: 20px;
 }
-.sidenav .text {
+.sidenav .textDesc, .sidenav .textTitle {
 			width: 70%;
     padding: 8px 8px 12px 32px;
     margin-left: 150px;
+    transition: 0.5s;
 }
 
-.sidenav .text:hover {
-			width: 73%;
+.sidenav .textTitle:hover {
+			width: 70%;
     color: #ffffff;
-    background-color: #bb99ff;
+    background-color: #9966ff;
     font-weight: 500;
     transition: 0.3s;
 			font-size: 25px;
     padding: 8px 8px 12px 32px;
     margin-left: 150px;
+}
+
+.sidenav .textTitle {
+    color: #ffffff;
+    background-color: #bb99ff;
+    font-weight: 500;
 }
 
 .sidenav {
@@ -328,28 +370,6 @@
     transition: 0.5s;
     padding-top: 60px;
 }
-
-				/* ===Eunit will get back to you soon!===
-				
-.sidenav a {
-    background-color: #ffffff;
-    padding: 8px 8px 8px 32px;
-    margin-left: 60px;
-    text-decoration: none;
-    font-size: inherit;
-    color: #818181;
-    display: block;
-    transition: 0.3s
-}
-
-.sidenav a:hover, .offcanvas a:focus{
-		cursor: pointer;
-		color: #cc99ff;
-		font-size: 20px;
-		font-weight: 500 !important;
-		background-color: #ffffff;
-}
-					*/
 
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
@@ -644,6 +664,10 @@
 			margin-top: 8px;
 		}
 			
+		.cancelMgTop {
+			margin-top: -6px !important;
+	}
+	
 		.chatImg {
 				height: 45px;
 				width: 45px;
@@ -701,21 +725,28 @@
 		.sidenav a:hover, .offcanvas a:focus {
 		font-size: 13px;
 }
-.sidenav .text {
+.sidenav .textTitle, .sidenav .textDesc {
 			width: 70%;
     padding: 8px 8px 12px 32px;
     margin-left: 60px;
+    transition: 0.5s;
 }
 
-.sidenav .text:hover {
-			width: 73%;
+.sidenav .textTitle:hover {
+			width: 70%;
     color: #ffffff;
-    background-color: #bb99ff;
+    background-color: #9966ff;
     font-weight: 500;
     transition: 0.3s;
 			font-size: 17px;
     padding: 8px 8px 12px 32px;
     margin-left: 60px;
+}
+
+.sidenav .textTitle {
+    color: #ffffff;
+    background-color: #bb99ff;
+    font-weight: 500;
 }
 
 .sidenav {
@@ -729,17 +760,63 @@
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
+}	
 }
 
-	.chatPadding {
-			padding-bottom: 55% !important;
-			background-color: inherit !important;
+
+/* Responsive Padding for keyboard during fullscreen
+==================================================*/
+
+/* Tablet desktop :768px. 
+@media only screen and (min-width: 768px) and (max-width: 1280px) {
+		.chatPadding {
+			padding-bottom: calc(40% + 50px);
+			background-color: inherit;
 	}
 
  .aboutPadding {
-			padding-bottom: inherit !important;
-			background-color: inherit !important;
+			padding-bottom: inherit;
+			background-color: inherit;
 	}
-	
-		
+}
+*/
+
+/* Large Mobile :960px. */
+@media only screen and (max-width: 960px) {
+	.chatPadding {
+			padding-bottom: calc(40% + 50px);
+			background-color: inherit;
 	}
+
+ .aboutPadding {
+			padding-bottom: inherit;
+			background-color: inherit;
+	}
+}
+
+/* Large Mobile :480px. 
+@media only screen and (max-width: 767px) {
+	.chatPadding {
+			padding-bottom: 55%;
+			background-color: inherit;
+	}
+
+ .aboutPadding {
+			padding-bottom: inherit;
+			background-color: inherit;
+	}
+}
+*/
+/* small mobile :320px. 
+@media only screen and (max-width: 479px) {
+		.chatPadding {
+			padding-bottom: 55%;
+			background-color: inherit;
+	}
+
+ .aboutPadding {
+			padding-bottom: inherit;
+			background-color: inherit;
+	}
+	*/
+}
