@@ -6,9 +6,9 @@ var local = (!document.location.hostname); // check if local
 // --------------------------------------- //
      
     
-	/*------------------
-		TYPED JS
-	--------------------*/
+	/***********************************
+									TYPED JS
+	***********************************/
 			$(document).ready(function(){
 	$("#aboutHeading").typed({
 		strings: ["Berline is a conversational bot.", "It discourages you from getting infatuated."],
@@ -30,9 +30,27 @@ var local = (!document.location.hostname); // check if local
 		loop:true,
 		backDelay: 3000
 	});
-	});
+	
+});
 
-
+  //Toggle SideNav Description when Title is clicked
+	$(document).ready(function(){
+	        $("#t1").click(function(){
+	            $("#d1").toggleClass("displayNone");
+	        });
+	        $("#t2").click(function(){
+	            $("#d2").toggleClass("displayNone");
+	        });
+	        $("#t3").click(function(){
+	            $("#d3").toggleClass("displayNone");
+	        });
+	        $("#t4").click(function(){
+	            $("#d4").toggleClass("displayNone");
+	        });
+	        $("#t5").click(function(){
+	            $("#d5").toggleClass("displayNone");
+	        });
+	 });
     
     
     // fadeOut the loader for Berline bot with jQuery
@@ -50,9 +68,9 @@ var local = (!document.location.hostname); // check if local
    // ]]> 
    
    
-   /** 
+   /************************************ 
    Display Menu when JS is enabled in browser
-   **/
+   ************************************/
 	       // <![CDATA[ 
 		$(document).ready(function(){
 				$("#menu").show(); 
@@ -62,10 +80,10 @@ var local = (!document.location.hostname); // check if local
    // ]]> 
    
    
-   /* *********** 
+   /**********************************
    			Hide() the menu when Berline's image is clicked.
    			Show() the menu when #closeModals clicked.
-   ************ */
+   ***********************************/
    			//For BerlineImg1
 	       // <![CDATA[ 
 		$(document).ready(function(){
@@ -78,6 +96,12 @@ var local = (!document.location.hostname); // check if local
 		     $("#chat-container").show();
 		     		$("#about-container").hide();
 		 						$("#menu").show();
+		 				//Close the sideNav
+		 					$("#d1").addClass("displayNone");
+		 					$("#d2").addClass("displayNone");
+		 					$("#d3").addClass("displayNone");
+		 					$("#d4").addClass("displayNone");
+		 					$("#d5").addClass("displayNone");
 	     });
 		});
    // ]]> 
@@ -106,14 +130,26 @@ var local = (!document.location.hostname); // check if local
 		     $("#about-container").hide();   
 		    		$("#chat-container").show();
 		    			$("#closeNav").hide();
-		 						$("#openNav").show();
-		    	 });
+		 							$("#openNav").show();
+		 								// Close the SideNav
+		    	 $("#d1").addClass("displayNone");
+		    	 $("#d2").addClass("displayNone");
+		    	 $("#d3").addClass("displayNone");
+		    	 $("#d4").addClass("displayNone");
+		    	 $("#d5").addClass("displayNone");
+		  });
 		  $("#about").click(function(){
 		    $("#chat-container").hide();
 		 				$("#about-container").show();
 		 					$("#about-container").removeClass("displayOff");
 		 						$("#closeNav").hide();
 		 							$("#openNav").show();
+		 					//Close the sideNav
+		 					$("#d1").addClass("displayNone");
+		 					$("#d2").addClass("displayNone");
+		 					$("#d3").addClass("displayNone");
+		 					$("#d4").addClass("displayNone");
+		 					$("#d5").addClass("displayNone");
 	     });
 		});
 
@@ -136,7 +172,12 @@ var local = (!document.location.hostname); // check if local
 		 						$("#chat-container").show();
 		     				$("#about-container").show();
 		     					$("#about-container").addClass("displayOff");
-
+		     		//Close the sideNav
+		 					$("#d1").addClass("displayNone");
+		 					$("#d2").addClass("displayNone");
+		 					$("#d3").addClass("displayNone");
+		 					$("#d4").addClass("displayNone");
+		 					$("#d5").addClass("displayNone");
 	     });
 		});
 			
@@ -155,7 +196,8 @@ var local = (!document.location.hostname); // check if local
  
 		$(document).ready(function(){
 		
-		/* ========Get userName through promp()====================
+		/* ========================
+		Get userName through promp()
 		var userName = prompt("What is your name?");
 		while(userName == null || userName == "") 
 		{
@@ -209,15 +251,16 @@ var local = (!document.location.hostname); // check if local
 		     $("#welcomeMsg").html(greet);
 		 						$("#welcomeMsg").fadeIn(600);   
 			     });
-			
 		});
-		
 	
- 
- // *************Greetings End ************* //
+ /*************************
+ 			Greetings End 
+ *************************/
 
 
-		// *********** Fullscreen Mode Start ************ //
+		/****************************
+								Fullscreen Mode Start 
+		*******************************/
 					$(document).ready(function(){
             $(".openFullScreen").click(function() {
                 $("body").fullscreen();
@@ -234,13 +277,20 @@ $("#chat-container").addClass("chatPadding"); // Add padding so your mobile keyb
                 $("#chat-container").removeClass("chatPadding"); // Remove padding since you can...
 
             });
-        });                       
-    // ****************FullScreen Mode Stop **********//
-    
-    
+        });                
+               
+    /****************************
+    FullScreen Mode Stop
+    *****************************/
+   
+   
+   
+    	/****************************
+					 Get the modal
+			****************************/
+			
     					$(document).ready(function(){
-					// *************** Get the modal ********** //
-var modal = document.getElementById('myModal');
+		var modal = document.getElementById('myModal');
 
 //Get the image and insert it inside the modal - use its "alt" text as a caption
 var img1 = document.getElementById('BerlineImg1');
@@ -253,7 +303,7 @@ img1.onclick = function(){
    /* captionText.innerHTML = this.alt; 
     Sets caption text as alt of Image. In this case; I'm Berline bot.
    Uncomment caption CSS if you are going tuse this! */
-    captionText.innerHTML = '<div class="line"><div class="message message-left animated bubbleLeft fadeIn">Hi. I\'m Berline </div></div> <div class="line"><div class="message message-left animated bubbleLeft fadeIn">Please click on <span class="highlight">×</span> above to continue your chat. </div></div>'; // Sets caption text
+    captionText.innerHTML = '<div class="line"><div class="message message-left animated bubbleLeft fadeIn">Hi. I\'m Berline</div></div> <div class="line"><div class="message message-left animated bubbleLeft fadeIn">Please click on <span class="highlight">×</span> above to continue your chat.</div></div>'; // Sets caption text
 }
 
 
