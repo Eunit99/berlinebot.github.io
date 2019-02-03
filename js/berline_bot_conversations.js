@@ -363,8 +363,8 @@ var questions = {
 		 "can i ask|i want to|question": {
 		 	 "replies": ["I was programmed to discourage infatuation and not to attend to other questions.", "In case you don't know."]
 		 },
-		 "what is infatuation|meaning of infatuation|what's infatuation": {
-		 	"replies": ["You will find out as we continue this conversation 😉", "You can keep your name to yourself."]
+		 "what is infatuation|meaning of infatuation|what's infatuation|what do you|what purpose|purpose|why are you created": {
+		 	"replies": ["You will find out as we continue this conversation 😉", "I will call you John Doe."]
 		 },
 			"fuck|get out": {
 				"replies": ["Do you kiss your mother with that mouth?", "I was only asking your name...", "You can keep your name to yourself 😞"]
@@ -570,8 +570,8 @@ var questions = {
 			"perhaps|maybe|probably": {
 				"replies": ["I think I should let you know me", "... I was developed by <a target=\"blank\" href=\"https://facebook.com/eunit99\">Eunit</a> to discourage infatuation.", "Do you know what that means?", "You will get to find out as we keep on conversing."]
 			},
-			"know you|you already|not interested|not|stop|nay|don't want|don't tell|care|no|never": {
-			"replies": ["Oh! You already know about know me.", "<a href=\"#\" onclick\=\"mail()\">Send me a note</a> if you would want to contact my dev."]
+			"know you|you already|not interested|not|stop|nay|don't want|don't tell|care|no|never|never": {
+			"replies": ["Oh! You already know know me.", "<a href=\"#\" onclick\=\"mail()\">Send me a note</a> if you would want to contact my developer."]
 			},
 			"bot|conversation|chat|before|already": {
 			"replies": ["You know already", "<a href=\"#\" onclick\=\"mail()\">Send me a note</a> if you would want to contact my dev."]
