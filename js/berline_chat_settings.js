@@ -25,7 +25,7 @@ var local = (!document.location.hostname); // check if local
 	});
 	
 	$("#aboutHeading2").typed({
-		strings: ["Get in touch with Berline"],
+		strings: ["Get in touch with Berline", "Like Berline on Facebook", "Follow Berline on Twitter", "Mail Berline"],
 		typeSpeed: 10,
 		loop:true,
 		backDelay: 3000
@@ -53,9 +53,77 @@ var local = (!document.location.hostname); // check if local
 	 });
     
     
+    
+    /***********************************
+    
+    				Control Nav description
+    				
+    ***********************************/
+    
+    // Hide other nav description when #t1 is clicked
+    
+   $(document).ready(function(){
+	      $("#t1").click(function(){
+	      		$("#d2").addClass("displayNone");
+	        $("#d3").addClass("displayNone");
+	        $("#d4").addClass("displayNone");
+	        $("#d5").addClass("displayNone");
+	        });
+	   });
+
+// Hide other nav description when #t2 is clicked
+    
+   $(document).ready(function(){
+	      $("#t2").click(function(){
+	        $("#d1").addClass("displayNone");
+	        $("#d3").addClass("displayNone");
+	        $("#d4").addClass("displayNone");
+	        $("#d5").addClass("displayNone");
+	        });
+	   });
+    
+    // Hide other nav description when #t3 is clicked
+    
+   $(document).ready(function(){
+	      $("#t3").click(function(){
+	        $("#d2").addClass("displayNone");
+	        $("#d1").addClass("displayNone");
+	        $("#d4").addClass("displayNone");
+	        $("#d5").addClass("displayNone");
+	        });
+	   });
+
+    // Hide other nav description when #t4 is clicked
+    
+   $(document).ready(function(){
+	      $("#t4").click(function(){
+	        $("#d2").addClass("displayNone");
+	        $("#d3").addClass("displayNone");
+	        $("#d1").addClass("displayNone");
+	        $("#d5").addClass("displayNone");
+	        });
+	   });
+
+    // Hide other nav description when #t5 is clicked
+    
+   $(document).ready(function(){
+	      $("#t5").click(function(){
+	        $("#d2").addClass("displayNone");
+	        $("#d3").addClass("displayNone");
+	        $("#d4").addClass("displayNone");
+	        $("#d1").addClass("displayNone");
+	        });
+	   });
+
+				/***********************************
+    
+    				Control Nav description end!
+    				
+    ***********************************/
+    
+    
     // fadeOut the loader for Berline bot with jQuery
     
-
 	       // <![CDATA[ 
 		$(document).ready(function(){
 				$("#chat-container").ready(function(){
@@ -392,7 +460,7 @@ function createMessage (messagesArray, i, response) {
 
 // Creates an answer input bubble
 function createAnswerField () {
-	var htmlAnswerField = "<div id=\"answer-container\" class=\"line\"><form action=\"#\" onsubmit=\"return false;\"><input required=\"required\" novalidate=\"novalidate\" autocomplete=\"on\" min=\"2\" max=\"40\" formnovalidate=\"formnovalidate\" autofocus=\"autofocus\" type=\"text\" name=\"answer\" id=\"answer\" class=\"message message-right animated fadeInUp\" value=\"\" placeholder=\"Type your response…\"></form><div class=\"clear\"></div></div>";
+	var htmlAnswerField = "<div id=\"answer-container\" class=\"line\"><form action=\"#\" onsubmit=\"return false;\"><input required=\"required\" novalidate=\"novalidate\" autocomplete=\"on\" min=\"2\" max=\"40\" formnovalidate=\"formnovalidate\" spellcheck=\"true\" autofocus=\"autofocus\" type=\"text\" name=\"answer\" id=\"answer\" class=\"message message-right animated fadeInUp\" value=\"\" placeholder=\"Type your response…\"></form><div class=\"clear\"></div></div>";
 
 	if (questions[currentQuestion].ending) {
 		return 1;
