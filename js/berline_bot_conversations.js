@@ -49,7 +49,7 @@ var questions = {
 				"replies": ["I'm unsure what happened to the 'H' in your name", "Perhaps it was an ingenious simplification of an unnecessary letter", "Or perhaps a lazy missing one!"]
 			},
 			"berline": {
-				"replies": ["So you share the same name with me... I bet you don't know the meaning of your name 😜"]
+				"replies": ["So you share the same name with me... I bet you don't even know the meaning of your name! 😜"]
 			},
 			"cj": {
 				"replies": ["Sweet name", "Welcome"]
@@ -60,7 +60,7 @@ var questions = {
 			"carlos|carlos solares": {
 				"replies": ["Cool name"]
 			},
-			"no": {
+			"no|why|what": {
 				"replies": ["Ouch...", "Not a great way to start a conversation", "and plus...", "the NSA just told me your name"]
 			},
 			"david bowie": {
@@ -360,6 +360,9 @@ var questions = {
 			"why do you wan\'t to know|don\'t|i don\'t have|no name|i don't have a name|why|what for|for what|what purpose": {
 				"replies": ["You don\'t want to tell?", "I will assume that you don\'t trust me, maybe you don\'t want to disclose your identity", "Let me assure you this, all your personal information you share with me in the course of this conversation with me wouldn't be disclosed to anyone, not even my developer.", "I don\'t even even store any user data 😃"]
 		 },
+		"private|personal|disclose|not telling": {
+			"replies": ["Nothing is private. If I choose to know it, I would do just that right away!"]
+		},
 		 "can i ask|i want to|question": {
 		 	 "replies": ["I was programmed to discourage infatuation and not to attend to other questions.", "In case you don't know."]
 		 },
@@ -489,6 +492,22 @@ var questions = {
 			"village": {
 				"replies": ["Village is no city! 😲😲 "]
 			},
+			"africa|afrique": {
+				"replies": ["That's a continent! No particular place in Africa? 😕"]
+			},
+			"america|amerique": {
+				"replies": ["That's a continent! No particular place in America? 😕"]
+			},
+			"asia|asie": {
+				"replies": ["That's a continent! No particular place in Asia? 😕"]
+			},
+			"europe": {
+				"replies": ["That's a continent! No particular place in Europe? 😕"]
+			},
+			
+			"oceania|oceanie": {
+				"replies": ["That's a continent! No particular place in Oceania? 😕"]
+			},
 			"abuja|abj": {
 				"replies": ["Nigeria's capital", "Have you visited that Zuma rock? I don't think you have"]
 			},
@@ -516,7 +535,7 @@ var questions = {
 			"do you think|expect|suppose|anticipate|how do you": {
 				"replies": ["How do you expect me to know?"]
 			},
-			"don't|not telling|undiclosed|not disclosing|privacy|concern|personal|private|won't tell|will not|wouldn't tell|would not tell|not your concern": {
+			"don't|not telling|undiclosed|not disclosing|privacy|concern|personal|undisclose|private|won't tell|will not|wouldn't tell|would not tell|not your concern": {
 				"replies": ["I don't think this a good way to start this conversation 😩", "You can keep your location to yourself 😢😞"]
 			},
 			"ask again|ask me again|repeat again|repeat the question|repeat|what did you say|don't understand|don't get it|meaning|go through it again": {
@@ -558,20 +577,20 @@ var questions = {
 			"default": {
 				"replies": ["I have told you that already, I recall"]
 				},
-			"of course|yuppy|yes|certainly|yup|yea|yeah|sure|yep|ahead|go on|love it|would love|like it": {
-				"replies": ["... I was developed by <a target=\"blank\" href=\"https://facebook.com/eunit99\">Eunit</a> to discourage infatuation.", "Do you know what that means?", "You will get to find out as we keep on conversing."]
+			"of course|yuppy|yes|certainly|yup|yea|yeah|sure|yep|ahead|go on|love it|love|love|would love|like it|course": {
+				"replies": ["Don't get too curious! 😁", "... I was developed by <a target=\"blank\" href=\"https://facebook.com/eunit99\">Eunit</a> to discourage infatuation.", "Do you know what that means?", "You will get to find out as we keep on conversing."]
 			},
 			"do you care|don't care|don't mind": {
 				"replies": ["I don't mind at all 😎", "... I was developed by <a target=\"blank\" href=\"https://facebook.com/eunit99\">Eunit</a> to discourage infatuation.", "Do you know what that means?", "You will get to find out as we keep on conversing."]
 			},
-			"maybe|probably|want to tell me?|want me to know?|do you want|if you like|want": {
+			"want to tell me?|want me to know?|do you want|if you like|want": {
 				"replies": ["I want to tell you", "... I was developed by <a target=\"blank\" href=\"https://facebook.com/eunit99\">Eunit</a> to discourage infatuation.", "Do you know what that means?", "You will get to find out as we keep on conversing."]
 			},
-			"perhaps|maybe|probably": {
+			"perhaps|maybe|probably|proly": {
 				"replies": ["I think I should let you know me", "... I was developed by <a target=\"blank\" href=\"https://facebook.com/eunit99\">Eunit</a> to discourage infatuation.", "Do you know what that means?", "You will get to find out as we keep on conversing."]
 			},
 			"know you|you already|not interested|not|stop|nay|don't want|don't tell|care|no|never|never": {
-			"replies": ["Oh! You already know know me.", "<a href=\"#\" onclick\=\"mail()\">Send me a note</a> if you would want to contact my developer."]
+			"replies": ["Oh! You already know me.", "<a href=\"#\" onclick\=\"mail()\">Send me a note</a> if you would want to contact my developer."]
 			},
 			"bot|conversation|chat|before|already": {
 			"replies": ["You know already", "<a href=\"#\" onclick\=\"mail()\">Send me a note</a> if you would want to contact my dev."]
@@ -684,6 +703,9 @@ var questions = {
 			"question": {
 				"replies": ["Ohh! You are not a friendly fellow. I'm trying to make you my friend!"]
 			},
+		"private|personal|disclose|not telling": {
+			"replies": ["You need not hide it from me, I know how already!"]
+		},
 			"why do you wan\'t to know|do you|don\'t|i don\'t have|why this question|why|what for|for what|what purpose": {
 				"replies": ["You can skip replying 😃"]
 		 },
@@ -795,9 +817,15 @@ var questions = {
 			"do you think|expect|suppose|anticipate|how do you": {
 				"replies": ["I've got no idea that's why I asked."]
 			},
+		"private|personal|disclose|not telling": {
+			"replies": ["You can trust me it keeping secrets! 😉"]
+		},
 			"many|plenty|beaucoup|lot|numerous": {
 			 "replies": ["Oh I see, but I do know that you definitely have something you do for a living."]
 			},
+		"private|personal|disclose|not telling": {
+			"replies": ["Maybe you forget that this chat is confidential and wouldn't be disclosed to anyone!"]
+		},
 			"tell me|choose": {
 				"replies": ["You don't expect me to do that. Do you?"]
 			},
@@ -876,6 +904,9 @@ var questions = {
 			"i don't think you want|don't want to know": {
 				"replies": ["Of course I do, that's why I asked.", "I guess you don't like them."] 
 			},
+		"private|personal|disclose|not telling": {
+			"replies": ["Keep it to yourself then!"]
+		},
 			"fuck|get out": {
 				"replies": ["You ain't a good fellow."]
 			},
@@ -962,6 +993,9 @@ var questions = {
 			},
 			"zebra": {
 				"replies": ["That creature with black and white stripes"]
+			},
+			"all|animals|every|love all": {
+				"replies": ["Dogs inclusive!"]
 			},
 			"fuck|get out": {
 				"replies": ["Hey! Hey!! Hey!!! Watch what you type.", "Goat 😂😀"]
@@ -1253,6 +1287,9 @@ var questions = {
 						"i don't think you want|don't want to know": {
 				"replies": ["I don't think you know it."] 
 			},
+		"private|personal|disclose|not telling": {
+			"replies": ["You need to be open to me if you would like us to understand ourselves, please!"]
+		},
 			"why|ask|question|what": {
 			"replies": ["Because I was programmed to let you know what infatuation is and discourage you from getting infatuated."]
 			}
