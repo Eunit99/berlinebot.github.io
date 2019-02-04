@@ -115,6 +115,10 @@
 		overflow: hidden;
 	}
 	
+	.scroll {
+			overflow: scroll;
+	}
+	
 	.line {
 		width: 100%;
 	}
@@ -152,7 +156,7 @@
 			background-color: #9966ff;
 	}
 	
-	.message a, .message b, .message i, .message u, .message h1, .mesaage h2, .mesaage h3, .mesaage h4, .message h5, .message h6, .message p .message ul, .message li, .message ol, .message img, .message font, .message span {
+	.message a, .message b, .message i, .message u, .message h1, .message h2, .message h3, .message h4, .message h5, .message h6, .message p .message ul, .message li, .message ol, .message img, .message font, .message span {
 			background-color: inherit;
 	}
 	
@@ -211,7 +215,7 @@
 	
 	.displayNone {
 		display: none;
-		transition: 0.3s !important;
+		transition: 0.7s !important;
 	}
 	
 	.hideMenu, .hideScreen, .hidden {
