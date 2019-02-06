@@ -11,7 +11,7 @@ var local = (!document.location.hostname); // check if local
 	***********************************/
 			$(document).ready(function(){
 	$("#aboutHeading").typed({
-		strings: ["Berline is a conversational interface.", "It discourages you from getting infatuated."],
+		strings: ["Berline is a conversational bot.", "It discourages you from getting infatuated."],
 		typeSpeed: 10,
 		loop:true,
 		backDelay: 3000
