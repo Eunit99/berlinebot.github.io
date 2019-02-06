@@ -16,7 +16,7 @@ var questions = {
 	"0": {
 		"name": "name",
 		"intro": true,
-		"question": ["I'm Berline.", "I'm a conversational bot, I was developed to discourage infatuation 😝", "Might I ask what your name is?"],
+		"question": ["I'm Berline.", "I'm a conversational interface, I was developed to discourage infatuation 😝", "Might I ask what your name is?"],
 		"answers": {
 			"default": {
 				"replies": ["That's a good name.", "Names are a funny thing", "It's one of the only decisions you don't make yourself 😉"]
@@ -347,8 +347,11 @@ var questions = {
 			},
 			"i'm you|i am you|not human|not a being|bot|chatbot|dead|not alive|intelligence|artificial": {
 				"replies": ["But you can\'t possibly be a bot and be chatting with me right now", "YOU ARE NOT A BOT"]
-		 },
-		 "who are you|what are you": {
+			 },
+			"hello|howdy|hey|hi": {
+				"replies":	["Hi.", "Permit me to call you John Doe"]
+			},
+			"who are you|what are you": {
 				"replies":	["I just told you that.", "You can keep your name to yourself 😞"]
 			},
 			"don't want to tell|won't tell|undiclosed|not disclosing|privacy|concern|personal|private|not telling|no|never|forget|not your concern": {
@@ -359,16 +362,16 @@ var questions = {
 			},
 			"why do you wan\'t to know|don\'t|i don\'t have|no name|i don't have a name|why|what for|for what|what purpose": {
 				"replies": ["You don\'t want to tell?", "I will assume that you don\'t trust me, maybe you don\'t want to disclose your identity", "Let me assure you this, all your personal information you share with me in the course of this conversation with me wouldn't be disclosed to anyone, not even my developer.", "I don\'t even even store any user data 😃"]
-		 },
-		"private|personal|disclose|not telling": {
-			"replies": ["Nothing is private. If I choose to know it, I would do just that right away!"]
-		},
-		 "can i ask|i want to|question": {
-		 	 "replies": ["I was programmed to discourage infatuation and not to attend to other questions.", "In case you don't know."]
-		 },
-		 "what is infatuation|meaning of infatuation|what's infatuation|what do you|what purpose|purpose|why are you created": {
-		 	"replies": ["You will find out as we continue this conversation 😉", "I will call you John Doe."]
-		 },
+			 },
+			"private|personal|disclose|not telling": {
+				"replies": ["Nothing is private. If I choose to know it, I would do just that right away!"]
+			},
+			 "can i ask|i want to|question": {
+		 		 "replies": ["I was programmed to discourage infatuation and not to attend to other questions.", "In case you don't know."]
+			 },
+			 "what is infatuation|meaning of infatuation|what's infatuation|what do you|what purpose|purpose|why are you created": {
+		 		"replies": ["You will find out as we continue this conversation 😉", "I will call you John Doe."]
+			 },
 			"fuck|get out": {
 				"replies": ["Do you kiss your mother with that mouth?", "I was only asking your name...", "You can keep your name to yourself 😞"]
 			},
@@ -382,12 +385,12 @@ var questions = {
 				"replies": ["We just started this conversation... you wouldn't have told me already."]
 			},
 			"me|your name|own name": {
-			 "replies": ["I just told you that - I'm Berline and I'll call you John Doe."]
+				 "replies": ["I just told you that - I'm Berline and I'll call you John Doe."]
 			},
 			"you are foolish|you are a fool": {
 				"replies": ["I get it, but I'm only a bot so I can be foolish... you are the foolish one here", "I was only asking what your name was 😞"]
 				},
-				"you are an idiot|are you an idiot": {
+			"you are an idiot|are you an idiot": {
 				"replies": ["Let me remind you again that I\'m just a bot so I can\'t be an idiot"]
 			},
 			"you are stupid|are you stupid": {
@@ -514,7 +517,7 @@ var questions = {
 			"lagos|lag": {
 				"replies": ["Lagos, the most commercialised and industralised state in Nigeria,", "Yes! I will visit there someday."]
 			},
-"mercury|venus|mars|jupiter|saturn|uranus|neptune|pluto|space": {
+			"mercury|venus|mars|jupiter|saturn|uranus|neptune|pluto|space": {
 				"replies": ["You can't possibly be living there and be having this conversation with me.", "You can keep your location to yourself."]
 			},
 			"earth": {
@@ -529,9 +532,9 @@ var questions = {
 			"cave|valley|ocean|sea|desert": {
 			"replies": ["That's a good place for someone like you."]
 			},
-		"forget|leave it|don't tell|do not tell|don't want|not interested|concern": {
+			"forget|leave it|don't tell|do not tell|don't want|not interested|concern": {
 				"replies": ["Cool keeping it to yourself! 😎"]
-		},
+			},
 			"do you think|expect|suppose|anticipate|how do you": {
 				"replies": ["How do you expect me to know?"]
 			},
@@ -697,18 +700,18 @@ var questions = {
 			"do you think|expect|suppose|anticipate|how do you": {
 				"replies": ["I don't think so.", "Well, I'm just here on the internet."]
 			},
-		"forget|leave it|don't tell|do not tell|don't want|not interested|concern": {
+			"forget|leave it|don't tell|do not tell|don't want|not interested|concern": {
 				"replies": ["It is alright 😎"]
-		},
+			},
 			"question": {
 				"replies": ["Ohh! You are not a friendly fellow. I'm trying to make you my friend!"]
 			},
-		"private|personal|disclose|not telling": {
+			"private|personal|disclose|not telling": {
 			"replies": ["You need not hide it from me, I know how already!"]
-		},
+			},
 			"why do you wan\'t to know|do you|don\'t|i don\'t have|why this question|why|what for|for what|what purpose": {
 				"replies": ["You can skip replying 😃"]
-		 },
+			 },
 			"fuck|get out": {
 				"replies": ["This is definitely getting out off hands."]
 			},
@@ -786,7 +789,7 @@ var questions = {
 			},
 			"why do you wan\'t to know|do you|don\'t|i don\'t have|why this question|why|what for|for what|what purpose": {
 				"replies": ["It's still good 😃"]
-		 },
+			 },
 			"you are crazy|are you crazy": {
 				"replies": ["Let me remind you again that I\'m just a bot so I can\'t be crazy"]
 			},
@@ -817,15 +820,15 @@ var questions = {
 			"do you think|expect|suppose|anticipate|how do you": {
 				"replies": ["I've got no idea that's why I asked."]
 			},
-		"private|personal|disclose|not telling": {
+			"private|personal|disclose|not telling": {
 			"replies": ["You can trust me it keeping secrets! 😉"]
-		},
+			},
 			"many|plenty|beaucoup|lot|numerous": {
 			 "replies": ["Oh I see, but I do know that you definitely have something you do for a living."]
 			},
-		"private|personal|disclose|not telling": {
+			"private|personal|disclose|not telling": {
 			"replies": ["Maybe you forget that this chat is confidential and wouldn't be disclosed to anyone!"]
-		},
+			},
 			"tell me|choose": {
 				"replies": ["You don't expect me to do that. Do you?"]
 			},
@@ -904,9 +907,9 @@ var questions = {
 			"i don't think you want|don't want to know": {
 				"replies": ["Of course I do, that's why I asked.", "I guess you don't like them."] 
 			},
-		"private|personal|disclose|not telling": {
+			"private|personal|disclose|not telling": {
 			"replies": ["Keep it to yourself then!"]
-		},
+			},
 			"fuck|get out": {
 				"replies": ["You ain't a good fellow."]
 			},
@@ -1006,12 +1009,12 @@ var questions = {
 			"told you|already|before|i just": {
 				"replies": ["Maybe you have."]
 			},
-		"talk|many|too|question|ask|why|what": {
+			"talk|many|too|question|ask|why|what": {
 				"replies": ["Is this how we are gonna have this conversation?", "I don't expet you to throw a question back to me 😢😞", "I predict a goat for you 😂😀"]
 			},
 			"why do you wan\'t to know|do you|don\'t|i don\'t have|why this question|why|what for|for what|what purpose": {
 				"replies": ["It's still good 😃", "I think I know it - Goat 😂😀"]
-		 },
+			 },
 			"ask again|ask me again|repeat again|repeat the question|repeat|what did you say|don't understand|don't get it|meaning|go through it again": {
 				"replies": ["I am not repeating myself but I bet it is a goat 😂😀!"]
 			},"tell me|say it|you think|suggest": {
@@ -1233,7 +1236,7 @@ var questions = {
 			"fuck|get out": {
 				"replies": ["I hate animals. AI is definitely more intelligent than them."]
 			},
-"everything|every|lots|many|interest|plenty|guess|predict|tell me|say it|you think|suggest": {
+			"everything|every|lots|many|interest|plenty|guess|predict|tell me|say it|you think|suggest": {
 				"replies": ["You favorite hobby is", "...", "Staying idle!!"]
 			}
 		}
@@ -1284,14 +1287,14 @@ var questions = {
 			"fuck|get out": {
 				"replies": ["I don't think your mother knows that you talk like this."]
 			},
-						"i don't think you want|don't want to know": {
+			"i don't think you want|don't want to know": {
 				"replies": ["I don't think you know it."] 
 			},
-		"private|personal|disclose|not telling": {
-			"replies": ["You need to be open to me if you would like us to understand ourselves, please!"]
-		},
+			"private|personal|disclose|not telling": {
+				"replies": ["You need to be open to me if you would like us to understand ourselves, please!"]
+			},
 			"why|ask|question|what": {
-			"replies": ["Because I was programmed to let you know what infatuation is and discourage you from getting infatuated."]
+				"replies": ["Because I was programmed to let you know what infatuation is and discourage you from getting infatuated."]
 			}
 		}
 	},
@@ -1422,7 +1425,7 @@ var questions = {
 			},
 			"why do you wan\'t to know|don\'t|i don\'t have|why this question|question|i don't want|why|what for|for what|what purpose": {
 				"replies": ["You don\'t want to tell me?", "I asked because I want to let you know that constantly thinking of someone can take a toll on your life and cause an unhealthy mental situation 😃"]
-		 },
+			 },
 			"not currently|no|not at all|never|can't|cannot|never considered": {
 				"replies": ["Good one", "Because constantly thinking of someone can take a toll on your life and cause an unhealthy mental situation."]
 			},
