@@ -280,6 +280,8 @@ var local = (!document.location.hostname); // check if local
 		var sec = date.getSeconds();
 		var min = date.getMinutes();
 		var hour = date.getHours();
+		var hour = date.getHours();
+		var copyrightYear = date.getFullYear();
 		
 		
 		if(hour===5 || hour===6 || hour===7 || hour===8 || hour===9 || hour===10 || hour===11)
@@ -317,8 +319,12 @@ var local = (!document.location.hostname); // check if local
 						
 		$("document").ready(function(){
 		     $("#welcomeMsg").html(greet);
-		 						$("#welcomeMsg").fadeIn(600);   
+		 		 $("#welcomeMsg").fadeIn(600);   
 			     });
+		$("document").ready(function(){
+		     $("#copyright").text(copyrightYear);   // SET CURRENT YEAR AS COPYRIGHT
+			     });
+
 		});
 	
  /*************************
