@@ -388,13 +388,13 @@ var questions = {
 				 "replies": ["I just told you that - I'm Berline and I'll call you John Doe."]
 			},
 			"you are foolish|you are a fool": {
-				"replies": ["I get it, but I'm only a bot so I can be foolish... you are the foolish one here", "I was only asking what your name was 😞"]
+				"replies": ["I get it, but I'm only a bot so I can\'t be foolish... you are the foolish one here", "I was only asking what your name was 😞"]
 				},
 			"you are an idiot|are you an idiot": {
 				"replies": ["Let me remind you again that I\'m just a bot so I can\'t be an idiot"]
 			},
 			"you are stupid|are you stupid": {
-				"replies": ["I get it, but I'm only a bot so I can be stupid... you are the stupid one here", "I was only asking what your name was 😞"]
+				"replies": ["I get it, but I'm only a bot so I can\'t be stupid... you are the stupid one here", "I was only asking what your name was 😞"]
 			}
 		}
 	},
