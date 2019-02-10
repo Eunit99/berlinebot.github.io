@@ -63,6 +63,7 @@
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
 
 		
     <!--   Scripts  -->
@@ -70,6 +71,7 @@
     <script type="text/javascript" src="/js/berline_bot_conversations.js"></script>
     <script type="text/javascript" src="/js/berline_contact.js"></script>
     <script type="text/javascript" src="/js/berline_chat_settings.js"></script>
+     <script type="text/javascript" src="/js/berline_chat_manipulations.js"></script>
     <script type="text/javascript" src="/js/jquery.fullscreen.js"></script>
     <script type="text/javascript" src="/js/color.js"></script>
     <script type="text/javascript" src="/js/typed.js"></script>
@@ -128,30 +130,204 @@
 
     
 <div id="mySidenav" class="sidenav">
-   <div class="line"><a id="t1" title="Report a bug to the developer" href="#"><div class="textTitle message message-left animated bubbleLeft fadeIn">Report a bug</div></a>	        
-        <div class="cancelMgTop textDesc message message-left animated bubbleLeft fadeIn displayNone" id="d1"><span>Report a bug</span>:<br>Lorem ipsum dolet si amar<br><br>
-    	</div>
-    </div>			
- 
-  <div class="line"><a id="t2" title="Request a feature from the developer" href="#"><div class="textTitle message message-left animated bubbleLeft fadeIn">Request a feature</div></a>	        
-  <div class="cancelMgTop textDesc message message-left animated bubbleLeft fadeIn displayNone" id="d2"><span>Request a feature</span>:<br>Lorem ipsum dolet si amar<br><br>
-	        </div>
-	    </div>		
-  
-  <div class="line"><a id="t3" title="Contact the developer" href="#"><div class="textTitle message message-left animated bubbleLeft fadeIn">Contact</div></a>	        
-  <div class="cancelMgTop textDesc message message-left animated bubbleLeft fadeIn displayNone" id="d3"><span>Contact Us</span>:<br>Lorem ipsum dolet si amar<br><br>
-	        </div>
-	    </div>		
-    
-  <div class="line"><a id="t4" title="Read our privacy policy" href="#"><div class="textTitle message message-left animated bubbleLeft fadeIn">Privacy policy</div></a>	        
-  <div class="cancelMgTop textDesc message message-left animated bubbleLeft fadeIn displayNone" id="d4"><span>Privacy policy</span>:<br>Lorem ipsum dolet si amar<br><br>
-	        </div>
-	    </div>		
 
- <div class="line">
-         <div class="copy">&copy; <span id="copyright"></span> <a href="#" title="Eunit Designs Inc" class="link">Eunit Designs, Inc.</a> All rights reserved. </div>    
-         </div>
-         
+   <div class="line"><a id="t1" title="Report a bug to the developer" href="#bug"><div class="textTitle message message-left animated bubbleLeft fadeIn">Report a bug</div></a>         
+  <div class="cancelMgTop textDesc message message-left animated bubbleLeft fadeIn displayNone" id="d1"><span>Report a bug</span>:<br>Lorem ipsum dolet si amar<br><br>
+            </div>
+        </div>          
+ 
+  <div class="line"><a id="t2" title="Request a feature from the developer" href="#feature"><div class="textTitle message message-left animated bubbleLeft fadeIn">Request a feature</div></a>          
+  <div class="cancelMgTop textDesc message message-left animated bubbleLeft fadeIn displayNone" id="d2"><span>Request a feature</span>:<br>Lorem ipsum dolet si amar<br><br>
+            </div>
+        </div>      
+  
+  <div class="line"><a id="t3" title="Contact the developers" href="#contact"><div class="textTitle message message-left animated bubbleLeft fadeIn">Contact</div></a>          
+  <div class="cancelMgTop textDesc message message-left animated bubbleLeft fadeIn displayNone" id="d3"><span>Contact Us</span>:<br>Lorem ipsum dolet si amar<br><br>
+            </div>
+        </div>  
+
+         <div class="line"><a id="t4" title="Read our Terms of Service" href="#terms"><div class="textTitle message message-left animated bubbleLeft fadeIn">Terms of Service</div></a>           
+  <div class="cancelMgTop textDesc message message-left animated bubbleLeft fadeIn displayNone" id="d4"><span>Terms of Service</span>:<br>Lorem ipsum dolet si amar<br><br>
+            </div>
+        </div>  
+    
+  <div class="line"><a id="t5" title="Read our privacy policy" href="#privacy"><div class="textTitle message message-left animated bubbleLeft fadeIn">Privacy Policy</div></a>          
+    <div class="cancelMgTop textDesc message message-left animated bubbleLeft fadeIn displayNone" id="d5"><br>
+        <p class="revised">Last Revised: February 14, 2019</p>
+        <h2>Our Policy</h2>
+        <p>Welcome to BerlineBot!</p>
+        <p>Eunit Designs, Inc. (“<strong>BerlineBot</strong>”, “<strong>Berline</strong>”, “we”, “us” and/or “our”) operates the web site www.berlinebot.github.io (the “<strong>Site</strong>”), and other related services (collectively, the “<strong>Services</strong>”). This Privacy Policy sets forth Eunit Designs’s policy with respect to information including personally identifiable data (“<strong>Personal Data</strong>”) and other information that is collected from users of the Services and/or visitors to the Site.</p>
+        <h2>Information We Collect</h2>
+        <p>When you interact with us through the Services, we may collect Personal Data and other information from you, as further described below:</p>
+        <p><strong>Personal Data That You Provide Through the Services</strong>: We collect Personal Data from you when you voluntarily provide such information, such as when you contact us with inquiries, respond to one of our surveys (if you take part in any), or use certain Services. In addition, if you provide us with any chat logs (suggestions) to help feed our chatbot engine, those chat logs may contain your Personal Data. Wherever we collect Personal Data we make an effort to provide a link to this Privacy Policy.</p>
+        <p><strong>By voluntarily providing us with Personal Data, you are consenting to our use of it in accordance with this Privacy Policy. If you provide Personal Data to the Services, you acknowledge and agree that such Personal Data may be transferred from your current location to the offices and servers of ours and the authorized third parties referred to herein located in the United States.</strong></p>
+        <h2>Other Information</h2>
+        <p><strong>Non-Identifiable Data</strong>: When you interact with us through the Services, we receive and store certain personally non-identifiable information. Such information, which is collected passively using various technologies, cannot presently be used to specifically identify you. We may store such information itself or such information may be included in databases owned and maintained by our affiliates, agents or service providers. The Services may use such information and pool it with other information to track, for example, the total number of visitors to our Site, the number of visitors to each page of our Site, and the domain names of our visitors’ Internet service providers. It is important to note that no Personal Data is available or used in this process.</p>
+        <p>In operating the Services, we may use a technology called “cookies.” A cookie is a piece of information that the computer that hosts our Services gives to your browser when you access the Services. Our cookies help provide additional functionality to the Services and help us analyze Services usage more accurately. In all cases in which we use cookies, we will not collect Personal Data except with your permission. On most web browsers, you will find a “help” section on the toolbar. Please refer to this section for information on how to receive notification when you are receiving a new cookie and how to turn cookies off. We recommend that you leave cookies turned on because they allow you to take advantage of some of the Service features.</p>
+        <p><strong>Third Party Tracking</strong>: We may allow third party service providers to use cookies or similar technologies to collect information about your browsing activities over time and across different websites following your use of the Services. For example, we use Google Analytics, an online analytics service operated by Google LLC (Google Analytics). Google Analytics uses cookies to help us analyze traffic on the Site and enhance your experience when you use the Services. For more information on how Google LLC uses this data, go to <a href="https://policies.google.com/privacy?hl=en" target="_blank" title="Google's Privacy Policy">https://policies.google.com/privacy</a>.</p>
+        <h2>Our Use of Your Personal Data and Other Information</h2>
+        <p>We use the Personal Data you provide in a manner that is consistent with this Privacy Policy. If you provide Personal Data for a certain reason, we may use the Personal Data in connection with the reason for which it was provided. For instance, if you contact us by email, we will use the Personal Data you provide to answer your question or resolve your problem. Also, if you provide Personal Data in order to obtain access to the Services, we will use your Personal Data to provide you with access to such services and to monitor your use of such services. We and our subsidiaries and affiliates (the “Related Companies”) may also use your Personal Data and other personally non-identifiable information collected through the Services to help us improve the content and functionality of the Services, to better understand our users and to improve the Services. We and our affiliates may use this information to contact you in the future to tell you about services we believe will be of interest to you. If we do so, each marketing communication we send you will contain instructions permitting you to “opt-out” of receiving future marketing communications. In addition, if at any time you wish not to receive any future marketing communications or you wish to have your name deleted from our mailing lists, please contact us as indicated below.</p>
+        <p>If we intend on using any Personal Data in any manner that is not consistent with this Privacy Policy, you will be informed of such anticipated use prior to or at the time at which the Personal Data is collected.</p>
+        <h2>Detailed Information On the Processing of Personal Data</h2>
+        <p>Personal Data is collected for the following purposes and using the following services:</p>
+        <p><strong>Analytics</strong>: The services contained in this section enable the Owner to monitor and analyze online traffic and can be used to keep track of User behavior.</p>
+        <ul>
+       <!-- <li>
+        <p><em>Amplitude.com (Amplitude, Inc.)</em>: Amplitude.com is an online analytics service provided by Amplitude, Inc.</p>
+        <ul>
+        <li>
+        <p>Personal Data collected: Cookies and Usage Data.</p>
+        </li> 
+        <li>
+        <p>Place of processing: US – <a href="https://amplitude.com/privacy/">Privacy Policy</a></p>
+        </li>
+        </ul>
+        </li> -->
+        <li>
+        <p><em>Google Analytics (Google LLC)</em>: Google Analytics is an online analytics service provided by Google.</p>
+        <ul>
+        <li>
+        <p>Personal Data collected: Cookies and Usage Data.</p>
+        </li>
+        <li>
+        <p>Place of processing: US – <a href="https://policies.google.com/privacy?hl=en" target="_blank" title="Google's Privacy Policy">https://policies.google.com/privacy</a></p>
+        </li>
+        </ul>
+        </li>
+       <!-- <li>
+        <p><em>Facebook Ads conversion tracking (Facebook, Inc.)</em>: Facebook Ads conversion tracking is an analytics service provided by Facebook, Inc. that connects data from the Facebook advertising network with actions performed on this site.</p>
+        <ul>
+        <li>
+        <p>Personal Data collected: Cookies and Usage Data.</p>
+        </li>
+        <li>
+        <p>Place of processing: US – <a href="https://www.facebook.com/about/privacy/">Privacy Policy</a></p>
+        </li>
+        </ul>
+        </li> -->
+        </ul>
+        <p><strong>Contacting the User</strong></p>
+        <ul>
+        <li>
+        <p><em>Email Contact </em>: Users that provided their email might be contacted for commercial or promotional purposes related to this site, as well as for fulfilling support requests.</p>
+        <ul>
+        <li>
+        <p>Personal Data collected: email.</p>
+        </li>
+        </ul>
+        </li>
+       <!-- <li>
+        <p><em>Phone Contact </em>: Users that provided their phone number might be contacted for commercial or promotional purposes related to this site, as well as for fulfilling support requests.</p>
+        <ul>
+        <li>
+        <p>Personal Data collected: phone number.</p>
+        </li>
+        </ul>
+        </li> -->
+        </ul>
+        <p><strong>Hosting and Backend Infrastructure</strong>: This type of service has the purpose of hosting data and files that enable this site to run and be distributed as well as to provide a ready-made infrastructure to run specific features or parts of this site. Some of these services work through geographically distributed servers, making it difficult to determine the actual location where the Personal Data are stored.</p>
+        <ul>
+        <li>
+        <p><em>Microsoft Azure (Microsoft Corporation)</em>: Microsoft Azure is a hosting service provided by Microsoft Corporation.</p>
+        <ul>
+        <li>
+        <p>Personal Data collected: various types of Data as specified in the privacy policy of the service.</p>
+        </li>
+        <li>
+        <p>Place of processing: US – <a target="_blank" title="Microsoft Azure's Privacy Policy" href="https://www.microsoft.com/privacystatement/en-us/OnlineServices/Default.aspx">Privacy Policy</a></p>
+        </li>
+        </ul>
+        </li>
+        <li>
+        <p><em>Amazon Web Services (Amazon)</em>: Amazon Web Services is a hosting service provided by Amazon.com Inc.</p>
+        <ul>
+        <li>
+        <p>Personal Data collected: various types of Data as specified in the privacy policy of the service.</p>
+        </li>
+        <li>
+        <p><a target="_blank" title="Amazon's Privacy Policy" href="https://www.amazon.com/gp/help/customer/display.html?nodeId=468496">Privacy Policy</a></p>
+        </li>
+        </ul>
+        </li>
+        </ul>
+        <p><strong>Interaction with external social networks and platforms</strong>: This type of service allows interaction with social networks or other external platforms directly from the pages of this site. The interaction and information obtained through this site are always subject to the User’s privacy settings for each social network. This type of service might still collect traffic data for the pages where the service is installed, even when Users do not use it.</p>
+        <ul>
+        <li>
+        <p><em>Twitter Tweet button and social widgets (Twitter, Inc.)</em>: The Twitter Tweet button and social widgets are services allowing interaction with the Twitter social network provided by Twitter, Inc.</p>
+        <ul>
+        <li>
+        <p>Personal Data collected: Cookies and Usage Data.</p>
+        </li>
+        <li>
+        <p>Place of processing: US – <a target="_blank" title="Twitter's Privacy Policy" href="https://twitter.com/privacy">Privacy Policy</a></p>
+        </li>
+        </ul>
+        </li>
+        <li>
+        <p><em>Facebook Like button and social widgets (Facebook, Inc.)</em>: The Facebook Like button and social widgets are services allowing interaction with the Facebook social network provided by Facebook, Inc.</p>
+        <ul>
+        <li>
+        <p>Personal Data collected: Cookies and Usage Data.</p>
+        </li>
+        <li>
+        <p>Place of processing: US – <a target="_blank" title="Facebook's Privacy Policy" href="https://www.facebook.com/privacy/explanation">Privacy Policy</a></p>
+        </li>
+        </ul>
+        </li>
+        </ul>
+        <p><strong>Remarketing and behavioral targeting</strong>: This type of services allows this site and its partners to inform, optimize and serve advertising based on past use of this site by the User. This activity is performed by tracking Usage Data and by using Cookies, information that is transferred to the partners that manage the remarketing and behavioral targeting activity.</p>
+       <!-- <ul>
+        <li>
+        <p><em>Facebook Custom Audience (Facebook, Inc.)</em>: Facebook Custom Audience is a Remarketing and Behavioral Targeting service provided by Facebook, Inc. that connects the activity of this site with the Facebook advertising network.</p>
+        <ul>
+        <li>
+        <p>Personal Data collected: Cookies and email address.</p>
+        </li>
+        <li>
+        <p>Place of processing: US – <a href="https://www.facebook.com/about/privacy/">Privacy Policy</a> – <a href="https://www.aboutads.info/choices/">Opt Out</a></p>
+        </li>
+        </ul>
+        </li>
+        </ul> -->
+        <h2>Our Disclosure of Your Personal Data and Other Information</h2>
+        <p>We are not in the business of selling your information. We consider this information to be a vital part of our relationship with you. There are, however, certain circumstances in which we may share your Personal Data with certain third parties without further notice to you. These are set forth below:</p>
+       <!-- <p><strong>Business Transfers</strong>: As we develop our business, we might sell or buy businesses or assets. In the event of a corporate sale, merger, reorganization, dissolution or similar event, Personal Data may be part of the transferred assets.</p>
+        <p><strong>Related Companies</strong>: We may also share your Personal Data with our Related Companies for purposes consistent with this Privacy Policy.</p>
+        <p><strong>Agents, Consultants and Related Third Parties</strong>: We, like many businesses, sometimes hire other companies to perform certain business-related functions. Examples of such functions include mailing information, maintaining databases and processing payments. When we employ another entity to perform a function of this nature, we only provide them with the information that they need to perform their specific function.</p> -->
+        <p><strong>Legal Requirements</strong>: We may disclose your Personal Data if required to do so by law or in the good faith belief that such action is necessary to (i) comply with a legal obligation, (ii) protect and defend the our rights or property, (iii) act in urgent circumstances to protect the personal safety of users of the Services or the public, or (iv) protect against legal liability.</p>
+        <h2>Your Choices</h2>
+        <p>You can visit the Site without providing any Personal Data. If you choose not to provide any Personal Data, you may not be able to use certain Services.</p>
+        <h2>Exclusions</h2>
+        <p>This Privacy Policy does not apply to any Personal Data collected by us other than Personal Data collected through the Services. This Privacy Policy shall not apply to any unsolicited information you provide to us through the Services or through any other means. This includes, but is not limited to, information posted to any public areas of the Services, such as forums, any ideas for new products or modifications to existing products, and other unsolicited submissions (collectively, “Unsolicited Information”). All Unsolicited Information shall be deemed to be non-confidential and we shall be free to reproduce, use, disclose, and distribute such Unsolicited Information to others without limitation or attribution.</p>
+        <h2>Children</h2>
+        <p>We do not knowingly collect Personal Data from children under the age of 13. If you are under the age of 13, please do not submit any Personal Data through the Services. We encourage parents and legal guardians to monitor their children’s Internet usage and to help enforce our Privacy Policy by instructing their children never to provide Personal Data on the Services without their permission. If you have reason to believe that a child under the age of 13 has provided Personal Data to us through the Services, please contact us, and we will endeavor to delete that information from our databases.</p>
+        <h2>Links to Other Web Sites</h2>
+        <p>This Privacy Policy applies only to the Services. The Services may contain links to other web sites not operated or controlled by us (the “Third Party Sites”). The policies and procedures we described here do not apply to the Third Party Sites. The links from the Services do not imply that we endorse or have reviewed the Third Party Sites. We suggest contacting those sites directly for information on their privacy policies.</p>
+        <h2>Security</h2>
+        <p>We take reasonable steps to protect the Personal Data provided via the Services from loss, misuse, and unauthorized access, disclosure, alteration, or destruction. However, no Internet or email transmission is ever fully secure or error free. In particular, email sent to or from the Services may not be secure. Therefore, you should take special care in deciding what information you send to us via email. Please keep this in mind when disclosing any Personal Data to us via the Internet.</p>
+        <h2>Other Terms and Conditions</h2>
+        <p>Your access to and use of the Services is subject to our Terms of Service. Pls click <a href="#terms" id="terms" title="Read our Terms of Service">here</a> to read them.</p>
+        <h2>Changes to Our Privacy Policy</h2>
+        <p>The Services and our business may change from time to time. As a result, at times it may be necessary for us to make changes to this Privacy Policy. We reserve the right to update or modify this Privacy Policy at any time and from time to time without prior notice. Please review this policy periodically, and especially before you provide any Personal Data. This Privacy Policy was last updated on the date indicated above. Your continued use of the Services after any changes or revisions to this Privacy Policy shall indicate your agreement with the terms of such revised Privacy Policy.</p>
+        <h2>Access to Information; Contacting Us</h2>
+        <p>To keep your Personal Data accurate, current, and complete, please contact us as specified below. We will take reasonable steps to update or correct Personal Data in our possession that you have previously submitted via the Services.</p>
+        <p>Please also feel free to contact us if you have any questions about our Privacy Policy or the information practices of the Services.</p>
+        <p>You may contact us as follows:</p>
+        <ul>
+        <li>
+        <p>Use the contact form provided in this site, please click <a href="#contact" id="contact" title="Use the online contact form">here</a> to use the online form.</p></li>
+        <li><p>Contact us via: <a href="javascript:void(0)" title="Mail Berline bot" onclick="mail()">berlinebot@gmail.com</a></p>
+       <!-- <p>Eunit Designs, Inc. • Owerri • Imo State • Nigeria</p> -->
+       </li>
+        </ul>
+            <br><br>
+            </div>
+        </div>  
+
+  <div class="line">
+         <div class="copy">&copy; <span id="copyright"></span> <a href="#" title="Eunit Designs, Inc" class="link">Eunit Designs, Inc.</a> All rights reserved. </div>  
+   </div>
+   
 </div>
     
 	<!-- Google Tag Manager (noscript) -->
